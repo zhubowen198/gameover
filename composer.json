@@ -1,14 +1,14 @@
 {
-  "name": "nova-service/device",
-  "repositories": [
-  ],
-  "require": {
-    "packaged/thrift": "0.9.2.1"
-  },
-  "autoload": {
-    "psr-4": {
-      "Com\\Miaoju\\Device\\": "sdk/gen-php"
+    "name": "nova-service/game",
+    "repositories": [
+    ],
+    "require": {
+        "packaged/thrift": "0.9.2.1"
     },
-    "classmap": []
-  }
+    "autoload": {
+        "psr-4": {
+            "Com\\Miaoju\\Device\\": "sdk/gen-php"
+        },
+        "classmap": []
+    }
 }

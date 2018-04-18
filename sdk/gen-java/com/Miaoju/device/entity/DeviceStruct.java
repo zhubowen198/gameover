@@ -40,14 +40,30 @@ public class DeviceStruct implements org.apache.thrift.TBase<DeviceStruct, Devic
   private static final org.apache.thrift.protocol.TStruct STRUCT_DESC = new org.apache.thrift.protocol.TStruct("DeviceStruct");
 
   private static final org.apache.thrift.protocol.TField ID_FIELD_DESC = new org.apache.thrift.protocol.TField("id", org.apache.thrift.protocol.TType.I32, (short)1);
-  private static final org.apache.thrift.protocol.TField DEVICE_FIELD_DESC = new org.apache.thrift.protocol.TField("device", org.apache.thrift.protocol.TType.STRING, (short)2);
-  private static final org.apache.thrift.protocol.TField DEVICE_NAME_FIELD_DESC = new org.apache.thrift.protocol.TField("device_name", org.apache.thrift.protocol.TType.STRING, (short)3);
-  private static final org.apache.thrift.protocol.TField PROVINCE_FIELD_DESC = new org.apache.thrift.protocol.TField("province", org.apache.thrift.protocol.TType.STRING, (short)4);
-  private static final org.apache.thrift.protocol.TField CITY_FIELD_DESC = new org.apache.thrift.protocol.TField("city", org.apache.thrift.protocol.TType.STRING, (short)5);
-  private static final org.apache.thrift.protocol.TField AREA_FIELD_DESC = new org.apache.thrift.protocol.TField("area", org.apache.thrift.protocol.TType.STRING, (short)6);
-  private static final org.apache.thrift.protocol.TField ADDRESS_FIELD_DESC = new org.apache.thrift.protocol.TField("address", org.apache.thrift.protocol.TType.STRING, (short)7);
-  private static final org.apache.thrift.protocol.TField STATE_FIELD_DESC = new org.apache.thrift.protocol.TField("state", org.apache.thrift.protocol.TType.I32, (short)8);
-  private static final org.apache.thrift.protocol.TField CREATE_TIME_FIELD_DESC = new org.apache.thrift.protocol.TField("create_time", org.apache.thrift.protocol.TType.I32, (short)9);
+  private static final org.apache.thrift.protocol.TField ENTITY_ID_FIELD_DESC = new org.apache.thrift.protocol.TField("entity_id", org.apache.thrift.protocol.TType.I32, (short)2);
+  private static final org.apache.thrift.protocol.TField NAME_FIELD_DESC = new org.apache.thrift.protocol.TField("name", org.apache.thrift.protocol.TType.STRING, (short)3);
+  private static final org.apache.thrift.protocol.TField NAME_EN_FIELD_DESC = new org.apache.thrift.protocol.TField("name_en", org.apache.thrift.protocol.TType.STRING, (short)4);
+  private static final org.apache.thrift.protocol.TField ICON_FIELD_DESC = new org.apache.thrift.protocol.TField("icon", org.apache.thrift.protocol.TType.STRING, (short)5);
+  private static final org.apache.thrift.protocol.TField DESC_FIELD_DESC = new org.apache.thrift.protocol.TField("desc", org.apache.thrift.protocol.TType.STRING, (short)6);
+  private static final org.apache.thrift.protocol.TField CATEGORY_FIELD_DESC = new org.apache.thrift.protocol.TField("category", org.apache.thrift.protocol.TType.STRING, (short)7);
+  private static final org.apache.thrift.protocol.TField RANK_FIELD_DESC = new org.apache.thrift.protocol.TField("rank", org.apache.thrift.protocol.TType.STRING, (short)8);
+  private static final org.apache.thrift.protocol.TField OS_FIELD_DESC = new org.apache.thrift.protocol.TField("os", org.apache.thrift.protocol.TType.I32, (short)9);
+  private static final org.apache.thrift.protocol.TField COMMON_SIGN_KEY_FIELD_DESC = new org.apache.thrift.protocol.TField("common_sign_key", org.apache.thrift.protocol.TType.STRING, (short)10);
+  private static final org.apache.thrift.protocol.TField CONFIRM_SIGN_KEY_FIELD_DESC = new org.apache.thrift.protocol.TField("confirm_sign_key", org.apache.thrift.protocol.TType.STRING, (short)11);
+  private static final org.apache.thrift.protocol.TField PAY_SIGN_KEY_FIELD_DESC = new org.apache.thrift.protocol.TField("pay_sign_key", org.apache.thrift.protocol.TType.STRING, (short)12);
+  private static final org.apache.thrift.protocol.TField PAY_CALLBACK_FIELD_DESC = new org.apache.thrift.protocol.TField("pay_callback", org.apache.thrift.protocol.TType.STRING, (short)13);
+  private static final org.apache.thrift.protocol.TField COIN_UNIT_FIELD_DESC = new org.apache.thrift.protocol.TField("coin_unit", org.apache.thrift.protocol.TType.STRING, (short)14);
+  private static final org.apache.thrift.protocol.TField COIN_RATE_FIELD_DESC = new org.apache.thrift.protocol.TField("coin_rate", org.apache.thrift.protocol.TType.I32, (short)15);
+  private static final org.apache.thrift.protocol.TField UCODE_FIELD_DESC = new org.apache.thrift.protocol.TField("ucode", org.apache.thrift.protocol.TType.I32, (short)16);
+  private static final org.apache.thrift.protocol.TField VERSION_FIELD_DESC = new org.apache.thrift.protocol.TField("version", org.apache.thrift.protocol.TType.STRING, (short)17);
+  private static final org.apache.thrift.protocol.TField PACKAGE_URL_FIELD_DESC = new org.apache.thrift.protocol.TField("package_url", org.apache.thrift.protocol.TType.STRING, (short)18);
+  private static final org.apache.thrift.protocol.TField CREATE_TIME_FIELD_DESC = new org.apache.thrift.protocol.TField("create_time", org.apache.thrift.protocol.TType.I32, (short)19);
+  private static final org.apache.thrift.protocol.TField UPDATE_TIME_FIELD_DESC = new org.apache.thrift.protocol.TField("update_time", org.apache.thrift.protocol.TType.I32, (short)20);
+  private static final org.apache.thrift.protocol.TField CREATE_BY_FIELD_DESC = new org.apache.thrift.protocol.TField("create_by", org.apache.thrift.protocol.TType.STRING, (short)21);
+  private static final org.apache.thrift.protocol.TField UPDATE_BY_FIELD_DESC = new org.apache.thrift.protocol.TField("update_by", org.apache.thrift.protocol.TType.STRING, (short)22);
+  private static final org.apache.thrift.protocol.TField DISCOUNT_FIELD_DESC = new org.apache.thrift.protocol.TField("discount", org.apache.thrift.protocol.TType.DOUBLE, (short)23);
+  private static final org.apache.thrift.protocol.TField BACK_PAY_FIELD_DESC = new org.apache.thrift.protocol.TField("back_pay", org.apache.thrift.protocol.TType.DOUBLE, (short)24);
+  private static final org.apache.thrift.protocol.TField STATUS_FIELD_DESC = new org.apache.thrift.protocol.TField("status", org.apache.thrift.protocol.TType.I32, (short)25);
 
   private static final Map<Class<? extends IScheme>, SchemeFactory> schemes = new HashMap<Class<? extends IScheme>, SchemeFactory>();
   static {
@@ -55,26 +71,58 @@ public class DeviceStruct implements org.apache.thrift.TBase<DeviceStruct, Devic
   }
 
   private Integer id; // optional
-  private String device; // optional
-  private String device_name; // optional
-  private String province; // optional
-  private String city; // optional
-  private String area; // optional
-  private String address; // optional
-  private Integer state; // optional
+  private Integer entity_id; // optional
+  private String name; // optional
+  private String name_en; // optional
+  private String icon; // optional
+  private String desc; // optional
+  private String category; // optional
+  private String rank; // optional
+  private Integer os; // optional
+  private String common_sign_key; // optional
+  private String confirm_sign_key; // optional
+  private String pay_sign_key; // optional
+  private String pay_callback; // optional
+  private String coin_unit; // optional
+  private Integer coin_rate; // optional
+  private Integer ucode; // optional
+  private String version; // optional
+  private String package_url; // optional
   private Integer create_time; // optional
+  private Integer update_time; // optional
+  private String create_by; // optional
+  private String update_by; // optional
+  private Double discount; // optional
+  private Double back_pay; // optional
+  private Integer status; // optional
 
   /** The set of fields this struct contains, along with convenience methods for finding and manipulating them. */
   public enum _Fields implements org.apache.thrift.TFieldIdEnum {
     ID((short)1, "id"),
-    DEVICE((short)2, "device"),
-    DEVICE_NAME((short)3, "device_name"),
-    PROVINCE((short)4, "province"),
-    CITY((short)5, "city"),
-    AREA((short)6, "area"),
-    ADDRESS((short)7, "address"),
-    STATE((short)8, "state"),
-    CREATE_TIME((short)9, "create_time");
+    ENTITY_ID((short)2, "entity_id"),
+    NAME((short)3, "name"),
+    NAME_EN((short)4, "name_en"),
+    ICON((short)5, "icon"),
+    DESC((short)6, "desc"),
+    CATEGORY((short)7, "category"),
+    RANK((short)8, "rank"),
+    OS((short)9, "os"),
+    COMMON_SIGN_KEY((short)10, "common_sign_key"),
+    CONFIRM_SIGN_KEY((short)11, "confirm_sign_key"),
+    PAY_SIGN_KEY((short)12, "pay_sign_key"),
+    PAY_CALLBACK((short)13, "pay_callback"),
+    COIN_UNIT((short)14, "coin_unit"),
+    COIN_RATE((short)15, "coin_rate"),
+    UCODE((short)16, "ucode"),
+    VERSION((short)17, "version"),
+    PACKAGE_URL((short)18, "package_url"),
+    CREATE_TIME((short)19, "create_time"),
+    UPDATE_TIME((short)20, "update_time"),
+    CREATE_BY((short)21, "create_by"),
+    UPDATE_BY((short)22, "update_by"),
+    DISCOUNT((short)23, "discount"),
+    BACK_PAY((short)24, "back_pay"),
+    STATUS((short)25, "status");
 
     private static final Map<String, _Fields> byName = new HashMap<String, _Fields>();
 
@@ -91,22 +139,54 @@ public class DeviceStruct implements org.apache.thrift.TBase<DeviceStruct, Devic
       switch(fieldId) {
         case 1: // ID
           return ID;
-        case 2: // DEVICE
-          return DEVICE;
-        case 3: // DEVICE_NAME
-          return DEVICE_NAME;
-        case 4: // PROVINCE
-          return PROVINCE;
-        case 5: // CITY
-          return CITY;
-        case 6: // AREA
-          return AREA;
-        case 7: // ADDRESS
-          return ADDRESS;
-        case 8: // STATE
-          return STATE;
-        case 9: // CREATE_TIME
+        case 2: // ENTITY_ID
+          return ENTITY_ID;
+        case 3: // NAME
+          return NAME;
+        case 4: // NAME_EN
+          return NAME_EN;
+        case 5: // ICON
+          return ICON;
+        case 6: // DESC
+          return DESC;
+        case 7: // CATEGORY
+          return CATEGORY;
+        case 8: // RANK
+          return RANK;
+        case 9: // OS
+          return OS;
+        case 10: // COMMON_SIGN_KEY
+          return COMMON_SIGN_KEY;
+        case 11: // CONFIRM_SIGN_KEY
+          return CONFIRM_SIGN_KEY;
+        case 12: // PAY_SIGN_KEY
+          return PAY_SIGN_KEY;
+        case 13: // PAY_CALLBACK
+          return PAY_CALLBACK;
+        case 14: // COIN_UNIT
+          return COIN_UNIT;
+        case 15: // COIN_RATE
+          return COIN_RATE;
+        case 16: // UCODE
+          return UCODE;
+        case 17: // VERSION
+          return VERSION;
+        case 18: // PACKAGE_URL
+          return PACKAGE_URL;
+        case 19: // CREATE_TIME
           return CREATE_TIME;
+        case 20: // UPDATE_TIME
+          return UPDATE_TIME;
+        case 21: // CREATE_BY
+          return CREATE_BY;
+        case 22: // UPDATE_BY
+          return UPDATE_BY;
+        case 23: // DISCOUNT
+          return DISCOUNT;
+        case 24: // BACK_PAY
+          return BACK_PAY;
+        case 25: // STATUS
+          return STATUS;
         default:
           return null;
       }
@@ -148,30 +228,69 @@ public class DeviceStruct implements org.apache.thrift.TBase<DeviceStruct, Devic
 
   // isset id assignments
   private static final int __ID_ISSET_ID = 0;
-  private static final int __STATE_ISSET_ID = 1;
-  private static final int __CREATE_TIME_ISSET_ID = 2;
-  private byte __isset_bitfield = 0;
-  private static final _Fields optionals[] = {_Fields.ID,_Fields.DEVICE,_Fields.DEVICE_NAME,_Fields.PROVINCE,_Fields.CITY,_Fields.AREA,_Fields.ADDRESS,_Fields.STATE,_Fields.CREATE_TIME};
+  private static final int __ENTITY_ID_ISSET_ID = 1;
+  private static final int __OS_ISSET_ID = 2;
+  private static final int __COIN_RATE_ISSET_ID = 3;
+  private static final int __UCODE_ISSET_ID = 4;
+  private static final int __CREATE_TIME_ISSET_ID = 5;
+  private static final int __UPDATE_TIME_ISSET_ID = 6;
+  private static final int __DISCOUNT_ISSET_ID = 7;
+  private static final int __BACK_PAY_ISSET_ID = 8;
+  private static final int __STATUS_ISSET_ID = 9;
+  private short __isset_bitfield = 0;
+  private static final _Fields optionals[] = {_Fields.ID,_Fields.ENTITY_ID,_Fields.NAME,_Fields.NAME_EN,_Fields.ICON,_Fields.DESC,_Fields.CATEGORY,_Fields.RANK,_Fields.OS,_Fields.COMMON_SIGN_KEY,_Fields.CONFIRM_SIGN_KEY,_Fields.PAY_SIGN_KEY,_Fields.PAY_CALLBACK,_Fields.COIN_UNIT,_Fields.COIN_RATE,_Fields.UCODE,_Fields.VERSION,_Fields.PACKAGE_URL,_Fields.CREATE_TIME,_Fields.UPDATE_TIME,_Fields.CREATE_BY,_Fields.UPDATE_BY,_Fields.DISCOUNT,_Fields.BACK_PAY,_Fields.STATUS};
   public static final Map<_Fields, org.apache.thrift.meta_data.FieldMetaData> metaDataMap;
   static {
     Map<_Fields, org.apache.thrift.meta_data.FieldMetaData> tmpMap = new EnumMap<_Fields, org.apache.thrift.meta_data.FieldMetaData>(_Fields.class);
     tmpMap.put(_Fields.ID, new org.apache.thrift.meta_data.FieldMetaData("id", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
         new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.I32)));
-    tmpMap.put(_Fields.DEVICE, new org.apache.thrift.meta_data.FieldMetaData("device", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
-        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
-    tmpMap.put(_Fields.DEVICE_NAME, new org.apache.thrift.meta_data.FieldMetaData("device_name", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
-        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
-    tmpMap.put(_Fields.PROVINCE, new org.apache.thrift.meta_data.FieldMetaData("province", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
-        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
-    tmpMap.put(_Fields.CITY, new org.apache.thrift.meta_data.FieldMetaData("city", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
-        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
-    tmpMap.put(_Fields.AREA, new org.apache.thrift.meta_data.FieldMetaData("area", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
-        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
-    tmpMap.put(_Fields.ADDRESS, new org.apache.thrift.meta_data.FieldMetaData("address", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
-        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
-    tmpMap.put(_Fields.STATE, new org.apache.thrift.meta_data.FieldMetaData("state", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
+    tmpMap.put(_Fields.ENTITY_ID, new org.apache.thrift.meta_data.FieldMetaData("entity_id", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
         new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.I32)));
+    tmpMap.put(_Fields.NAME, new org.apache.thrift.meta_data.FieldMetaData("name", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
+        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
+    tmpMap.put(_Fields.NAME_EN, new org.apache.thrift.meta_data.FieldMetaData("name_en", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
+        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
+    tmpMap.put(_Fields.ICON, new org.apache.thrift.meta_data.FieldMetaData("icon", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
+        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
+    tmpMap.put(_Fields.DESC, new org.apache.thrift.meta_data.FieldMetaData("desc", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
+        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
+    tmpMap.put(_Fields.CATEGORY, new org.apache.thrift.meta_data.FieldMetaData("category", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
+        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
+    tmpMap.put(_Fields.RANK, new org.apache.thrift.meta_data.FieldMetaData("rank", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
+        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
+    tmpMap.put(_Fields.OS, new org.apache.thrift.meta_data.FieldMetaData("os", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
+        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.I32)));
+    tmpMap.put(_Fields.COMMON_SIGN_KEY, new org.apache.thrift.meta_data.FieldMetaData("common_sign_key", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
+        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
+    tmpMap.put(_Fields.CONFIRM_SIGN_KEY, new org.apache.thrift.meta_data.FieldMetaData("confirm_sign_key", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
+        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
+    tmpMap.put(_Fields.PAY_SIGN_KEY, new org.apache.thrift.meta_data.FieldMetaData("pay_sign_key", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
+        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
+    tmpMap.put(_Fields.PAY_CALLBACK, new org.apache.thrift.meta_data.FieldMetaData("pay_callback", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
+        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
+    tmpMap.put(_Fields.COIN_UNIT, new org.apache.thrift.meta_data.FieldMetaData("coin_unit", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
+        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
+    tmpMap.put(_Fields.COIN_RATE, new org.apache.thrift.meta_data.FieldMetaData("coin_rate", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
+        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.I32)));
+    tmpMap.put(_Fields.UCODE, new org.apache.thrift.meta_data.FieldMetaData("ucode", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
+        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.I32)));
+    tmpMap.put(_Fields.VERSION, new org.apache.thrift.meta_data.FieldMetaData("version", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
+        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
+    tmpMap.put(_Fields.PACKAGE_URL, new org.apache.thrift.meta_data.FieldMetaData("package_url", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
+        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
     tmpMap.put(_Fields.CREATE_TIME, new org.apache.thrift.meta_data.FieldMetaData("create_time", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
+        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.I32)));
+    tmpMap.put(_Fields.UPDATE_TIME, new org.apache.thrift.meta_data.FieldMetaData("update_time", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
+        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.I32)));
+    tmpMap.put(_Fields.CREATE_BY, new org.apache.thrift.meta_data.FieldMetaData("create_by", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
+        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
+    tmpMap.put(_Fields.UPDATE_BY, new org.apache.thrift.meta_data.FieldMetaData("update_by", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
+        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
+    tmpMap.put(_Fields.DISCOUNT, new org.apache.thrift.meta_data.FieldMetaData("discount", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
+        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.DOUBLE)));
+    tmpMap.put(_Fields.BACK_PAY, new org.apache.thrift.meta_data.FieldMetaData("back_pay", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
+        new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.DOUBLE)));
+    tmpMap.put(_Fields.STATUS, new org.apache.thrift.meta_data.FieldMetaData("status", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
         new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.I32)));
     metaDataMap = Collections.unmodifiableMap(tmpMap);
     org.apache.thrift.meta_data.FieldMetaData.addStructMetaDataMap(DeviceStruct.class, metaDataMap);
@@ -186,26 +305,60 @@ public class DeviceStruct implements org.apache.thrift.TBase<DeviceStruct, Devic
   public DeviceStruct(DeviceStruct other) {
     __isset_bitfield = other.__isset_bitfield;
     this.id = other.id;
-    if (other.isSetDevice()) {
-      this.device = other.device;
+    this.entity_id = other.entity_id;
+    if (other.isSetName()) {
+      this.name = other.name;
     }
-    if (other.isSetDevice_name()) {
-      this.device_name = other.device_name;
+    if (other.isSetName_en()) {
+      this.name_en = other.name_en;
     }
-    if (other.isSetProvince()) {
-      this.province = other.province;
+    if (other.isSetIcon()) {
+      this.icon = other.icon;
     }
-    if (other.isSetCity()) {
-      this.city = other.city;
+    if (other.isSetDesc()) {
+      this.desc = other.desc;
     }
-    if (other.isSetArea()) {
-      this.area = other.area;
+    if (other.isSetCategory()) {
+      this.category = other.category;
     }
-    if (other.isSetAddress()) {
-      this.address = other.address;
+    if (other.isSetRank()) {
+      this.rank = other.rank;
     }
-    this.state = other.state;
+    this.os = other.os;
+    if (other.isSetCommon_sign_key()) {
+      this.common_sign_key = other.common_sign_key;
+    }
+    if (other.isSetConfirm_sign_key()) {
+      this.confirm_sign_key = other.confirm_sign_key;
+    }
+    if (other.isSetPay_sign_key()) {
+      this.pay_sign_key = other.pay_sign_key;
+    }
+    if (other.isSetPay_callback()) {
+      this.pay_callback = other.pay_callback;
+    }
+    if (other.isSetCoin_unit()) {
+      this.coin_unit = other.coin_unit;
+    }
+    this.coin_rate = other.coin_rate;
+    this.ucode = other.ucode;
+    if (other.isSetVersion()) {
+      this.version = other.version;
+    }
+    if (other.isSetPackage_url()) {
+      this.package_url = other.package_url;
+    }
     this.create_time = other.create_time;
+    this.update_time = other.update_time;
+    if (other.isSetCreate_by()) {
+      this.create_by = other.create_by;
+    }
+    if (other.isSetUpdate_by()) {
+      this.update_by = other.update_by;
+    }
+    this.discount = other.discount;
+    this.back_pay = other.back_pay;
+    this.status = other.status;
   }
 
   public DeviceStruct deepCopy() {
@@ -216,22 +369,54 @@ public class DeviceStruct implements org.apache.thrift.TBase<DeviceStruct, Devic
   public void clear() {
     setIdIsSet(false);
     this.id = null;
-    setDeviceIsSet(false);
-    this.device = null;
-    setDevice_nameIsSet(false);
-    this.device_name = null;
-    setProvinceIsSet(false);
-    this.province = null;
-    setCityIsSet(false);
-    this.city = null;
-    setAreaIsSet(false);
-    this.area = null;
-    setAddressIsSet(false);
-    this.address = null;
-    setStateIsSet(false);
-    this.state = null;
+    setEntity_idIsSet(false);
+    this.entity_id = null;
+    setNameIsSet(false);
+    this.name = null;
+    setName_enIsSet(false);
+    this.name_en = null;
+    setIconIsSet(false);
+    this.icon = null;
+    setDescIsSet(false);
+    this.desc = null;
+    setCategoryIsSet(false);
+    this.category = null;
+    setRankIsSet(false);
+    this.rank = null;
+    setOsIsSet(false);
+    this.os = null;
+    setCommon_sign_keyIsSet(false);
+    this.common_sign_key = null;
+    setConfirm_sign_keyIsSet(false);
+    this.confirm_sign_key = null;
+    setPay_sign_keyIsSet(false);
+    this.pay_sign_key = null;
+    setPay_callbackIsSet(false);
+    this.pay_callback = null;
+    setCoin_unitIsSet(false);
+    this.coin_unit = null;
+    setCoin_rateIsSet(false);
+    this.coin_rate = null;
+    setUcodeIsSet(false);
+    this.ucode = null;
+    setVersionIsSet(false);
+    this.version = null;
+    setPackage_urlIsSet(false);
+    this.package_url = null;
     setCreate_timeIsSet(false);
     this.create_time = null;
+    setUpdate_timeIsSet(false);
+    this.update_time = null;
+    setCreate_byIsSet(false);
+    this.create_by = null;
+    setUpdate_byIsSet(false);
+    this.update_by = null;
+    setDiscountIsSet(false);
+    this.discount = null;
+    setBack_payIsSet(false);
+    this.back_pay = null;
+    setStatusIsSet(false);
+    this.status = null;
   }
 
   public Integer getId() {
@@ -261,205 +446,489 @@ public class DeviceStruct implements org.apache.thrift.TBase<DeviceStruct, Devic
     __isset_bitfield = EncodingUtils.setBit(__isset_bitfield, __ID_ISSET_ID, value);
   }
 
-  public String getDevice() {
-    return this.device;
+  public Integer getEntity_id() {
+    return this.entity_id;
   }
 
-  public DeviceStruct setDevice(String device) {
-    this.device = device;
-    if (device != null) {
-      setDeviceIsSet(true);
+  public DeviceStruct setEntity_id(Integer entity_id) {
+    this.entity_id = entity_id;
+    if (entity_id != null) {
+      setEntity_idIsSet(true);
     } else {
-      unsetDevice();
+      unsetEntity_id();
     }
     return this;
   }
 
-  public void unsetDevice() {
-    this.device = null;
+  public void unsetEntity_id() {
+    __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __ENTITY_ID_ISSET_ID);
   }
 
-  /** Returns true if field device is set (has been assigned a value) and false otherwise */
-  public boolean isSetDevice() {
-    return this.device != null;
+  /** Returns true if field entity_id is set (has been assigned a value) and false otherwise */
+  public boolean isSetEntity_id() {
+    return EncodingUtils.testBit(__isset_bitfield, __ENTITY_ID_ISSET_ID);
   }
 
-  public void setDeviceIsSet(boolean value) {
+  public void setEntity_idIsSet(boolean value) {
+    __isset_bitfield = EncodingUtils.setBit(__isset_bitfield, __ENTITY_ID_ISSET_ID, value);
+  }
+
+  public String getName() {
+    return this.name;
+  }
+
+  public DeviceStruct setName(String name) {
+    this.name = name;
+    if (name != null) {
+      setNameIsSet(true);
+    } else {
+      unsetName();
+    }
+    return this;
+  }
+
+  public void unsetName() {
+    this.name = null;
+  }
+
+  /** Returns true if field name is set (has been assigned a value) and false otherwise */
+  public boolean isSetName() {
+    return this.name != null;
+  }
+
+  public void setNameIsSet(boolean value) {
     if (!value) {
-      this.device = null;
+      this.name = null;
     }
   }
 
-  public String getDevice_name() {
-    return this.device_name;
+  public String getName_en() {
+    return this.name_en;
   }
 
-  public DeviceStruct setDevice_name(String device_name) {
-    this.device_name = device_name;
-    if (device_name != null) {
-      setDevice_nameIsSet(true);
+  public DeviceStruct setName_en(String name_en) {
+    this.name_en = name_en;
+    if (name_en != null) {
+      setName_enIsSet(true);
     } else {
-      unsetDevice_name();
+      unsetName_en();
     }
     return this;
   }
 
-  public void unsetDevice_name() {
-    this.device_name = null;
+  public void unsetName_en() {
+    this.name_en = null;
   }
 
-  /** Returns true if field device_name is set (has been assigned a value) and false otherwise */
-  public boolean isSetDevice_name() {
-    return this.device_name != null;
+  /** Returns true if field name_en is set (has been assigned a value) and false otherwise */
+  public boolean isSetName_en() {
+    return this.name_en != null;
   }
 
-  public void setDevice_nameIsSet(boolean value) {
+  public void setName_enIsSet(boolean value) {
     if (!value) {
-      this.device_name = null;
+      this.name_en = null;
     }
   }
 
-  public String getProvince() {
-    return this.province;
+  public String getIcon() {
+    return this.icon;
   }
 
-  public DeviceStruct setProvince(String province) {
-    this.province = province;
-    if (province != null) {
-      setProvinceIsSet(true);
+  public DeviceStruct setIcon(String icon) {
+    this.icon = icon;
+    if (icon != null) {
+      setIconIsSet(true);
     } else {
-      unsetProvince();
+      unsetIcon();
     }
     return this;
   }
 
-  public void unsetProvince() {
-    this.province = null;
+  public void unsetIcon() {
+    this.icon = null;
   }
 
-  /** Returns true if field province is set (has been assigned a value) and false otherwise */
-  public boolean isSetProvince() {
-    return this.province != null;
+  /** Returns true if field icon is set (has been assigned a value) and false otherwise */
+  public boolean isSetIcon() {
+    return this.icon != null;
   }
 
-  public void setProvinceIsSet(boolean value) {
+  public void setIconIsSet(boolean value) {
     if (!value) {
-      this.province = null;
+      this.icon = null;
     }
   }
 
-  public String getCity() {
-    return this.city;
+  public String getDesc() {
+    return this.desc;
   }
 
-  public DeviceStruct setCity(String city) {
-    this.city = city;
-    if (city != null) {
-      setCityIsSet(true);
+  public DeviceStruct setDesc(String desc) {
+    this.desc = desc;
+    if (desc != null) {
+      setDescIsSet(true);
     } else {
-      unsetCity();
+      unsetDesc();
     }
     return this;
   }
 
-  public void unsetCity() {
-    this.city = null;
+  public void unsetDesc() {
+    this.desc = null;
   }
 
-  /** Returns true if field city is set (has been assigned a value) and false otherwise */
-  public boolean isSetCity() {
-    return this.city != null;
+  /** Returns true if field desc is set (has been assigned a value) and false otherwise */
+  public boolean isSetDesc() {
+    return this.desc != null;
   }
 
-  public void setCityIsSet(boolean value) {
+  public void setDescIsSet(boolean value) {
     if (!value) {
-      this.city = null;
+      this.desc = null;
     }
   }
 
-  public String getArea() {
-    return this.area;
+  public String getCategory() {
+    return this.category;
   }
 
-  public DeviceStruct setArea(String area) {
-    this.area = area;
-    if (area != null) {
-      setAreaIsSet(true);
+  public DeviceStruct setCategory(String category) {
+    this.category = category;
+    if (category != null) {
+      setCategoryIsSet(true);
     } else {
-      unsetArea();
+      unsetCategory();
     }
     return this;
   }
 
-  public void unsetArea() {
-    this.area = null;
+  public void unsetCategory() {
+    this.category = null;
   }
 
-  /** Returns true if field area is set (has been assigned a value) and false otherwise */
-  public boolean isSetArea() {
-    return this.area != null;
+  /** Returns true if field category is set (has been assigned a value) and false otherwise */
+  public boolean isSetCategory() {
+    return this.category != null;
   }
 
-  public void setAreaIsSet(boolean value) {
+  public void setCategoryIsSet(boolean value) {
     if (!value) {
-      this.area = null;
+      this.category = null;
     }
   }
 
-  public String getAddress() {
-    return this.address;
+  public String getRank() {
+    return this.rank;
   }
 
-  public DeviceStruct setAddress(String address) {
-    this.address = address;
-    if (address != null) {
-      setAddressIsSet(true);
+  public DeviceStruct setRank(String rank) {
+    this.rank = rank;
+    if (rank != null) {
+      setRankIsSet(true);
     } else {
-      unsetAddress();
+      unsetRank();
     }
     return this;
   }
 
-  public void unsetAddress() {
-    this.address = null;
+  public void unsetRank() {
+    this.rank = null;
   }
 
-  /** Returns true if field address is set (has been assigned a value) and false otherwise */
-  public boolean isSetAddress() {
-    return this.address != null;
+  /** Returns true if field rank is set (has been assigned a value) and false otherwise */
+  public boolean isSetRank() {
+    return this.rank != null;
   }
 
-  public void setAddressIsSet(boolean value) {
+  public void setRankIsSet(boolean value) {
     if (!value) {
-      this.address = null;
+      this.rank = null;
     }
   }
 
-  public Integer getState() {
-    return this.state;
+  public Integer getOs() {
+    return this.os;
   }
 
-  public DeviceStruct setState(Integer state) {
-    this.state = state;
-    if (state != null) {
-      setStateIsSet(true);
+  public DeviceStruct setOs(Integer os) {
+    this.os = os;
+    if (os != null) {
+      setOsIsSet(true);
     } else {
-      unsetState();
+      unsetOs();
     }
     return this;
   }
 
-  public void unsetState() {
-    __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __STATE_ISSET_ID);
+  public void unsetOs() {
+    __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __OS_ISSET_ID);
   }
 
-  /** Returns true if field state is set (has been assigned a value) and false otherwise */
-  public boolean isSetState() {
-    return EncodingUtils.testBit(__isset_bitfield, __STATE_ISSET_ID);
+  /** Returns true if field os is set (has been assigned a value) and false otherwise */
+  public boolean isSetOs() {
+    return EncodingUtils.testBit(__isset_bitfield, __OS_ISSET_ID);
   }
 
-  public void setStateIsSet(boolean value) {
-    __isset_bitfield = EncodingUtils.setBit(__isset_bitfield, __STATE_ISSET_ID, value);
+  public void setOsIsSet(boolean value) {
+    __isset_bitfield = EncodingUtils.setBit(__isset_bitfield, __OS_ISSET_ID, value);
+  }
+
+  public String getCommon_sign_key() {
+    return this.common_sign_key;
+  }
+
+  public DeviceStruct setCommon_sign_key(String common_sign_key) {
+    this.common_sign_key = common_sign_key;
+    if (common_sign_key != null) {
+      setCommon_sign_keyIsSet(true);
+    } else {
+      unsetCommon_sign_key();
+    }
+    return this;
+  }
+
+  public void unsetCommon_sign_key() {
+    this.common_sign_key = null;
+  }
+
+  /** Returns true if field common_sign_key is set (has been assigned a value) and false otherwise */
+  public boolean isSetCommon_sign_key() {
+    return this.common_sign_key != null;
+  }
+
+  public void setCommon_sign_keyIsSet(boolean value) {
+    if (!value) {
+      this.common_sign_key = null;
+    }
+  }
+
+  public String getConfirm_sign_key() {
+    return this.confirm_sign_key;
+  }
+
+  public DeviceStruct setConfirm_sign_key(String confirm_sign_key) {
+    this.confirm_sign_key = confirm_sign_key;
+    if (confirm_sign_key != null) {
+      setConfirm_sign_keyIsSet(true);
+    } else {
+      unsetConfirm_sign_key();
+    }
+    return this;
+  }
+
+  public void unsetConfirm_sign_key() {
+    this.confirm_sign_key = null;
+  }
+
+  /** Returns true if field confirm_sign_key is set (has been assigned a value) and false otherwise */
+  public boolean isSetConfirm_sign_key() {
+    return this.confirm_sign_key != null;
+  }
+
+  public void setConfirm_sign_keyIsSet(boolean value) {
+    if (!value) {
+      this.confirm_sign_key = null;
+    }
+  }
+
+  public String getPay_sign_key() {
+    return this.pay_sign_key;
+  }
+
+  public DeviceStruct setPay_sign_key(String pay_sign_key) {
+    this.pay_sign_key = pay_sign_key;
+    if (pay_sign_key != null) {
+      setPay_sign_keyIsSet(true);
+    } else {
+      unsetPay_sign_key();
+    }
+    return this;
+  }
+
+  public void unsetPay_sign_key() {
+    this.pay_sign_key = null;
+  }
+
+  /** Returns true if field pay_sign_key is set (has been assigned a value) and false otherwise */
+  public boolean isSetPay_sign_key() {
+    return this.pay_sign_key != null;
+  }
+
+  public void setPay_sign_keyIsSet(boolean value) {
+    if (!value) {
+      this.pay_sign_key = null;
+    }
+  }
+
+  public String getPay_callback() {
+    return this.pay_callback;
+  }
+
+  public DeviceStruct setPay_callback(String pay_callback) {
+    this.pay_callback = pay_callback;
+    if (pay_callback != null) {
+      setPay_callbackIsSet(true);
+    } else {
+      unsetPay_callback();
+    }
+    return this;
+  }
+
+  public void unsetPay_callback() {
+    this.pay_callback = null;
+  }
+
+  /** Returns true if field pay_callback is set (has been assigned a value) and false otherwise */
+  public boolean isSetPay_callback() {
+    return this.pay_callback != null;
+  }
+
+  public void setPay_callbackIsSet(boolean value) {
+    if (!value) {
+      this.pay_callback = null;
+    }
+  }
+
+  public String getCoin_unit() {
+    return this.coin_unit;
+  }
+
+  public DeviceStruct setCoin_unit(String coin_unit) {
+    this.coin_unit = coin_unit;
+    if (coin_unit != null) {
+      setCoin_unitIsSet(true);
+    } else {
+      unsetCoin_unit();
+    }
+    return this;
+  }
+
+  public void unsetCoin_unit() {
+    this.coin_unit = null;
+  }
+
+  /** Returns true if field coin_unit is set (has been assigned a value) and false otherwise */
+  public boolean isSetCoin_unit() {
+    return this.coin_unit != null;
+  }
+
+  public void setCoin_unitIsSet(boolean value) {
+    if (!value) {
+      this.coin_unit = null;
+    }
+  }
+
+  public Integer getCoin_rate() {
+    return this.coin_rate;
+  }
+
+  public DeviceStruct setCoin_rate(Integer coin_rate) {
+    this.coin_rate = coin_rate;
+    if (coin_rate != null) {
+      setCoin_rateIsSet(true);
+    } else {
+      unsetCoin_rate();
+    }
+    return this;
+  }
+
+  public void unsetCoin_rate() {
+    __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __COIN_RATE_ISSET_ID);
+  }
+
+  /** Returns true if field coin_rate is set (has been assigned a value) and false otherwise */
+  public boolean isSetCoin_rate() {
+    return EncodingUtils.testBit(__isset_bitfield, __COIN_RATE_ISSET_ID);
+  }
+
+  public void setCoin_rateIsSet(boolean value) {
+    __isset_bitfield = EncodingUtils.setBit(__isset_bitfield, __COIN_RATE_ISSET_ID, value);
+  }
+
+  public Integer getUcode() {
+    return this.ucode;
+  }
+
+  public DeviceStruct setUcode(Integer ucode) {
+    this.ucode = ucode;
+    if (ucode != null) {
+      setUcodeIsSet(true);
+    } else {
+      unsetUcode();
+    }
+    return this;
+  }
+
+  public void unsetUcode() {
+    __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __UCODE_ISSET_ID);
+  }
+
+  /** Returns true if field ucode is set (has been assigned a value) and false otherwise */
+  public boolean isSetUcode() {
+    return EncodingUtils.testBit(__isset_bitfield, __UCODE_ISSET_ID);
+  }
+
+  public void setUcodeIsSet(boolean value) {
+    __isset_bitfield = EncodingUtils.setBit(__isset_bitfield, __UCODE_ISSET_ID, value);
+  }
+
+  public String getVersion() {
+    return this.version;
+  }
+
+  public DeviceStruct setVersion(String version) {
+    this.version = version;
+    if (version != null) {
+      setVersionIsSet(true);
+    } else {
+      unsetVersion();
+    }
+    return this;
+  }
+
+  public void unsetVersion() {
+    this.version = null;
+  }
+
+  /** Returns true if field version is set (has been assigned a value) and false otherwise */
+  public boolean isSetVersion() {
+    return this.version != null;
+  }
+
+  public void setVersionIsSet(boolean value) {
+    if (!value) {
+      this.version = null;
+    }
+  }
+
+  public String getPackage_url() {
+    return this.package_url;
+  }
+
+  public DeviceStruct setPackage_url(String package_url) {
+    this.package_url = package_url;
+    if (package_url != null) {
+      setPackage_urlIsSet(true);
+    } else {
+      unsetPackage_url();
+    }
+    return this;
+  }
+
+  public void unsetPackage_url() {
+    this.package_url = null;
+  }
+
+  /** Returns true if field package_url is set (has been assigned a value) and false otherwise */
+  public boolean isSetPackage_url() {
+    return this.package_url != null;
+  }
+
+  public void setPackage_urlIsSet(boolean value) {
+    if (!value) {
+      this.package_url = null;
+    }
   }
 
   public Integer getCreate_time() {
@@ -489,6 +958,172 @@ public class DeviceStruct implements org.apache.thrift.TBase<DeviceStruct, Devic
     __isset_bitfield = EncodingUtils.setBit(__isset_bitfield, __CREATE_TIME_ISSET_ID, value);
   }
 
+  public Integer getUpdate_time() {
+    return this.update_time;
+  }
+
+  public DeviceStruct setUpdate_time(Integer update_time) {
+    this.update_time = update_time;
+    if (update_time != null) {
+      setUpdate_timeIsSet(true);
+    } else {
+      unsetUpdate_time();
+    }
+    return this;
+  }
+
+  public void unsetUpdate_time() {
+    __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __UPDATE_TIME_ISSET_ID);
+  }
+
+  /** Returns true if field update_time is set (has been assigned a value) and false otherwise */
+  public boolean isSetUpdate_time() {
+    return EncodingUtils.testBit(__isset_bitfield, __UPDATE_TIME_ISSET_ID);
+  }
+
+  public void setUpdate_timeIsSet(boolean value) {
+    __isset_bitfield = EncodingUtils.setBit(__isset_bitfield, __UPDATE_TIME_ISSET_ID, value);
+  }
+
+  public String getCreate_by() {
+    return this.create_by;
+  }
+
+  public DeviceStruct setCreate_by(String create_by) {
+    this.create_by = create_by;
+    if (create_by != null) {
+      setCreate_byIsSet(true);
+    } else {
+      unsetCreate_by();
+    }
+    return this;
+  }
+
+  public void unsetCreate_by() {
+    this.create_by = null;
+  }
+
+  /** Returns true if field create_by is set (has been assigned a value) and false otherwise */
+  public boolean isSetCreate_by() {
+    return this.create_by != null;
+  }
+
+  public void setCreate_byIsSet(boolean value) {
+    if (!value) {
+      this.create_by = null;
+    }
+  }
+
+  public String getUpdate_by() {
+    return this.update_by;
+  }
+
+  public DeviceStruct setUpdate_by(String update_by) {
+    this.update_by = update_by;
+    if (update_by != null) {
+      setUpdate_byIsSet(true);
+    } else {
+      unsetUpdate_by();
+    }
+    return this;
+  }
+
+  public void unsetUpdate_by() {
+    this.update_by = null;
+  }
+
+  /** Returns true if field update_by is set (has been assigned a value) and false otherwise */
+  public boolean isSetUpdate_by() {
+    return this.update_by != null;
+  }
+
+  public void setUpdate_byIsSet(boolean value) {
+    if (!value) {
+      this.update_by = null;
+    }
+  }
+
+  public Double getDiscount() {
+    return this.discount;
+  }
+
+  public DeviceStruct setDiscount(Double discount) {
+    this.discount = discount;
+    if (discount != null) {
+      setDiscountIsSet(true);
+    } else {
+      unsetDiscount();
+    }
+    return this;
+  }
+
+  public void unsetDiscount() {
+    __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __DISCOUNT_ISSET_ID);
+  }
+
+  /** Returns true if field discount is set (has been assigned a value) and false otherwise */
+  public boolean isSetDiscount() {
+    return EncodingUtils.testBit(__isset_bitfield, __DISCOUNT_ISSET_ID);
+  }
+
+  public void setDiscountIsSet(boolean value) {
+    __isset_bitfield = EncodingUtils.setBit(__isset_bitfield, __DISCOUNT_ISSET_ID, value);
+  }
+
+  public Double getBack_pay() {
+    return this.back_pay;
+  }
+
+  public DeviceStruct setBack_pay(Double back_pay) {
+    this.back_pay = back_pay;
+    if (back_pay != null) {
+      setBack_payIsSet(true);
+    } else {
+      unsetBack_pay();
+    }
+    return this;
+  }
+
+  public void unsetBack_pay() {
+    __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __BACK_PAY_ISSET_ID);
+  }
+
+  /** Returns true if field back_pay is set (has been assigned a value) and false otherwise */
+  public boolean isSetBack_pay() {
+    return EncodingUtils.testBit(__isset_bitfield, __BACK_PAY_ISSET_ID);
+  }
+
+  public void setBack_payIsSet(boolean value) {
+    __isset_bitfield = EncodingUtils.setBit(__isset_bitfield, __BACK_PAY_ISSET_ID, value);
+  }
+
+  public Integer getStatus() {
+    return this.status;
+  }
+
+  public DeviceStruct setStatus(Integer status) {
+    this.status = status;
+    if (status != null) {
+      setStatusIsSet(true);
+    } else {
+      unsetStatus();
+    }
+    return this;
+  }
+
+  public void unsetStatus() {
+    __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __STATUS_ISSET_ID);
+  }
+
+  /** Returns true if field status is set (has been assigned a value) and false otherwise */
+  public boolean isSetStatus() {
+    return EncodingUtils.testBit(__isset_bitfield, __STATUS_ISSET_ID);
+  }
+
+  public void setStatusIsSet(boolean value) {
+    __isset_bitfield = EncodingUtils.setBit(__isset_bitfield, __STATUS_ISSET_ID, value);
+  }
+
   public void setFieldValue(_Fields field, Object value) {
     switch (field) {
     case ID:
@@ -499,59 +1134,139 @@ public class DeviceStruct implements org.apache.thrift.TBase<DeviceStruct, Devic
       }
       break;
 
-    case DEVICE:
+    case ENTITY_ID:
       if (value == null) {
-        unsetDevice();
+        unsetEntity_id();
       } else {
-        setDevice((String)value);
+        setEntity_id((Integer)value);
       }
       break;
 
-    case DEVICE_NAME:
+    case NAME:
       if (value == null) {
-        unsetDevice_name();
+        unsetName();
       } else {
-        setDevice_name((String)value);
+        setName((String)value);
       }
       break;
 
-    case PROVINCE:
+    case NAME_EN:
       if (value == null) {
-        unsetProvince();
+        unsetName_en();
       } else {
-        setProvince((String)value);
+        setName_en((String)value);
       }
       break;
 
-    case CITY:
+    case ICON:
       if (value == null) {
-        unsetCity();
+        unsetIcon();
       } else {
-        setCity((String)value);
+        setIcon((String)value);
       }
       break;
 
-    case AREA:
+    case DESC:
       if (value == null) {
-        unsetArea();
+        unsetDesc();
       } else {
-        setArea((String)value);
+        setDesc((String)value);
       }
       break;
 
-    case ADDRESS:
+    case CATEGORY:
       if (value == null) {
-        unsetAddress();
+        unsetCategory();
       } else {
-        setAddress((String)value);
+        setCategory((String)value);
       }
       break;
 
-    case STATE:
+    case RANK:
       if (value == null) {
-        unsetState();
+        unsetRank();
       } else {
-        setState((Integer)value);
+        setRank((String)value);
+      }
+      break;
+
+    case OS:
+      if (value == null) {
+        unsetOs();
+      } else {
+        setOs((Integer)value);
+      }
+      break;
+
+    case COMMON_SIGN_KEY:
+      if (value == null) {
+        unsetCommon_sign_key();
+      } else {
+        setCommon_sign_key((String)value);
+      }
+      break;
+
+    case CONFIRM_SIGN_KEY:
+      if (value == null) {
+        unsetConfirm_sign_key();
+      } else {
+        setConfirm_sign_key((String)value);
+      }
+      break;
+
+    case PAY_SIGN_KEY:
+      if (value == null) {
+        unsetPay_sign_key();
+      } else {
+        setPay_sign_key((String)value);
+      }
+      break;
+
+    case PAY_CALLBACK:
+      if (value == null) {
+        unsetPay_callback();
+      } else {
+        setPay_callback((String)value);
+      }
+      break;
+
+    case COIN_UNIT:
+      if (value == null) {
+        unsetCoin_unit();
+      } else {
+        setCoin_unit((String)value);
+      }
+      break;
+
+    case COIN_RATE:
+      if (value == null) {
+        unsetCoin_rate();
+      } else {
+        setCoin_rate((Integer)value);
+      }
+      break;
+
+    case UCODE:
+      if (value == null) {
+        unsetUcode();
+      } else {
+        setUcode((Integer)value);
+      }
+      break;
+
+    case VERSION:
+      if (value == null) {
+        unsetVersion();
+      } else {
+        setVersion((String)value);
+      }
+      break;
+
+    case PACKAGE_URL:
+      if (value == null) {
+        unsetPackage_url();
+      } else {
+        setPackage_url((String)value);
       }
       break;
 
@@ -560,6 +1275,54 @@ public class DeviceStruct implements org.apache.thrift.TBase<DeviceStruct, Devic
         unsetCreate_time();
       } else {
         setCreate_time((Integer)value);
+      }
+      break;
+
+    case UPDATE_TIME:
+      if (value == null) {
+        unsetUpdate_time();
+      } else {
+        setUpdate_time((Integer)value);
+      }
+      break;
+
+    case CREATE_BY:
+      if (value == null) {
+        unsetCreate_by();
+      } else {
+        setCreate_by((String)value);
+      }
+      break;
+
+    case UPDATE_BY:
+      if (value == null) {
+        unsetUpdate_by();
+      } else {
+        setUpdate_by((String)value);
+      }
+      break;
+
+    case DISCOUNT:
+      if (value == null) {
+        unsetDiscount();
+      } else {
+        setDiscount((Double)value);
+      }
+      break;
+
+    case BACK_PAY:
+      if (value == null) {
+        unsetBack_pay();
+      } else {
+        setBack_pay((Double)value);
+      }
+      break;
+
+    case STATUS:
+      if (value == null) {
+        unsetStatus();
+      } else {
+        setStatus((Integer)value);
       }
       break;
 
@@ -573,50 +1336,139 @@ public class DeviceStruct implements org.apache.thrift.TBase<DeviceStruct, Devic
         return Integer.valueOf(getId());
       }
       return null;
-    case DEVICE:
-      if (getDevice() != null) {
-        return getDevice();
+    case ENTITY_ID:
+      if (getEntity_id() != null) {
+        return Integer.valueOf(getEntity_id());
+      }
+      return null;
+    case NAME:
+      if (getName() != null) {
+        return getName();
 
       }
       return null;
-    case DEVICE_NAME:
-      if (getDevice_name() != null) {
-        return getDevice_name();
+    case NAME_EN:
+      if (getName_en() != null) {
+        return getName_en();
 
       }
       return null;
-    case PROVINCE:
-      if (getProvince() != null) {
-        return getProvince();
+    case ICON:
+      if (getIcon() != null) {
+        return getIcon();
 
       }
       return null;
-    case CITY:
-      if (getCity() != null) {
-        return getCity();
+    case DESC:
+      if (getDesc() != null) {
+        return getDesc();
 
       }
       return null;
-    case AREA:
-      if (getArea() != null) {
-        return getArea();
+    case CATEGORY:
+      if (getCategory() != null) {
+        return getCategory();
 
       }
       return null;
-    case ADDRESS:
-      if (getAddress() != null) {
-        return getAddress();
+    case RANK:
+      if (getRank() != null) {
+        return getRank();
 
       }
       return null;
-    case STATE:
-      if (getState() != null) {
-        return Integer.valueOf(getState());
+    case OS:
+      if (getOs() != null) {
+        return Integer.valueOf(getOs());
+      }
+      return null;
+    case COMMON_SIGN_KEY:
+      if (getCommon_sign_key() != null) {
+        return getCommon_sign_key();
+
+      }
+      return null;
+    case CONFIRM_SIGN_KEY:
+      if (getConfirm_sign_key() != null) {
+        return getConfirm_sign_key();
+
+      }
+      return null;
+    case PAY_SIGN_KEY:
+      if (getPay_sign_key() != null) {
+        return getPay_sign_key();
+
+      }
+      return null;
+    case PAY_CALLBACK:
+      if (getPay_callback() != null) {
+        return getPay_callback();
+
+      }
+      return null;
+    case COIN_UNIT:
+      if (getCoin_unit() != null) {
+        return getCoin_unit();
+
+      }
+      return null;
+    case COIN_RATE:
+      if (getCoin_rate() != null) {
+        return Integer.valueOf(getCoin_rate());
+      }
+      return null;
+    case UCODE:
+      if (getUcode() != null) {
+        return Integer.valueOf(getUcode());
+      }
+      return null;
+    case VERSION:
+      if (getVersion() != null) {
+        return getVersion();
+
+      }
+      return null;
+    case PACKAGE_URL:
+      if (getPackage_url() != null) {
+        return getPackage_url();
+
       }
       return null;
     case CREATE_TIME:
       if (getCreate_time() != null) {
         return Integer.valueOf(getCreate_time());
+      }
+      return null;
+    case UPDATE_TIME:
+      if (getUpdate_time() != null) {
+        return Integer.valueOf(getUpdate_time());
+      }
+      return null;
+    case CREATE_BY:
+      if (getCreate_by() != null) {
+        return getCreate_by();
+
+      }
+      return null;
+    case UPDATE_BY:
+      if (getUpdate_by() != null) {
+        return getUpdate_by();
+
+      }
+      return null;
+    case DISCOUNT:
+      if (getDiscount() != null) {
+        return Double.valueOf(getDiscount());
+      }
+      return null;
+    case BACK_PAY:
+      if (getBack_pay() != null) {
+        return Double.valueOf(getBack_pay());
+      }
+      return null;
+    case STATUS:
+      if (getStatus() != null) {
+        return Integer.valueOf(getStatus());
       }
       return null;
     }
@@ -632,22 +1484,54 @@ public class DeviceStruct implements org.apache.thrift.TBase<DeviceStruct, Devic
     switch (field) {
     case ID:
       return isSetId();
-    case DEVICE:
-      return isSetDevice();
-    case DEVICE_NAME:
-      return isSetDevice_name();
-    case PROVINCE:
-      return isSetProvince();
-    case CITY:
-      return isSetCity();
-    case AREA:
-      return isSetArea();
-    case ADDRESS:
-      return isSetAddress();
-    case STATE:
-      return isSetState();
+    case ENTITY_ID:
+      return isSetEntity_id();
+    case NAME:
+      return isSetName();
+    case NAME_EN:
+      return isSetName_en();
+    case ICON:
+      return isSetIcon();
+    case DESC:
+      return isSetDesc();
+    case CATEGORY:
+      return isSetCategory();
+    case RANK:
+      return isSetRank();
+    case OS:
+      return isSetOs();
+    case COMMON_SIGN_KEY:
+      return isSetCommon_sign_key();
+    case CONFIRM_SIGN_KEY:
+      return isSetConfirm_sign_key();
+    case PAY_SIGN_KEY:
+      return isSetPay_sign_key();
+    case PAY_CALLBACK:
+      return isSetPay_callback();
+    case COIN_UNIT:
+      return isSetCoin_unit();
+    case COIN_RATE:
+      return isSetCoin_rate();
+    case UCODE:
+      return isSetUcode();
+    case VERSION:
+      return isSetVersion();
+    case PACKAGE_URL:
+      return isSetPackage_url();
     case CREATE_TIME:
       return isSetCreate_time();
+    case UPDATE_TIME:
+      return isSetUpdate_time();
+    case CREATE_BY:
+      return isSetCreate_by();
+    case UPDATE_BY:
+      return isSetUpdate_by();
+    case DISCOUNT:
+      return isSetDiscount();
+    case BACK_PAY:
+      return isSetBack_pay();
+    case STATUS:
+      return isSetStatus();
     }
     throw new IllegalStateException();
   }
@@ -674,66 +1558,156 @@ public class DeviceStruct implements org.apache.thrift.TBase<DeviceStruct, Devic
         return false;
     }
 
-    boolean this_present_device = true && this.isSetDevice();
-    boolean that_present_device = true && that.isSetDevice();
-    if (this_present_device || that_present_device) {
-      if (!(this_present_device && that_present_device))
+    boolean this_present_entity_id = true && this.isSetEntity_id();
+    boolean that_present_entity_id = true && that.isSetEntity_id();
+    if (this_present_entity_id || that_present_entity_id) {
+      if (!(this_present_entity_id && that_present_entity_id))
         return false;
-      if (!this.device.equals(that.device))
-        return false;
-    }
-
-    boolean this_present_device_name = true && this.isSetDevice_name();
-    boolean that_present_device_name = true && that.isSetDevice_name();
-    if (this_present_device_name || that_present_device_name) {
-      if (!(this_present_device_name && that_present_device_name))
-        return false;
-      if (!this.device_name.equals(that.device_name))
+      if (!this.entity_id.equals(that.entity_id))
         return false;
     }
 
-    boolean this_present_province = true && this.isSetProvince();
-    boolean that_present_province = true && that.isSetProvince();
-    if (this_present_province || that_present_province) {
-      if (!(this_present_province && that_present_province))
+    boolean this_present_name = true && this.isSetName();
+    boolean that_present_name = true && that.isSetName();
+    if (this_present_name || that_present_name) {
+      if (!(this_present_name && that_present_name))
         return false;
-      if (!this.province.equals(that.province))
-        return false;
-    }
-
-    boolean this_present_city = true && this.isSetCity();
-    boolean that_present_city = true && that.isSetCity();
-    if (this_present_city || that_present_city) {
-      if (!(this_present_city && that_present_city))
-        return false;
-      if (!this.city.equals(that.city))
+      if (!this.name.equals(that.name))
         return false;
     }
 
-    boolean this_present_area = true && this.isSetArea();
-    boolean that_present_area = true && that.isSetArea();
-    if (this_present_area || that_present_area) {
-      if (!(this_present_area && that_present_area))
+    boolean this_present_name_en = true && this.isSetName_en();
+    boolean that_present_name_en = true && that.isSetName_en();
+    if (this_present_name_en || that_present_name_en) {
+      if (!(this_present_name_en && that_present_name_en))
         return false;
-      if (!this.area.equals(that.area))
-        return false;
-    }
-
-    boolean this_present_address = true && this.isSetAddress();
-    boolean that_present_address = true && that.isSetAddress();
-    if (this_present_address || that_present_address) {
-      if (!(this_present_address && that_present_address))
-        return false;
-      if (!this.address.equals(that.address))
+      if (!this.name_en.equals(that.name_en))
         return false;
     }
 
-    boolean this_present_state = true && this.isSetState();
-    boolean that_present_state = true && that.isSetState();
-    if (this_present_state || that_present_state) {
-      if (!(this_present_state && that_present_state))
+    boolean this_present_icon = true && this.isSetIcon();
+    boolean that_present_icon = true && that.isSetIcon();
+    if (this_present_icon || that_present_icon) {
+      if (!(this_present_icon && that_present_icon))
         return false;
-      if (!this.state.equals(that.state))
+      if (!this.icon.equals(that.icon))
+        return false;
+    }
+
+    boolean this_present_desc = true && this.isSetDesc();
+    boolean that_present_desc = true && that.isSetDesc();
+    if (this_present_desc || that_present_desc) {
+      if (!(this_present_desc && that_present_desc))
+        return false;
+      if (!this.desc.equals(that.desc))
+        return false;
+    }
+
+    boolean this_present_category = true && this.isSetCategory();
+    boolean that_present_category = true && that.isSetCategory();
+    if (this_present_category || that_present_category) {
+      if (!(this_present_category && that_present_category))
+        return false;
+      if (!this.category.equals(that.category))
+        return false;
+    }
+
+    boolean this_present_rank = true && this.isSetRank();
+    boolean that_present_rank = true && that.isSetRank();
+    if (this_present_rank || that_present_rank) {
+      if (!(this_present_rank && that_present_rank))
+        return false;
+      if (!this.rank.equals(that.rank))
+        return false;
+    }
+
+    boolean this_present_os = true && this.isSetOs();
+    boolean that_present_os = true && that.isSetOs();
+    if (this_present_os || that_present_os) {
+      if (!(this_present_os && that_present_os))
+        return false;
+      if (!this.os.equals(that.os))
+        return false;
+    }
+
+    boolean this_present_common_sign_key = true && this.isSetCommon_sign_key();
+    boolean that_present_common_sign_key = true && that.isSetCommon_sign_key();
+    if (this_present_common_sign_key || that_present_common_sign_key) {
+      if (!(this_present_common_sign_key && that_present_common_sign_key))
+        return false;
+      if (!this.common_sign_key.equals(that.common_sign_key))
+        return false;
+    }
+
+    boolean this_present_confirm_sign_key = true && this.isSetConfirm_sign_key();
+    boolean that_present_confirm_sign_key = true && that.isSetConfirm_sign_key();
+    if (this_present_confirm_sign_key || that_present_confirm_sign_key) {
+      if (!(this_present_confirm_sign_key && that_present_confirm_sign_key))
+        return false;
+      if (!this.confirm_sign_key.equals(that.confirm_sign_key))
+        return false;
+    }
+
+    boolean this_present_pay_sign_key = true && this.isSetPay_sign_key();
+    boolean that_present_pay_sign_key = true && that.isSetPay_sign_key();
+    if (this_present_pay_sign_key || that_present_pay_sign_key) {
+      if (!(this_present_pay_sign_key && that_present_pay_sign_key))
+        return false;
+      if (!this.pay_sign_key.equals(that.pay_sign_key))
+        return false;
+    }
+
+    boolean this_present_pay_callback = true && this.isSetPay_callback();
+    boolean that_present_pay_callback = true && that.isSetPay_callback();
+    if (this_present_pay_callback || that_present_pay_callback) {
+      if (!(this_present_pay_callback && that_present_pay_callback))
+        return false;
+      if (!this.pay_callback.equals(that.pay_callback))
+        return false;
+    }
+
+    boolean this_present_coin_unit = true && this.isSetCoin_unit();
+    boolean that_present_coin_unit = true && that.isSetCoin_unit();
+    if (this_present_coin_unit || that_present_coin_unit) {
+      if (!(this_present_coin_unit && that_present_coin_unit))
+        return false;
+      if (!this.coin_unit.equals(that.coin_unit))
+        return false;
+    }
+
+    boolean this_present_coin_rate = true && this.isSetCoin_rate();
+    boolean that_present_coin_rate = true && that.isSetCoin_rate();
+    if (this_present_coin_rate || that_present_coin_rate) {
+      if (!(this_present_coin_rate && that_present_coin_rate))
+        return false;
+      if (!this.coin_rate.equals(that.coin_rate))
+        return false;
+    }
+
+    boolean this_present_ucode = true && this.isSetUcode();
+    boolean that_present_ucode = true && that.isSetUcode();
+    if (this_present_ucode || that_present_ucode) {
+      if (!(this_present_ucode && that_present_ucode))
+        return false;
+      if (!this.ucode.equals(that.ucode))
+        return false;
+    }
+
+    boolean this_present_version = true && this.isSetVersion();
+    boolean that_present_version = true && that.isSetVersion();
+    if (this_present_version || that_present_version) {
+      if (!(this_present_version && that_present_version))
+        return false;
+      if (!this.version.equals(that.version))
+        return false;
+    }
+
+    boolean this_present_package_url = true && this.isSetPackage_url();
+    boolean that_present_package_url = true && that.isSetPackage_url();
+    if (this_present_package_url || that_present_package_url) {
+      if (!(this_present_package_url && that_present_package_url))
+        return false;
+      if (!this.package_url.equals(that.package_url))
         return false;
     }
 
@@ -743,6 +1717,60 @@ public class DeviceStruct implements org.apache.thrift.TBase<DeviceStruct, Devic
       if (!(this_present_create_time && that_present_create_time))
         return false;
       if (!this.create_time.equals(that.create_time))
+        return false;
+    }
+
+    boolean this_present_update_time = true && this.isSetUpdate_time();
+    boolean that_present_update_time = true && that.isSetUpdate_time();
+    if (this_present_update_time || that_present_update_time) {
+      if (!(this_present_update_time && that_present_update_time))
+        return false;
+      if (!this.update_time.equals(that.update_time))
+        return false;
+    }
+
+    boolean this_present_create_by = true && this.isSetCreate_by();
+    boolean that_present_create_by = true && that.isSetCreate_by();
+    if (this_present_create_by || that_present_create_by) {
+      if (!(this_present_create_by && that_present_create_by))
+        return false;
+      if (!this.create_by.equals(that.create_by))
+        return false;
+    }
+
+    boolean this_present_update_by = true && this.isSetUpdate_by();
+    boolean that_present_update_by = true && that.isSetUpdate_by();
+    if (this_present_update_by || that_present_update_by) {
+      if (!(this_present_update_by && that_present_update_by))
+        return false;
+      if (!this.update_by.equals(that.update_by))
+        return false;
+    }
+
+    boolean this_present_discount = true && this.isSetDiscount();
+    boolean that_present_discount = true && that.isSetDiscount();
+    if (this_present_discount || that_present_discount) {
+      if (!(this_present_discount && that_present_discount))
+        return false;
+      if (!this.discount.equals(that.discount))
+        return false;
+    }
+
+    boolean this_present_back_pay = true && this.isSetBack_pay();
+    boolean that_present_back_pay = true && that.isSetBack_pay();
+    if (this_present_back_pay || that_present_back_pay) {
+      if (!(this_present_back_pay && that_present_back_pay))
+        return false;
+      if (!this.back_pay.equals(that.back_pay))
+        return false;
+    }
+
+    boolean this_present_status = true && this.isSetStatus();
+    boolean that_present_status = true && that.isSetStatus();
+    if (this_present_status || that_present_status) {
+      if (!(this_present_status && that_present_status))
+        return false;
+      if (!this.status.equals(that.status))
         return false;
     }
 
@@ -758,45 +1786,125 @@ public class DeviceStruct implements org.apache.thrift.TBase<DeviceStruct, Devic
     if (present_id)
       list.add(id);
 
-    boolean present_device = true && (isSetDevice());
-    list.add(present_device);
-    if (present_device)
-      list.add(device);
+    boolean present_entity_id = true && (isSetEntity_id());
+    list.add(present_entity_id);
+    if (present_entity_id)
+      list.add(entity_id);
 
-    boolean present_device_name = true && (isSetDevice_name());
-    list.add(present_device_name);
-    if (present_device_name)
-      list.add(device_name);
+    boolean present_name = true && (isSetName());
+    list.add(present_name);
+    if (present_name)
+      list.add(name);
 
-    boolean present_province = true && (isSetProvince());
-    list.add(present_province);
-    if (present_province)
-      list.add(province);
+    boolean present_name_en = true && (isSetName_en());
+    list.add(present_name_en);
+    if (present_name_en)
+      list.add(name_en);
 
-    boolean present_city = true && (isSetCity());
-    list.add(present_city);
-    if (present_city)
-      list.add(city);
+    boolean present_icon = true && (isSetIcon());
+    list.add(present_icon);
+    if (present_icon)
+      list.add(icon);
 
-    boolean present_area = true && (isSetArea());
-    list.add(present_area);
-    if (present_area)
-      list.add(area);
+    boolean present_desc = true && (isSetDesc());
+    list.add(present_desc);
+    if (present_desc)
+      list.add(desc);
 
-    boolean present_address = true && (isSetAddress());
-    list.add(present_address);
-    if (present_address)
-      list.add(address);
+    boolean present_category = true && (isSetCategory());
+    list.add(present_category);
+    if (present_category)
+      list.add(category);
 
-    boolean present_state = true && (isSetState());
-    list.add(present_state);
-    if (present_state)
-      list.add(state);
+    boolean present_rank = true && (isSetRank());
+    list.add(present_rank);
+    if (present_rank)
+      list.add(rank);
+
+    boolean present_os = true && (isSetOs());
+    list.add(present_os);
+    if (present_os)
+      list.add(os);
+
+    boolean present_common_sign_key = true && (isSetCommon_sign_key());
+    list.add(present_common_sign_key);
+    if (present_common_sign_key)
+      list.add(common_sign_key);
+
+    boolean present_confirm_sign_key = true && (isSetConfirm_sign_key());
+    list.add(present_confirm_sign_key);
+    if (present_confirm_sign_key)
+      list.add(confirm_sign_key);
+
+    boolean present_pay_sign_key = true && (isSetPay_sign_key());
+    list.add(present_pay_sign_key);
+    if (present_pay_sign_key)
+      list.add(pay_sign_key);
+
+    boolean present_pay_callback = true && (isSetPay_callback());
+    list.add(present_pay_callback);
+    if (present_pay_callback)
+      list.add(pay_callback);
+
+    boolean present_coin_unit = true && (isSetCoin_unit());
+    list.add(present_coin_unit);
+    if (present_coin_unit)
+      list.add(coin_unit);
+
+    boolean present_coin_rate = true && (isSetCoin_rate());
+    list.add(present_coin_rate);
+    if (present_coin_rate)
+      list.add(coin_rate);
+
+    boolean present_ucode = true && (isSetUcode());
+    list.add(present_ucode);
+    if (present_ucode)
+      list.add(ucode);
+
+    boolean present_version = true && (isSetVersion());
+    list.add(present_version);
+    if (present_version)
+      list.add(version);
+
+    boolean present_package_url = true && (isSetPackage_url());
+    list.add(present_package_url);
+    if (present_package_url)
+      list.add(package_url);
 
     boolean present_create_time = true && (isSetCreate_time());
     list.add(present_create_time);
     if (present_create_time)
       list.add(create_time);
+
+    boolean present_update_time = true && (isSetUpdate_time());
+    list.add(present_update_time);
+    if (present_update_time)
+      list.add(update_time);
+
+    boolean present_create_by = true && (isSetCreate_by());
+    list.add(present_create_by);
+    if (present_create_by)
+      list.add(create_by);
+
+    boolean present_update_by = true && (isSetUpdate_by());
+    list.add(present_update_by);
+    if (present_update_by)
+      list.add(update_by);
+
+    boolean present_discount = true && (isSetDiscount());
+    list.add(present_discount);
+    if (present_discount)
+      list.add(discount);
+
+    boolean present_back_pay = true && (isSetBack_pay());
+    list.add(present_back_pay);
+    if (present_back_pay)
+      list.add(back_pay);
+
+    boolean present_status = true && (isSetStatus());
+    list.add(present_status);
+    if (present_status)
+      list.add(status);
 
     return list.hashCode();
   }
@@ -819,72 +1927,172 @@ public class DeviceStruct implements org.apache.thrift.TBase<DeviceStruct, Devic
         return lastComparison;
       }
     }
-    lastComparison = Boolean.valueOf(isSetDevice()).compareTo(other.isSetDevice());
+    lastComparison = Boolean.valueOf(isSetEntity_id()).compareTo(other.isSetEntity_id());
     if (lastComparison != 0) {
       return lastComparison;
     }
-    if (isSetDevice()) {
-      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.device, other.device);
+    if (isSetEntity_id()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.entity_id, other.entity_id);
       if (lastComparison != 0) {
         return lastComparison;
       }
     }
-    lastComparison = Boolean.valueOf(isSetDevice_name()).compareTo(other.isSetDevice_name());
+    lastComparison = Boolean.valueOf(isSetName()).compareTo(other.isSetName());
     if (lastComparison != 0) {
       return lastComparison;
     }
-    if (isSetDevice_name()) {
-      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.device_name, other.device_name);
+    if (isSetName()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.name, other.name);
       if (lastComparison != 0) {
         return lastComparison;
       }
     }
-    lastComparison = Boolean.valueOf(isSetProvince()).compareTo(other.isSetProvince());
+    lastComparison = Boolean.valueOf(isSetName_en()).compareTo(other.isSetName_en());
     if (lastComparison != 0) {
       return lastComparison;
     }
-    if (isSetProvince()) {
-      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.province, other.province);
+    if (isSetName_en()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.name_en, other.name_en);
       if (lastComparison != 0) {
         return lastComparison;
       }
     }
-    lastComparison = Boolean.valueOf(isSetCity()).compareTo(other.isSetCity());
+    lastComparison = Boolean.valueOf(isSetIcon()).compareTo(other.isSetIcon());
     if (lastComparison != 0) {
       return lastComparison;
     }
-    if (isSetCity()) {
-      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.city, other.city);
+    if (isSetIcon()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.icon, other.icon);
       if (lastComparison != 0) {
         return lastComparison;
       }
     }
-    lastComparison = Boolean.valueOf(isSetArea()).compareTo(other.isSetArea());
+    lastComparison = Boolean.valueOf(isSetDesc()).compareTo(other.isSetDesc());
     if (lastComparison != 0) {
       return lastComparison;
     }
-    if (isSetArea()) {
-      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.area, other.area);
+    if (isSetDesc()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.desc, other.desc);
       if (lastComparison != 0) {
         return lastComparison;
       }
     }
-    lastComparison = Boolean.valueOf(isSetAddress()).compareTo(other.isSetAddress());
+    lastComparison = Boolean.valueOf(isSetCategory()).compareTo(other.isSetCategory());
     if (lastComparison != 0) {
       return lastComparison;
     }
-    if (isSetAddress()) {
-      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.address, other.address);
+    if (isSetCategory()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.category, other.category);
       if (lastComparison != 0) {
         return lastComparison;
       }
     }
-    lastComparison = Boolean.valueOf(isSetState()).compareTo(other.isSetState());
+    lastComparison = Boolean.valueOf(isSetRank()).compareTo(other.isSetRank());
     if (lastComparison != 0) {
       return lastComparison;
     }
-    if (isSetState()) {
-      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.state, other.state);
+    if (isSetRank()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.rank, other.rank);
+      if (lastComparison != 0) {
+        return lastComparison;
+      }
+    }
+    lastComparison = Boolean.valueOf(isSetOs()).compareTo(other.isSetOs());
+    if (lastComparison != 0) {
+      return lastComparison;
+    }
+    if (isSetOs()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.os, other.os);
+      if (lastComparison != 0) {
+        return lastComparison;
+      }
+    }
+    lastComparison = Boolean.valueOf(isSetCommon_sign_key()).compareTo(other.isSetCommon_sign_key());
+    if (lastComparison != 0) {
+      return lastComparison;
+    }
+    if (isSetCommon_sign_key()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.common_sign_key, other.common_sign_key);
+      if (lastComparison != 0) {
+        return lastComparison;
+      }
+    }
+    lastComparison = Boolean.valueOf(isSetConfirm_sign_key()).compareTo(other.isSetConfirm_sign_key());
+    if (lastComparison != 0) {
+      return lastComparison;
+    }
+    if (isSetConfirm_sign_key()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.confirm_sign_key, other.confirm_sign_key);
+      if (lastComparison != 0) {
+        return lastComparison;
+      }
+    }
+    lastComparison = Boolean.valueOf(isSetPay_sign_key()).compareTo(other.isSetPay_sign_key());
+    if (lastComparison != 0) {
+      return lastComparison;
+    }
+    if (isSetPay_sign_key()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.pay_sign_key, other.pay_sign_key);
+      if (lastComparison != 0) {
+        return lastComparison;
+      }
+    }
+    lastComparison = Boolean.valueOf(isSetPay_callback()).compareTo(other.isSetPay_callback());
+    if (lastComparison != 0) {
+      return lastComparison;
+    }
+    if (isSetPay_callback()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.pay_callback, other.pay_callback);
+      if (lastComparison != 0) {
+        return lastComparison;
+      }
+    }
+    lastComparison = Boolean.valueOf(isSetCoin_unit()).compareTo(other.isSetCoin_unit());
+    if (lastComparison != 0) {
+      return lastComparison;
+    }
+    if (isSetCoin_unit()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.coin_unit, other.coin_unit);
+      if (lastComparison != 0) {
+        return lastComparison;
+      }
+    }
+    lastComparison = Boolean.valueOf(isSetCoin_rate()).compareTo(other.isSetCoin_rate());
+    if (lastComparison != 0) {
+      return lastComparison;
+    }
+    if (isSetCoin_rate()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.coin_rate, other.coin_rate);
+      if (lastComparison != 0) {
+        return lastComparison;
+      }
+    }
+    lastComparison = Boolean.valueOf(isSetUcode()).compareTo(other.isSetUcode());
+    if (lastComparison != 0) {
+      return lastComparison;
+    }
+    if (isSetUcode()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.ucode, other.ucode);
+      if (lastComparison != 0) {
+        return lastComparison;
+      }
+    }
+    lastComparison = Boolean.valueOf(isSetVersion()).compareTo(other.isSetVersion());
+    if (lastComparison != 0) {
+      return lastComparison;
+    }
+    if (isSetVersion()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.version, other.version);
+      if (lastComparison != 0) {
+        return lastComparison;
+      }
+    }
+    lastComparison = Boolean.valueOf(isSetPackage_url()).compareTo(other.isSetPackage_url());
+    if (lastComparison != 0) {
+      return lastComparison;
+    }
+    if (isSetPackage_url()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.package_url, other.package_url);
       if (lastComparison != 0) {
         return lastComparison;
       }
@@ -895,6 +2103,66 @@ public class DeviceStruct implements org.apache.thrift.TBase<DeviceStruct, Devic
     }
     if (isSetCreate_time()) {
       lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.create_time, other.create_time);
+      if (lastComparison != 0) {
+        return lastComparison;
+      }
+    }
+    lastComparison = Boolean.valueOf(isSetUpdate_time()).compareTo(other.isSetUpdate_time());
+    if (lastComparison != 0) {
+      return lastComparison;
+    }
+    if (isSetUpdate_time()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.update_time, other.update_time);
+      if (lastComparison != 0) {
+        return lastComparison;
+      }
+    }
+    lastComparison = Boolean.valueOf(isSetCreate_by()).compareTo(other.isSetCreate_by());
+    if (lastComparison != 0) {
+      return lastComparison;
+    }
+    if (isSetCreate_by()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.create_by, other.create_by);
+      if (lastComparison != 0) {
+        return lastComparison;
+      }
+    }
+    lastComparison = Boolean.valueOf(isSetUpdate_by()).compareTo(other.isSetUpdate_by());
+    if (lastComparison != 0) {
+      return lastComparison;
+    }
+    if (isSetUpdate_by()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.update_by, other.update_by);
+      if (lastComparison != 0) {
+        return lastComparison;
+      }
+    }
+    lastComparison = Boolean.valueOf(isSetDiscount()).compareTo(other.isSetDiscount());
+    if (lastComparison != 0) {
+      return lastComparison;
+    }
+    if (isSetDiscount()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.discount, other.discount);
+      if (lastComparison != 0) {
+        return lastComparison;
+      }
+    }
+    lastComparison = Boolean.valueOf(isSetBack_pay()).compareTo(other.isSetBack_pay());
+    if (lastComparison != 0) {
+      return lastComparison;
+    }
+    if (isSetBack_pay()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.back_pay, other.back_pay);
+      if (lastComparison != 0) {
+        return lastComparison;
+      }
+    }
+    lastComparison = Boolean.valueOf(isSetStatus()).compareTo(other.isSetStatus());
+    if (lastComparison != 0) {
+      return lastComparison;
+    }
+    if (isSetStatus()) {
+      lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.status, other.status);
       if (lastComparison != 0) {
         return lastComparison;
       }
@@ -928,73 +2196,173 @@ public class DeviceStruct implements org.apache.thrift.TBase<DeviceStruct, Devic
       }
       first = false;
     }
-    if (isSetDevice()) {
+    if (isSetEntity_id()) {
       if (!first) sb.append(", ");
-      sb.append("device:");
-      if (this.device == null) {
+      sb.append("entity_id:");
+      if (this.entity_id == null) {
         sb.append("null");
       } else {
-        sb.append(this.device);
+        sb.append(this.entity_id);
       }
       first = false;
     }
-    if (isSetDevice_name()) {
+    if (isSetName()) {
       if (!first) sb.append(", ");
-      sb.append("device_name:");
-      if (this.device_name == null) {
+      sb.append("name:");
+      if (this.name == null) {
         sb.append("null");
       } else {
-        sb.append(this.device_name);
+        sb.append(this.name);
       }
       first = false;
     }
-    if (isSetProvince()) {
+    if (isSetName_en()) {
       if (!first) sb.append(", ");
-      sb.append("province:");
-      if (this.province == null) {
+      sb.append("name_en:");
+      if (this.name_en == null) {
         sb.append("null");
       } else {
-        sb.append(this.province);
+        sb.append(this.name_en);
       }
       first = false;
     }
-    if (isSetCity()) {
+    if (isSetIcon()) {
       if (!first) sb.append(", ");
-      sb.append("city:");
-      if (this.city == null) {
+      sb.append("icon:");
+      if (this.icon == null) {
         sb.append("null");
       } else {
-        sb.append(this.city);
+        sb.append(this.icon);
       }
       first = false;
     }
-    if (isSetArea()) {
+    if (isSetDesc()) {
       if (!first) sb.append(", ");
-      sb.append("area:");
-      if (this.area == null) {
+      sb.append("desc:");
+      if (this.desc == null) {
         sb.append("null");
       } else {
-        sb.append(this.area);
+        sb.append(this.desc);
       }
       first = false;
     }
-    if (isSetAddress()) {
+    if (isSetCategory()) {
       if (!first) sb.append(", ");
-      sb.append("address:");
-      if (this.address == null) {
+      sb.append("category:");
+      if (this.category == null) {
         sb.append("null");
       } else {
-        sb.append(this.address);
+        sb.append(this.category);
       }
       first = false;
     }
-    if (isSetState()) {
+    if (isSetRank()) {
       if (!first) sb.append(", ");
-      sb.append("state:");
-      if (this.state == null) {
+      sb.append("rank:");
+      if (this.rank == null) {
         sb.append("null");
       } else {
-        sb.append(this.state);
+        sb.append(this.rank);
+      }
+      first = false;
+    }
+    if (isSetOs()) {
+      if (!first) sb.append(", ");
+      sb.append("os:");
+      if (this.os == null) {
+        sb.append("null");
+      } else {
+        sb.append(this.os);
+      }
+      first = false;
+    }
+    if (isSetCommon_sign_key()) {
+      if (!first) sb.append(", ");
+      sb.append("common_sign_key:");
+      if (this.common_sign_key == null) {
+        sb.append("null");
+      } else {
+        sb.append(this.common_sign_key);
+      }
+      first = false;
+    }
+    if (isSetConfirm_sign_key()) {
+      if (!first) sb.append(", ");
+      sb.append("confirm_sign_key:");
+      if (this.confirm_sign_key == null) {
+        sb.append("null");
+      } else {
+        sb.append(this.confirm_sign_key);
+      }
+      first = false;
+    }
+    if (isSetPay_sign_key()) {
+      if (!first) sb.append(", ");
+      sb.append("pay_sign_key:");
+      if (this.pay_sign_key == null) {
+        sb.append("null");
+      } else {
+        sb.append(this.pay_sign_key);
+      }
+      first = false;
+    }
+    if (isSetPay_callback()) {
+      if (!first) sb.append(", ");
+      sb.append("pay_callback:");
+      if (this.pay_callback == null) {
+        sb.append("null");
+      } else {
+        sb.append(this.pay_callback);
+      }
+      first = false;
+    }
+    if (isSetCoin_unit()) {
+      if (!first) sb.append(", ");
+      sb.append("coin_unit:");
+      if (this.coin_unit == null) {
+        sb.append("null");
+      } else {
+        sb.append(this.coin_unit);
+      }
+      first = false;
+    }
+    if (isSetCoin_rate()) {
+      if (!first) sb.append(", ");
+      sb.append("coin_rate:");
+      if (this.coin_rate == null) {
+        sb.append("null");
+      } else {
+        sb.append(this.coin_rate);
+      }
+      first = false;
+    }
+    if (isSetUcode()) {
+      if (!first) sb.append(", ");
+      sb.append("ucode:");
+      if (this.ucode == null) {
+        sb.append("null");
+      } else {
+        sb.append(this.ucode);
+      }
+      first = false;
+    }
+    if (isSetVersion()) {
+      if (!first) sb.append(", ");
+      sb.append("version:");
+      if (this.version == null) {
+        sb.append("null");
+      } else {
+        sb.append(this.version);
+      }
+      first = false;
+    }
+    if (isSetPackage_url()) {
+      if (!first) sb.append(", ");
+      sb.append("package_url:");
+      if (this.package_url == null) {
+        sb.append("null");
+      } else {
+        sb.append(this.package_url);
       }
       first = false;
     }
@@ -1005,6 +2373,66 @@ public class DeviceStruct implements org.apache.thrift.TBase<DeviceStruct, Devic
         sb.append("null");
       } else {
         sb.append(this.create_time);
+      }
+      first = false;
+    }
+    if (isSetUpdate_time()) {
+      if (!first) sb.append(", ");
+      sb.append("update_time:");
+      if (this.update_time == null) {
+        sb.append("null");
+      } else {
+        sb.append(this.update_time);
+      }
+      first = false;
+    }
+    if (isSetCreate_by()) {
+      if (!first) sb.append(", ");
+      sb.append("create_by:");
+      if (this.create_by == null) {
+        sb.append("null");
+      } else {
+        sb.append(this.create_by);
+      }
+      first = false;
+    }
+    if (isSetUpdate_by()) {
+      if (!first) sb.append(", ");
+      sb.append("update_by:");
+      if (this.update_by == null) {
+        sb.append("null");
+      } else {
+        sb.append(this.update_by);
+      }
+      first = false;
+    }
+    if (isSetDiscount()) {
+      if (!first) sb.append(", ");
+      sb.append("discount:");
+      if (this.discount == null) {
+        sb.append("null");
+      } else {
+        sb.append(this.discount);
+      }
+      first = false;
+    }
+    if (isSetBack_pay()) {
+      if (!first) sb.append(", ");
+      sb.append("back_pay:");
+      if (this.back_pay == null) {
+        sb.append("null");
+      } else {
+        sb.append(this.back_pay);
+      }
+      first = false;
+    }
+    if (isSetStatus()) {
+      if (!first) sb.append(", ");
+      sb.append("status:");
+      if (this.status == null) {
+        sb.append("null");
+      } else {
+        sb.append(this.status);
       }
       first = false;
     }
@@ -1044,66 +2472,194 @@ public class DeviceStruct implements org.apache.thrift.TBase<DeviceStruct, Devic
               org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
             }
             break;
-          case 2: // DEVICE
-            if (schemeField.type == org.apache.thrift.protocol.TType.STRING) {
-              struct.device = iprot.readString();
-              struct.setDeviceIsSet(true);
-            } else { 
-              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
-            }
-            break;
-          case 3: // DEVICE_NAME
-            if (schemeField.type == org.apache.thrift.protocol.TType.STRING) {
-              struct.device_name = iprot.readString();
-              struct.setDevice_nameIsSet(true);
-            } else { 
-              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
-            }
-            break;
-          case 4: // PROVINCE
-            if (schemeField.type == org.apache.thrift.protocol.TType.STRING) {
-              struct.province = iprot.readString();
-              struct.setProvinceIsSet(true);
-            } else { 
-              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
-            }
-            break;
-          case 5: // CITY
-            if (schemeField.type == org.apache.thrift.protocol.TType.STRING) {
-              struct.city = iprot.readString();
-              struct.setCityIsSet(true);
-            } else { 
-              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
-            }
-            break;
-          case 6: // AREA
-            if (schemeField.type == org.apache.thrift.protocol.TType.STRING) {
-              struct.area = iprot.readString();
-              struct.setAreaIsSet(true);
-            } else { 
-              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
-            }
-            break;
-          case 7: // ADDRESS
-            if (schemeField.type == org.apache.thrift.protocol.TType.STRING) {
-              struct.address = iprot.readString();
-              struct.setAddressIsSet(true);
-            } else { 
-              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
-            }
-            break;
-          case 8: // STATE
+          case 2: // ENTITY_ID
             if (schemeField.type == org.apache.thrift.protocol.TType.I32) {
-              struct.state = iprot.readI32();
-              struct.setStateIsSet(true);
+              struct.entity_id = iprot.readI32();
+              struct.setEntity_idIsSet(true);
             } else { 
               org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
             }
             break;
-          case 9: // CREATE_TIME
+          case 3: // NAME
+            if (schemeField.type == org.apache.thrift.protocol.TType.STRING) {
+              struct.name = iprot.readString();
+              struct.setNameIsSet(true);
+            } else { 
+              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
+            }
+            break;
+          case 4: // NAME_EN
+            if (schemeField.type == org.apache.thrift.protocol.TType.STRING) {
+              struct.name_en = iprot.readString();
+              struct.setName_enIsSet(true);
+            } else { 
+              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
+            }
+            break;
+          case 5: // ICON
+            if (schemeField.type == org.apache.thrift.protocol.TType.STRING) {
+              struct.icon = iprot.readString();
+              struct.setIconIsSet(true);
+            } else { 
+              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
+            }
+            break;
+          case 6: // DESC
+            if (schemeField.type == org.apache.thrift.protocol.TType.STRING) {
+              struct.desc = iprot.readString();
+              struct.setDescIsSet(true);
+            } else { 
+              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
+            }
+            break;
+          case 7: // CATEGORY
+            if (schemeField.type == org.apache.thrift.protocol.TType.STRING) {
+              struct.category = iprot.readString();
+              struct.setCategoryIsSet(true);
+            } else { 
+              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
+            }
+            break;
+          case 8: // RANK
+            if (schemeField.type == org.apache.thrift.protocol.TType.STRING) {
+              struct.rank = iprot.readString();
+              struct.setRankIsSet(true);
+            } else { 
+              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
+            }
+            break;
+          case 9: // OS
+            if (schemeField.type == org.apache.thrift.protocol.TType.I32) {
+              struct.os = iprot.readI32();
+              struct.setOsIsSet(true);
+            } else { 
+              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
+            }
+            break;
+          case 10: // COMMON_SIGN_KEY
+            if (schemeField.type == org.apache.thrift.protocol.TType.STRING) {
+              struct.common_sign_key = iprot.readString();
+              struct.setCommon_sign_keyIsSet(true);
+            } else { 
+              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
+            }
+            break;
+          case 11: // CONFIRM_SIGN_KEY
+            if (schemeField.type == org.apache.thrift.protocol.TType.STRING) {
+              struct.confirm_sign_key = iprot.readString();
+              struct.setConfirm_sign_keyIsSet(true);
+            } else { 
+              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
+            }
+            break;
+          case 12: // PAY_SIGN_KEY
+            if (schemeField.type == org.apache.thrift.protocol.TType.STRING) {
+              struct.pay_sign_key = iprot.readString();
+              struct.setPay_sign_keyIsSet(true);
+            } else { 
+              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
+            }
+            break;
+          case 13: // PAY_CALLBACK
+            if (schemeField.type == org.apache.thrift.protocol.TType.STRING) {
+              struct.pay_callback = iprot.readString();
+              struct.setPay_callbackIsSet(true);
+            } else { 
+              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
+            }
+            break;
+          case 14: // COIN_UNIT
+            if (schemeField.type == org.apache.thrift.protocol.TType.STRING) {
+              struct.coin_unit = iprot.readString();
+              struct.setCoin_unitIsSet(true);
+            } else { 
+              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
+            }
+            break;
+          case 15: // COIN_RATE
+            if (schemeField.type == org.apache.thrift.protocol.TType.I32) {
+              struct.coin_rate = iprot.readI32();
+              struct.setCoin_rateIsSet(true);
+            } else { 
+              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
+            }
+            break;
+          case 16: // UCODE
+            if (schemeField.type == org.apache.thrift.protocol.TType.I32) {
+              struct.ucode = iprot.readI32();
+              struct.setUcodeIsSet(true);
+            } else { 
+              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
+            }
+            break;
+          case 17: // VERSION
+            if (schemeField.type == org.apache.thrift.protocol.TType.STRING) {
+              struct.version = iprot.readString();
+              struct.setVersionIsSet(true);
+            } else { 
+              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
+            }
+            break;
+          case 18: // PACKAGE_URL
+            if (schemeField.type == org.apache.thrift.protocol.TType.STRING) {
+              struct.package_url = iprot.readString();
+              struct.setPackage_urlIsSet(true);
+            } else { 
+              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
+            }
+            break;
+          case 19: // CREATE_TIME
             if (schemeField.type == org.apache.thrift.protocol.TType.I32) {
               struct.create_time = iprot.readI32();
               struct.setCreate_timeIsSet(true);
+            } else { 
+              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
+            }
+            break;
+          case 20: // UPDATE_TIME
+            if (schemeField.type == org.apache.thrift.protocol.TType.I32) {
+              struct.update_time = iprot.readI32();
+              struct.setUpdate_timeIsSet(true);
+            } else { 
+              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
+            }
+            break;
+          case 21: // CREATE_BY
+            if (schemeField.type == org.apache.thrift.protocol.TType.STRING) {
+              struct.create_by = iprot.readString();
+              struct.setCreate_byIsSet(true);
+            } else { 
+              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
+            }
+            break;
+          case 22: // UPDATE_BY
+            if (schemeField.type == org.apache.thrift.protocol.TType.STRING) {
+              struct.update_by = iprot.readString();
+              struct.setUpdate_byIsSet(true);
+            } else { 
+              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
+            }
+            break;
+          case 23: // DISCOUNT
+            if (schemeField.type == org.apache.thrift.protocol.TType.DOUBLE) {
+              struct.discount = iprot.readDouble();
+              struct.setDiscountIsSet(true);
+            } else { 
+              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
+            }
+            break;
+          case 24: // BACK_PAY
+            if (schemeField.type == org.apache.thrift.protocol.TType.DOUBLE) {
+              struct.back_pay = iprot.readDouble();
+              struct.setBack_payIsSet(true);
+            } else { 
+              org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
+            }
+            break;
+          case 25: // STATUS
+            if (schemeField.type == org.apache.thrift.protocol.TType.I32) {
+              struct.status = iprot.readI32();
+              struct.setStatusIsSet(true);
             } else { 
               org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
             }
@@ -1126,44 +2682,124 @@ public class DeviceStruct implements org.apache.thrift.TBase<DeviceStruct, Devic
         oprot.writeI32(struct.id);
         oprot.writeFieldEnd();
       }
-      if (struct.isSetDevice()) {
-        oprot.writeFieldBegin(DEVICE_FIELD_DESC);
-        oprot.writeString(struct.device);
+      if (struct.isSetEntity_id()) {
+        oprot.writeFieldBegin(ENTITY_ID_FIELD_DESC);
+        oprot.writeI32(struct.entity_id);
         oprot.writeFieldEnd();
       }
-      if (struct.isSetDevice_name()) {
-        oprot.writeFieldBegin(DEVICE_NAME_FIELD_DESC);
-        oprot.writeString(struct.device_name);
+      if (struct.isSetName()) {
+        oprot.writeFieldBegin(NAME_FIELD_DESC);
+        oprot.writeString(struct.name);
         oprot.writeFieldEnd();
       }
-      if (struct.isSetProvince()) {
-        oprot.writeFieldBegin(PROVINCE_FIELD_DESC);
-        oprot.writeString(struct.province);
+      if (struct.isSetName_en()) {
+        oprot.writeFieldBegin(NAME_EN_FIELD_DESC);
+        oprot.writeString(struct.name_en);
         oprot.writeFieldEnd();
       }
-      if (struct.isSetCity()) {
-        oprot.writeFieldBegin(CITY_FIELD_DESC);
-        oprot.writeString(struct.city);
+      if (struct.isSetIcon()) {
+        oprot.writeFieldBegin(ICON_FIELD_DESC);
+        oprot.writeString(struct.icon);
         oprot.writeFieldEnd();
       }
-      if (struct.isSetArea()) {
-        oprot.writeFieldBegin(AREA_FIELD_DESC);
-        oprot.writeString(struct.area);
+      if (struct.isSetDesc()) {
+        oprot.writeFieldBegin(DESC_FIELD_DESC);
+        oprot.writeString(struct.desc);
         oprot.writeFieldEnd();
       }
-      if (struct.isSetAddress()) {
-        oprot.writeFieldBegin(ADDRESS_FIELD_DESC);
-        oprot.writeString(struct.address);
+      if (struct.isSetCategory()) {
+        oprot.writeFieldBegin(CATEGORY_FIELD_DESC);
+        oprot.writeString(struct.category);
         oprot.writeFieldEnd();
       }
-      if (struct.isSetState()) {
-        oprot.writeFieldBegin(STATE_FIELD_DESC);
-        oprot.writeI32(struct.state);
+      if (struct.isSetRank()) {
+        oprot.writeFieldBegin(RANK_FIELD_DESC);
+        oprot.writeString(struct.rank);
+        oprot.writeFieldEnd();
+      }
+      if (struct.isSetOs()) {
+        oprot.writeFieldBegin(OS_FIELD_DESC);
+        oprot.writeI32(struct.os);
+        oprot.writeFieldEnd();
+      }
+      if (struct.isSetCommon_sign_key()) {
+        oprot.writeFieldBegin(COMMON_SIGN_KEY_FIELD_DESC);
+        oprot.writeString(struct.common_sign_key);
+        oprot.writeFieldEnd();
+      }
+      if (struct.isSetConfirm_sign_key()) {
+        oprot.writeFieldBegin(CONFIRM_SIGN_KEY_FIELD_DESC);
+        oprot.writeString(struct.confirm_sign_key);
+        oprot.writeFieldEnd();
+      }
+      if (struct.isSetPay_sign_key()) {
+        oprot.writeFieldBegin(PAY_SIGN_KEY_FIELD_DESC);
+        oprot.writeString(struct.pay_sign_key);
+        oprot.writeFieldEnd();
+      }
+      if (struct.isSetPay_callback()) {
+        oprot.writeFieldBegin(PAY_CALLBACK_FIELD_DESC);
+        oprot.writeString(struct.pay_callback);
+        oprot.writeFieldEnd();
+      }
+      if (struct.isSetCoin_unit()) {
+        oprot.writeFieldBegin(COIN_UNIT_FIELD_DESC);
+        oprot.writeString(struct.coin_unit);
+        oprot.writeFieldEnd();
+      }
+      if (struct.isSetCoin_rate()) {
+        oprot.writeFieldBegin(COIN_RATE_FIELD_DESC);
+        oprot.writeI32(struct.coin_rate);
+        oprot.writeFieldEnd();
+      }
+      if (struct.isSetUcode()) {
+        oprot.writeFieldBegin(UCODE_FIELD_DESC);
+        oprot.writeI32(struct.ucode);
+        oprot.writeFieldEnd();
+      }
+      if (struct.isSetVersion()) {
+        oprot.writeFieldBegin(VERSION_FIELD_DESC);
+        oprot.writeString(struct.version);
+        oprot.writeFieldEnd();
+      }
+      if (struct.isSetPackage_url()) {
+        oprot.writeFieldBegin(PACKAGE_URL_FIELD_DESC);
+        oprot.writeString(struct.package_url);
         oprot.writeFieldEnd();
       }
       if (struct.isSetCreate_time()) {
         oprot.writeFieldBegin(CREATE_TIME_FIELD_DESC);
         oprot.writeI32(struct.create_time);
+        oprot.writeFieldEnd();
+      }
+      if (struct.isSetUpdate_time()) {
+        oprot.writeFieldBegin(UPDATE_TIME_FIELD_DESC);
+        oprot.writeI32(struct.update_time);
+        oprot.writeFieldEnd();
+      }
+      if (struct.isSetCreate_by()) {
+        oprot.writeFieldBegin(CREATE_BY_FIELD_DESC);
+        oprot.writeString(struct.create_by);
+        oprot.writeFieldEnd();
+      }
+      if (struct.isSetUpdate_by()) {
+        oprot.writeFieldBegin(UPDATE_BY_FIELD_DESC);
+        oprot.writeString(struct.update_by);
+        oprot.writeFieldEnd();
+      }
+      if (struct.isSetDiscount()) {
+        oprot.writeFieldBegin(DISCOUNT_FIELD_DESC);
+        oprot.writeDouble(struct.discount);
+        oprot.writeFieldEnd();
+      }
+      if (struct.isSetBack_pay()) {
+        oprot.writeFieldBegin(BACK_PAY_FIELD_DESC);
+        oprot.writeDouble(struct.back_pay);
+        oprot.writeFieldEnd();
+      }
+      if (struct.isSetStatus()) {
+        oprot.writeFieldBegin(STATUS_FIELD_DESC);
+        oprot.writeI32(struct.status);
         oprot.writeFieldEnd();
       }
       oprot.writeFieldStop();

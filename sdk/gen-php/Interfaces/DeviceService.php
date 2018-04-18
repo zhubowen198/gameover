@@ -11,81 +11,13 @@ namespace Com\Miaoju\Device\Interfaces;
 
 interface DeviceService {
   /**
-   * @throws \Com\Miaoju\Device\Exception\DemoServiceException
+   * @throws \Com\Miaoju\Device\Exception\DeviceServiceException
    */
   public function throwException();
   /**
+   * @param \Com\Miaoju\Device\Entity\DeviceStruct $device_struct
+   * @return \Com\Miaoju\Device\Entity\MixDeviceStruct
    */
-  public function returnVoid();
-  /**
-   * @return bool
-   */
-  public function returnBool();
-  /**
-   * @return int
-   */
-  public function returnI32();
-  /**
-   * @return double
-   */
-  public function returnDouble();
-  /**
-   * @return string
-   */
-  public function returnString();
-  /**
-   * @return int
-   */
-  public function returnEnum();
-  /**
-   * @return \Com\Miaoju\Device\Entity\BaseStruct
-   */
-  public function returnBaseStruct();
-  /**
-   * @return \Com\Miaoju\Device\Entity\MixedStruct
-   */
-  public function returnMixedStruct();
-  /**
-   * @return \Com\Miaoju\Device\Entity\BaseStruct[]
-   */
-  public function returnList();
-  /**
-   * @return \Com\Miaoju\Device\Entity\BaseStruct[]
-   */
-  public function returnSet();
-  /**
-   * @return array
-   */
-  public function returnMap();
-  /**
-   * @param string $paraString
-   * @param int $errorLevel
-   */
-  public function paraBaseNoReturn($paraString, $errorLevel);
-  /**
-   * @param bool $paraBool
-   * @param int $paraI32
-   * @param double $paraDouble
-   * @param string $paraString
-   * @param \Com\Miaoju\Device\Entity\BaseStruct $baseStruct
-   * @param \Com\Miaoju\Device\Entity\BaseStruct[] $returnList
-   * @param \Com\Miaoju\Device\Entity\BaseStruct[] $returnSet
-   * @param array $returnMap
-   * @param int $errorLevel
-   */
-  public function paraMixedNoReturn($paraBool, $paraI32, $paraDouble, $paraString, \Com\Miaoju\Device\Entity\BaseStruct $baseStruct, array $returnList, array $returnSet, array $returnMap, $errorLevel);
-  /**
-   * @param bool $paraBool
-   * @param int $paraI32
-   * @param double $paraDouble
-   * @param string $paraString
-   * @param \Com\Miaoju\Device\Entity\BaseStruct $baseStruct
-   * @param \Com\Miaoju\Device\Entity\BaseStruct[] $returnList
-   * @param \Com\Miaoju\Device\Entity\BaseStruct[] $returnSet
-   * @param array $returnMap
-   * @param int $errorLevel
-   * @return array
-   */
-  public function complexMethod($paraBool, $paraI32, $paraDouble, $paraString, \Com\Miaoju\Device\Entity\BaseStruct $baseStruct, array $returnList, array $returnSet, array $returnMap, $errorLevel);
+  public function getDeviceList(\Com\Miaoju\Device\Entity\DeviceStruct $device_struct);
 }
 

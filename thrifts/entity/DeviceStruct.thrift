@@ -1,15 +1,28 @@
 namespace nova com.miaoju.device.entity
-
-include 'ErrorLevel.thrift'
-
 struct DeviceStruct {
     1:optional i32 id,
-    2:optional string device,
-    3:optional string device_name,
-    4:optional string province
-    5:optional string city
-    6:optional string area
-    7:optional string address
-    8:optional i32 state
-    9:optional i32 create_time
+    2:optional i32 entity_id,
+    3:optional string name,
+    4:optional string name_en,
+    5:optional string icon,
+    6:optional string desc,
+    7:optional string category,
+    8:optional string rank,
+    9:optional i32 os,
+    10:optional string common_sign_key,
+    11:optional string confirm_sign_key,
+    12:optional string pay_sign_key,
+    13:optional string pay_callback,
+    14:optional string coin_unit,
+    15:optional i32 coin_rate,
+    16:optional i32 ucode,
+    17:optional string version,
+    18:optional string package_url,
+    19:optional i32 create_time,
+    20:optional i32 update_time,
+    21:optional string create_by,
+    22:optional string update_by,
+    23:optional double discount,
+    24:optional double back_pay,
+    25:optional i32 status
 }

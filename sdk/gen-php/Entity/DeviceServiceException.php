@@ -7,14 +7,14 @@
  * @generated
  */
 
-namespace Com\Miaoju\Device\Exception;
+namespace Com\Miaoju\Device\Entity;
 
 use Kdt\Iron\Nova\Foundation\Protocol\TStruct;
 use Thrift\Type\TType;
 use Kdt\Iron\Nova\Foundation\Protocol\TException;
 
 
-class DemoServiceException extends TException {
+class DeviceServiceException extends TException {
   /**
    * @var string
    */

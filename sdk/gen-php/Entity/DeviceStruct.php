@@ -19,37 +19,101 @@ class DeviceStruct extends TStruct {
    */
   public $id = null;
   /**
-   * @var string
+   * @var int
    */
-  public $device = null;
+  public $entity_id = null;
   /**
    * @var string
    */
-  public $device_name = null;
+  public $name = null;
   /**
    * @var string
    */
-  public $province = null;
+  public $name_en = null;
   /**
    * @var string
    */
-  public $city = null;
+  public $icon = null;
   /**
    * @var string
    */
-  public $area = null;
+  public $desc = null;
   /**
    * @var string
    */
-  public $address = null;
+  public $category = null;
+  /**
+   * @var string
+   */
+  public $rank = null;
   /**
    * @var int
    */
-  public $state = null;
+  public $os = null;
+  /**
+   * @var string
+   */
+  public $common_sign_key = null;
+  /**
+   * @var string
+   */
+  public $confirm_sign_key = null;
+  /**
+   * @var string
+   */
+  public $pay_sign_key = null;
+  /**
+   * @var string
+   */
+  public $pay_callback = null;
+  /**
+   * @var string
+   */
+  public $coin_unit = null;
+  /**
+   * @var int
+   */
+  public $coin_rate = null;
+  /**
+   * @var int
+   */
+  public $ucode = null;
+  /**
+   * @var string
+   */
+  public $version = null;
+  /**
+   * @var string
+   */
+  public $package_url = null;
   /**
    * @var int
    */
   public $create_time = null;
+  /**
+   * @var int
+   */
+  public $update_time = null;
+  /**
+   * @var string
+   */
+  public $create_by = null;
+  /**
+   * @var string
+   */
+  public $update_by = null;
+  /**
+   * @var double
+   */
+  public $discount = null;
+  /**
+   * @var double
+   */
+  public $back_pay = null;
+  /**
+   * @var int
+   */
+  public $status = null;
 
   protected $structSpec = [
     1 => [
@@ -57,35 +121,99 @@ class DeviceStruct extends TStruct {
       'type' => TType::I32,
       ],
     2 => [
-      'var' => 'device',
-      'type' => TType::STRING,
+      'var' => 'entity_id',
+      'type' => TType::I32,
       ],
     3 => [
-      'var' => 'device_name',
+      'var' => 'name',
       'type' => TType::STRING,
       ],
     4 => [
-      'var' => 'province',
+      'var' => 'name_en',
       'type' => TType::STRING,
       ],
     5 => [
-      'var' => 'city',
+      'var' => 'icon',
       'type' => TType::STRING,
       ],
     6 => [
-      'var' => 'area',
+      'var' => 'desc',
       'type' => TType::STRING,
       ],
     7 => [
-      'var' => 'address',
+      'var' => 'category',
       'type' => TType::STRING,
       ],
     8 => [
-      'var' => 'state',
-      'type' => TType::I32,
+      'var' => 'rank',
+      'type' => TType::STRING,
       ],
     9 => [
+      'var' => 'os',
+      'type' => TType::I32,
+      ],
+    10 => [
+      'var' => 'common_sign_key',
+      'type' => TType::STRING,
+      ],
+    11 => [
+      'var' => 'confirm_sign_key',
+      'type' => TType::STRING,
+      ],
+    12 => [
+      'var' => 'pay_sign_key',
+      'type' => TType::STRING,
+      ],
+    13 => [
+      'var' => 'pay_callback',
+      'type' => TType::STRING,
+      ],
+    14 => [
+      'var' => 'coin_unit',
+      'type' => TType::STRING,
+      ],
+    15 => [
+      'var' => 'coin_rate',
+      'type' => TType::I32,
+      ],
+    16 => [
+      'var' => 'ucode',
+      'type' => TType::I32,
+      ],
+    17 => [
+      'var' => 'version',
+      'type' => TType::STRING,
+      ],
+    18 => [
+      'var' => 'package_url',
+      'type' => TType::STRING,
+      ],
+    19 => [
       'var' => 'create_time',
+      'type' => TType::I32,
+      ],
+    20 => [
+      'var' => 'update_time',
+      'type' => TType::I32,
+      ],
+    21 => [
+      'var' => 'create_by',
+      'type' => TType::STRING,
+      ],
+    22 => [
+      'var' => 'update_by',
+      'type' => TType::STRING,
+      ],
+    23 => [
+      'var' => 'discount',
+      'type' => TType::DOUBLE,
+      ],
+    24 => [
+      'var' => 'back_pay',
+      'type' => TType::DOUBLE,
+      ],
+    25 => [
+      'var' => 'status',
       'type' => TType::I32,
       ],
     ];
