@@ -5,7 +5,7 @@
  * THIS IS MODIFIED FOR ZAN GROUP, ANY PROBLEM PLS CONTACT Zan Group<zan@zanphp.io>
  * @generated
  */
-package com.Miaoju.device.entity;
+package com.miaoju.device.entity;
 
 import org.apache.thrift.scheme.IScheme;
 import org.apache.thrift.scheme.SchemeFactory;
@@ -51,10 +51,10 @@ public class MixedStruct implements org.apache.thrift.TBase<MixedStruct, MixedSt
   }
 
   private String propString; // optional
-  private com.Miaoju.device.entity.BaseStruct baseStruct; // optional
-  private List<com.Miaoju.device.entity.BaseStruct> propList; // optional
-  private Set<com.Miaoju.device.entity.BaseStruct> propSet; // optional
-  private Map<String,com.Miaoju.device.entity.BaseStruct> propMap; // optional
+  private com.miaoju.device.entity.BaseStruct baseStruct; // optional
+  private List<com.miaoju.device.entity.BaseStruct> propList; // optional
+  private Set<com.miaoju.device.entity.BaseStruct> propSet; // optional
+  private Map<String,com.miaoju.device.entity.BaseStruct> propMap; // optional
 
   /** The set of fields this struct contains, along with convenience methods for finding and manipulating them. */
   public enum _Fields implements org.apache.thrift.TFieldIdEnum {
@@ -134,17 +134,17 @@ public class MixedStruct implements org.apache.thrift.TBase<MixedStruct, MixedSt
     tmpMap.put(_Fields.PROP_STRING, new org.apache.thrift.meta_data.FieldMetaData("propString", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
         new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
     tmpMap.put(_Fields.BASE_STRUCT, new org.apache.thrift.meta_data.FieldMetaData("baseStruct", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
-        new org.apache.thrift.meta_data.StructMetaData(org.apache.thrift.protocol.TType.STRUCT, com.Miaoju.device.entity.BaseStruct.class)));
+        new org.apache.thrift.meta_data.StructMetaData(org.apache.thrift.protocol.TType.STRUCT, com.miaoju.device.entity.BaseStruct.class)));
     tmpMap.put(_Fields.PROP_LIST, new org.apache.thrift.meta_data.FieldMetaData("propList", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
         new org.apache.thrift.meta_data.ListMetaData(org.apache.thrift.protocol.TType.LIST, 
-            new org.apache.thrift.meta_data.StructMetaData(org.apache.thrift.protocol.TType.STRUCT, com.Miaoju.device.entity.BaseStruct.class))));
+            new org.apache.thrift.meta_data.StructMetaData(org.apache.thrift.protocol.TType.STRUCT, com.miaoju.device.entity.BaseStruct.class))));
     tmpMap.put(_Fields.PROP_SET, new org.apache.thrift.meta_data.FieldMetaData("propSet", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
         new org.apache.thrift.meta_data.SetMetaData(org.apache.thrift.protocol.TType.SET, 
-            new org.apache.thrift.meta_data.StructMetaData(org.apache.thrift.protocol.TType.STRUCT, com.Miaoju.device.entity.BaseStruct.class))));
+            new org.apache.thrift.meta_data.StructMetaData(org.apache.thrift.protocol.TType.STRUCT, com.miaoju.device.entity.BaseStruct.class))));
     tmpMap.put(_Fields.PROP_MAP, new org.apache.thrift.meta_data.FieldMetaData("propMap", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
         new org.apache.thrift.meta_data.MapMetaData(org.apache.thrift.protocol.TType.MAP, 
             new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING), 
-            new org.apache.thrift.meta_data.StructMetaData(org.apache.thrift.protocol.TType.STRUCT, com.Miaoju.device.entity.BaseStruct.class))));
+            new org.apache.thrift.meta_data.StructMetaData(org.apache.thrift.protocol.TType.STRUCT, com.miaoju.device.entity.BaseStruct.class))));
     metaDataMap = Collections.unmodifiableMap(tmpMap);
     org.apache.thrift.meta_data.FieldMetaData.addStructMetaDataMap(MixedStruct.class, metaDataMap);
   }
@@ -160,32 +160,32 @@ public class MixedStruct implements org.apache.thrift.TBase<MixedStruct, MixedSt
       this.propString = other.propString;
     }
     if (other.isSetBaseStruct()) {
-      this.baseStruct = new com.Miaoju.device.entity.BaseStruct(other.baseStruct);
+      this.baseStruct = new com.miaoju.device.entity.BaseStruct(other.baseStruct);
     }
     if (other.isSetPropList()) {
-      List<com.Miaoju.device.entity.BaseStruct> __this__propList = new ArrayList<com.Miaoju.device.entity.BaseStruct>(other.propList.size());
-      for (com.Miaoju.device.entity.BaseStruct other_element : other.propList) {
-        __this__propList.add(new com.Miaoju.device.entity.BaseStruct(other_element));
+      List<com.miaoju.device.entity.BaseStruct> __this__propList = new ArrayList<com.miaoju.device.entity.BaseStruct>(other.propList.size());
+      for (com.miaoju.device.entity.BaseStruct other_element : other.propList) {
+        __this__propList.add(new com.miaoju.device.entity.BaseStruct(other_element));
       }
       this.propList = __this__propList;
     }
     if (other.isSetPropSet()) {
-      Set<com.Miaoju.device.entity.BaseStruct> __this__propSet = new HashSet<com.Miaoju.device.entity.BaseStruct>(other.propSet.size());
-      for (com.Miaoju.device.entity.BaseStruct other_element : other.propSet) {
-        __this__propSet.add(new com.Miaoju.device.entity.BaseStruct(other_element));
+      Set<com.miaoju.device.entity.BaseStruct> __this__propSet = new HashSet<com.miaoju.device.entity.BaseStruct>(other.propSet.size());
+      for (com.miaoju.device.entity.BaseStruct other_element : other.propSet) {
+        __this__propSet.add(new com.miaoju.device.entity.BaseStruct(other_element));
       }
       this.propSet = __this__propSet;
     }
     if (other.isSetPropMap()) {
-      Map<String,com.Miaoju.device.entity.BaseStruct> __this__propMap = new HashMap<String,com.Miaoju.device.entity.BaseStruct>(other.propMap.size());
-      for (Map.Entry<String, com.Miaoju.device.entity.BaseStruct> other_element : other.propMap.entrySet()) {
+      Map<String,com.miaoju.device.entity.BaseStruct> __this__propMap = new HashMap<String,com.miaoju.device.entity.BaseStruct>(other.propMap.size());
+      for (Map.Entry<String, com.miaoju.device.entity.BaseStruct> other_element : other.propMap.entrySet()) {
 
         String other_element_key = other_element.getKey();
-        com.Miaoju.device.entity.BaseStruct other_element_value = other_element.getValue();
+        com.miaoju.device.entity.BaseStruct other_element_value = other_element.getValue();
 
         String __this__propMap_copy_key = other_element_key;
 
-        com.Miaoju.device.entity.BaseStruct __this__propMap_copy_value = new com.Miaoju.device.entity.BaseStruct(other_element_value);
+        com.miaoju.device.entity.BaseStruct __this__propMap_copy_value = new com.miaoju.device.entity.BaseStruct(other_element_value);
 
         __this__propMap.put(__this__propMap_copy_key, __this__propMap_copy_value);
       }
@@ -240,11 +240,11 @@ public class MixedStruct implements org.apache.thrift.TBase<MixedStruct, MixedSt
     }
   }
 
-  public com.Miaoju.device.entity.BaseStruct getBaseStruct() {
+  public com.miaoju.device.entity.BaseStruct getBaseStruct() {
     return this.baseStruct;
   }
 
-  public MixedStruct setBaseStruct(com.Miaoju.device.entity.BaseStruct baseStruct) {
+  public MixedStruct setBaseStruct(com.miaoju.device.entity.BaseStruct baseStruct) {
     this.baseStruct = baseStruct;
     if (baseStruct != null) {
       setBaseStructIsSet(true);
@@ -273,22 +273,22 @@ public class MixedStruct implements org.apache.thrift.TBase<MixedStruct, MixedSt
     return (this.propList == null) ? 0 : this.propList.size();
   }
 
-  public java.util.Iterator<com.Miaoju.device.entity.BaseStruct> getPropListIterator() {
+  public java.util.Iterator<com.miaoju.device.entity.BaseStruct> getPropListIterator() {
     return (this.propList == null) ? null : this.propList.iterator();
   }
 
-  public void addToPropList(com.Miaoju.device.entity.BaseStruct elem) {
+  public void addToPropList(com.miaoju.device.entity.BaseStruct elem) {
     if (this.propList == null) {
-      this.propList = new ArrayList<com.Miaoju.device.entity.BaseStruct>();
+      this.propList = new ArrayList<com.miaoju.device.entity.BaseStruct>();
     }
     this.propList.add(elem);
   }
 
-  public List<com.Miaoju.device.entity.BaseStruct> getPropList() {
+  public List<com.miaoju.device.entity.BaseStruct> getPropList() {
     return this.propList;
   }
 
-  public MixedStruct setPropList(List<com.Miaoju.device.entity.BaseStruct> propList) {
+  public MixedStruct setPropList(List<com.miaoju.device.entity.BaseStruct> propList) {
     this.propList = propList;
     if (propList != null) {
       setPropListIsSet(true);
@@ -317,22 +317,22 @@ public class MixedStruct implements org.apache.thrift.TBase<MixedStruct, MixedSt
     return (this.propSet == null) ? 0 : this.propSet.size();
   }
 
-  public java.util.Iterator<com.Miaoju.device.entity.BaseStruct> getPropSetIterator() {
+  public java.util.Iterator<com.miaoju.device.entity.BaseStruct> getPropSetIterator() {
     return (this.propSet == null) ? null : this.propSet.iterator();
   }
 
-  public void addToPropSet(com.Miaoju.device.entity.BaseStruct elem) {
+  public void addToPropSet(com.miaoju.device.entity.BaseStruct elem) {
     if (this.propSet == null) {
-      this.propSet = new HashSet<com.Miaoju.device.entity.BaseStruct>();
+      this.propSet = new HashSet<com.miaoju.device.entity.BaseStruct>();
     }
     this.propSet.add(elem);
   }
 
-  public Set<com.Miaoju.device.entity.BaseStruct> getPropSet() {
+  public Set<com.miaoju.device.entity.BaseStruct> getPropSet() {
     return this.propSet;
   }
 
-  public MixedStruct setPropSet(Set<com.Miaoju.device.entity.BaseStruct> propSet) {
+  public MixedStruct setPropSet(Set<com.miaoju.device.entity.BaseStruct> propSet) {
     this.propSet = propSet;
     if (propSet != null) {
       setPropSetIsSet(true);
@@ -361,18 +361,18 @@ public class MixedStruct implements org.apache.thrift.TBase<MixedStruct, MixedSt
     return (this.propMap == null) ? 0 : this.propMap.size();
   }
 
-  public void putToPropMap(String key, com.Miaoju.device.entity.BaseStruct val) {
+  public void putToPropMap(String key, com.miaoju.device.entity.BaseStruct val) {
     if (this.propMap == null) {
-      this.propMap = new HashMap<String,com.Miaoju.device.entity.BaseStruct>();
+      this.propMap = new HashMap<String,com.miaoju.device.entity.BaseStruct>();
     }
     this.propMap.put(key, val);
   }
 
-  public Map<String,com.Miaoju.device.entity.BaseStruct> getPropMap() {
+  public Map<String,com.miaoju.device.entity.BaseStruct> getPropMap() {
     return this.propMap;
   }
 
-  public MixedStruct setPropMap(Map<String,com.Miaoju.device.entity.BaseStruct> propMap) {
+  public MixedStruct setPropMap(Map<String,com.miaoju.device.entity.BaseStruct> propMap) {
     this.propMap = propMap;
     if (propMap != null) {
       setPropMapIsSet(true);
@@ -411,7 +411,7 @@ public class MixedStruct implements org.apache.thrift.TBase<MixedStruct, MixedSt
       if (value == null) {
         unsetBaseStruct();
       } else {
-        setBaseStruct((com.Miaoju.device.entity.BaseStruct)value);
+        setBaseStruct((com.miaoju.device.entity.BaseStruct)value);
       }
       break;
 
@@ -419,7 +419,7 @@ public class MixedStruct implements org.apache.thrift.TBase<MixedStruct, MixedSt
       if (value == null) {
         unsetPropList();
       } else {
-        setPropList((List<com.Miaoju.device.entity.BaseStruct>)value);
+        setPropList((List<com.miaoju.device.entity.BaseStruct>)value);
       }
       break;
 
@@ -427,7 +427,7 @@ public class MixedStruct implements org.apache.thrift.TBase<MixedStruct, MixedSt
       if (value == null) {
         unsetPropSet();
       } else {
-        setPropSet((Set<com.Miaoju.device.entity.BaseStruct>)value);
+        setPropSet((Set<com.miaoju.device.entity.BaseStruct>)value);
       }
       break;
 
@@ -435,7 +435,7 @@ public class MixedStruct implements org.apache.thrift.TBase<MixedStruct, MixedSt
       if (value == null) {
         unsetPropMap();
       } else {
-        setPropMap((Map<String,com.Miaoju.device.entity.BaseStruct>)value);
+        setPropMap((Map<String,com.miaoju.device.entity.BaseStruct>)value);
       }
       break;
 
@@ -760,7 +760,7 @@ public class MixedStruct implements org.apache.thrift.TBase<MixedStruct, MixedSt
             break;
           case 2: // BASE_STRUCT
             if (schemeField.type == org.apache.thrift.protocol.TType.STRUCT) {
-              struct.baseStruct = new com.Miaoju.device.entity.BaseStruct();
+              struct.baseStruct = new com.miaoju.device.entity.BaseStruct();
               struct.baseStruct.read(iprot);
               struct.setBaseStructIsSet(true);
             } else { 
@@ -771,11 +771,11 @@ public class MixedStruct implements org.apache.thrift.TBase<MixedStruct, MixedSt
             if (schemeField.type == org.apache.thrift.protocol.TType.LIST) {
               {
                 org.apache.thrift.protocol.TList _list0 = iprot.readListBegin();
-                struct.propList = new ArrayList<com.Miaoju.device.entity.BaseStruct>(_list0.size);
-                com.Miaoju.device.entity.BaseStruct _elem1;
+                struct.propList = new ArrayList<com.miaoju.device.entity.BaseStruct>(_list0.size);
+                com.miaoju.device.entity.BaseStruct _elem1;
                 for (int _i2 = 0; _i2 < _list0.size; ++_i2)
                 {
-                  _elem1 = new com.Miaoju.device.entity.BaseStruct();
+                  _elem1 = new com.miaoju.device.entity.BaseStruct();
                   _elem1.read(iprot);
                   struct.propList.add(_elem1);
                 }
@@ -790,11 +790,11 @@ public class MixedStruct implements org.apache.thrift.TBase<MixedStruct, MixedSt
             if (schemeField.type == org.apache.thrift.protocol.TType.SET) {
               {
                 org.apache.thrift.protocol.TSet _set3 = iprot.readSetBegin();
-                struct.propSet = new HashSet<com.Miaoju.device.entity.BaseStruct>(2*_set3.size);
-                com.Miaoju.device.entity.BaseStruct _elem4;
+                struct.propSet = new HashSet<com.miaoju.device.entity.BaseStruct>(2*_set3.size);
+                com.miaoju.device.entity.BaseStruct _elem4;
                 for (int _i5 = 0; _i5 < _set3.size; ++_i5)
                 {
-                  _elem4 = new com.Miaoju.device.entity.BaseStruct();
+                  _elem4 = new com.miaoju.device.entity.BaseStruct();
                   _elem4.read(iprot);
                   struct.propSet.add(_elem4);
                 }
@@ -809,13 +809,13 @@ public class MixedStruct implements org.apache.thrift.TBase<MixedStruct, MixedSt
             if (schemeField.type == org.apache.thrift.protocol.TType.MAP) {
               {
                 org.apache.thrift.protocol.TMap _map6 = iprot.readMapBegin();
-                struct.propMap = new HashMap<String,com.Miaoju.device.entity.BaseStruct>(2*_map6.size);
+                struct.propMap = new HashMap<String,com.miaoju.device.entity.BaseStruct>(2*_map6.size);
                 String _key7;
-                com.Miaoju.device.entity.BaseStruct _val8;
+                com.miaoju.device.entity.BaseStruct _val8;
                 for (int _i9 = 0; _i9 < _map6.size; ++_i9)
                 {
                   _key7 = iprot.readString();
-                  _val8 = new com.Miaoju.device.entity.BaseStruct();
+                  _val8 = new com.miaoju.device.entity.BaseStruct();
                   _val8.read(iprot);
                   struct.propMap.put(_key7, _val8);
                 }
@@ -853,7 +853,7 @@ public class MixedStruct implements org.apache.thrift.TBase<MixedStruct, MixedSt
         oprot.writeFieldBegin(PROP_LIST_FIELD_DESC);
         {
           int _isize11 = 0;
-          for (com.Miaoju.device.entity.BaseStruct _iter10 : struct.propList)
+          for (com.miaoju.device.entity.BaseStruct _iter10 : struct.propList)
           {
             if (_iter10 != null ) 
             {
@@ -861,7 +861,7 @@ public class MixedStruct implements org.apache.thrift.TBase<MixedStruct, MixedSt
             }
           }
           oprot.writeListBegin(new org.apache.thrift.protocol.TList(org.apache.thrift.protocol.TType.STRUCT, _isize11));
-          for (com.Miaoju.device.entity.BaseStruct _iter10 : struct.propList)
+          for (com.miaoju.device.entity.BaseStruct _iter10 : struct.propList)
           {
             if (_iter10 != null ) {
               _iter10.write(oprot);
@@ -875,7 +875,7 @@ public class MixedStruct implements org.apache.thrift.TBase<MixedStruct, MixedSt
         oprot.writeFieldBegin(PROP_SET_FIELD_DESC);
         {
           int _isize13 = 0;
-          for (com.Miaoju.device.entity.BaseStruct _iter12 : struct.propSet)
+          for (com.miaoju.device.entity.BaseStruct _iter12 : struct.propSet)
           {
             if (_iter12 != null ) 
             {
@@ -883,7 +883,7 @@ public class MixedStruct implements org.apache.thrift.TBase<MixedStruct, MixedSt
             }
           }
           oprot.writeSetBegin(new org.apache.thrift.protocol.TSet(org.apache.thrift.protocol.TType.STRUCT, _isize13));
-          for (com.Miaoju.device.entity.BaseStruct _iter12 : struct.propSet)
+          for (com.miaoju.device.entity.BaseStruct _iter12 : struct.propSet)
           {
             if (_iter12 != null ) {
           _iter12.write(oprot);
@@ -897,7 +897,7 @@ public class MixedStruct implements org.apache.thrift.TBase<MixedStruct, MixedSt
         oprot.writeFieldBegin(PROP_MAP_FIELD_DESC);
         {
           int _isize15 = 0;
-          for (Map.Entry<String, com.Miaoju.device.entity.BaseStruct> _iter14 : struct.propMap.entrySet())
+          for (Map.Entry<String, com.miaoju.device.entity.BaseStruct> _iter14 : struct.propMap.entrySet())
 
           {
             if (_iter14 != null &&_iter14.getValue() != null ) 
@@ -906,7 +906,7 @@ public class MixedStruct implements org.apache.thrift.TBase<MixedStruct, MixedSt
             }
           }
           oprot.writeMapBegin(new org.apache.thrift.protocol.TMap(org.apache.thrift.protocol.TType.STRING, org.apache.thrift.protocol.TType.STRUCT, _isize15));
-          for (Map.Entry<String, com.Miaoju.device.entity.BaseStruct> _iter14 : struct.propMap.entrySet())
+          for (Map.Entry<String, com.miaoju.device.entity.BaseStruct> _iter14 : struct.propMap.entrySet())
           {
             if (_iter14 != null && _iter14.getValue() != null) {
           oprot.writeString(_iter14.getKey());

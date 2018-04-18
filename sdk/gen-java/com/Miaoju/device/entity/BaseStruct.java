@@ -5,7 +5,7 @@
  * THIS IS MODIFIED FOR ZAN GROUP, ANY PROBLEM PLS CONTACT Zan Group<zan@zanphp.io>
  * @generated
  */
-package com.Miaoju.device.entity;
+package com.miaoju.device.entity;
 
 import org.apache.thrift.scheme.IScheme;
 import org.apache.thrift.scheme.SchemeFactory;
@@ -62,9 +62,9 @@ public class BaseStruct implements org.apache.thrift.TBase<BaseStruct, BaseStruc
   private String propString; // optional
   /**
    * 
-   * @see com.Miaoju.device.entity.ErrorLevel
+   * @see com.miaoju.device.entity.ErrorLevel
    */
-  private com.Miaoju.device.entity.ErrorLevel errorLevel; // optional
+  private com.miaoju.device.entity.ErrorLevel errorLevel; // optional
 
   /** The set of fields this struct contains, along with convenience methods for finding and manipulating them. */
   public enum _Fields implements org.apache.thrift.TFieldIdEnum {
@@ -77,7 +77,7 @@ public class BaseStruct implements org.apache.thrift.TBase<BaseStruct, BaseStruc
     PROP_STRING((short)7, "propString"),
     /**
      * 
-     * @see com.Miaoju.device.entity.ErrorLevel
+     * @see com.miaoju.device.entity.ErrorLevel
      */
     ERROR_LEVEL((short)8, "errorLevel");
 
@@ -176,7 +176,7 @@ public class BaseStruct implements org.apache.thrift.TBase<BaseStruct, BaseStruc
     tmpMap.put(_Fields.PROP_STRING, new org.apache.thrift.meta_data.FieldMetaData("propString", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
         new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
     tmpMap.put(_Fields.ERROR_LEVEL, new org.apache.thrift.meta_data.FieldMetaData("errorLevel", org.apache.thrift.TFieldRequirementType.OPTIONAL, 
-        new org.apache.thrift.meta_data.EnumMetaData(org.apache.thrift.protocol.TType.ENUM, com.Miaoju.device.entity.ErrorLevel.class)));
+        new org.apache.thrift.meta_data.EnumMetaData(org.apache.thrift.protocol.TType.ENUM, com.miaoju.device.entity.ErrorLevel.class)));
     metaDataMap = Collections.unmodifiableMap(tmpMap);
     org.apache.thrift.meta_data.FieldMetaData.addStructMetaDataMap(BaseStruct.class, metaDataMap);
   }
@@ -420,17 +420,17 @@ public class BaseStruct implements org.apache.thrift.TBase<BaseStruct, BaseStruc
 
   /**
    * 
-   * @see com.Miaoju.device.entity.ErrorLevel
+   * @see com.miaoju.device.entity.ErrorLevel
    */
-  public com.Miaoju.device.entity.ErrorLevel getErrorLevel() {
+  public com.miaoju.device.entity.ErrorLevel getErrorLevel() {
     return this.errorLevel;
   }
 
   /**
    * 
-   * @see com.Miaoju.device.entity.ErrorLevel
+   * @see com.miaoju.device.entity.ErrorLevel
    */
-  public BaseStruct setErrorLevel(com.Miaoju.device.entity.ErrorLevel errorLevel) {
+  public BaseStruct setErrorLevel(com.miaoju.device.entity.ErrorLevel errorLevel) {
     this.errorLevel = errorLevel;
     if (errorLevel != null) {
       setErrorLevelIsSet(true);
@@ -517,7 +517,7 @@ public class BaseStruct implements org.apache.thrift.TBase<BaseStruct, BaseStruc
       if (value == null) {
         unsetErrorLevel();
       } else {
-        setErrorLevel((com.Miaoju.device.entity.ErrorLevel)value);
+        setErrorLevel((com.miaoju.device.entity.ErrorLevel)value);
       }
       break;
 
@@ -1007,7 +1007,7 @@ public class BaseStruct implements org.apache.thrift.TBase<BaseStruct, BaseStruc
             break;
           case 8: // ERROR_LEVEL
             if (schemeField.type == org.apache.thrift.protocol.TType.I32) {
-              struct.errorLevel = com.Miaoju.device.entity.ErrorLevel.findByValue(iprot.readI32());
+              struct.errorLevel = com.miaoju.device.entity.ErrorLevel.findByValue(iprot.readI32());
               struct.setErrorLevelIsSet(true);
             } else { 
               org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);

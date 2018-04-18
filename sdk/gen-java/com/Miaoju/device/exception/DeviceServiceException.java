@@ -5,7 +5,7 @@
  * THIS IS MODIFIED FOR ZAN GROUP, ANY PROBLEM PLS CONTACT Zan Group<zan@zanphp.io>
  * @generated
  */
-package com.Miaoju.device.exception;
+package com.miaoju.device.exception;
 
 import org.apache.thrift.scheme.IScheme;
 import org.apache.thrift.scheme.SchemeFactory;

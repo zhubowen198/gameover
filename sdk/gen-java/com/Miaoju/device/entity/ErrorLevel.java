@@ -5,7 +5,7 @@
  * THIS IS MODIFIED FOR ZAN GROUP, ANY PROBLEM PLS CONTACT Zan Group<zan@zanphp.io>
  * @generated
  */
-package com.Miaoju.device.entity;
+package com.miaoju.device.entity;
 
 
 import java.util.Map;

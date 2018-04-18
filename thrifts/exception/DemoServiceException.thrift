@@ -1,4 +1,4 @@
-namespace nova com.Miaoju.device.exception
+namespace nova com.miaoju.device.exception
 
 exception DemoServiceException {
     1: string message

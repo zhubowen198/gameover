@@ -1,4 +1,4 @@
-namespace nova com.Miaoju.device.entity
+namespace nova com.miaoju.device.entity
 
 include 'BaseStruct.thrift'
 
