@@ -1,5 +1,5 @@
 {
-  "name": "nova-service/nova-gameover",
+  "name": "nova-service/device",
   "repositories": [
   ],
   "require": {
@@ -7,7 +7,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Com\\Yourcompany\\Demo\\": "sdk/gen-php"
+      "Com\\Miaoju\\Device\\": "sdk/gen-php"
     },
     "classmap": []
   }

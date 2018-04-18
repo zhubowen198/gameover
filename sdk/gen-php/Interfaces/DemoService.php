@@ -7,11 +7,11 @@
  * @generated
  */
 
-namespace Com\Yourcompany\Demo\Interfaces;
+namespace Com\Miaoju\Device\Interfaces;
 
 interface DemoService {
   /**
-   * @throws \Com\Yourcompany\Demo\Exception\DemoServiceException
+   * @throws \Com\Miaoju\Device\Exception\DemoServiceException
    */
   public function throwException();
   /**
@@ -38,19 +38,19 @@ interface DemoService {
    */
   public function returnEnum();
   /**
-   * @return \Com\Yourcompany\Demo\Entity\BaseStruct
+   * @return \Com\Miaoju\Device\Entity\BaseStruct
    */
   public function returnBaseStruct();
   /**
-   * @return \Com\Yourcompany\Demo\Entity\MixedStruct
+   * @return \Com\Miaoju\Device\Entity\MixedStruct
    */
   public function returnMixedStruct();
   /**
-   * @return \Com\Yourcompany\Demo\Entity\BaseStruct[]
+   * @return \Com\Miaoju\Device\Entity\BaseStruct[]
    */
   public function returnList();
   /**
-   * @return \Com\Yourcompany\Demo\Entity\BaseStruct[]
+   * @return \Com\Miaoju\Device\Entity\BaseStruct[]
    */
   public function returnSet();
   /**
@@ -67,25 +67,25 @@ interface DemoService {
    * @param int $paraI32
    * @param double $paraDouble
    * @param string $paraString
-   * @param \Com\Yourcompany\Demo\Entity\BaseStruct $baseStruct
-   * @param \Com\Yourcompany\Demo\Entity\BaseStruct[] $returnList
-   * @param \Com\Yourcompany\Demo\Entity\BaseStruct[] $returnSet
+   * @param \Com\Miaoju\Device\Entity\BaseStruct $baseStruct
+   * @param \Com\Miaoju\Device\Entity\BaseStruct[] $returnList
+   * @param \Com\Miaoju\Device\Entity\BaseStruct[] $returnSet
    * @param array $returnMap
    * @param int $errorLevel
    */
-  public function paraMixedNoReturn($paraBool, $paraI32, $paraDouble, $paraString, \Com\Yourcompany\Demo\Entity\BaseStruct $baseStruct, array $returnList, array $returnSet, array $returnMap, $errorLevel);
+  public function paraMixedNoReturn($paraBool, $paraI32, $paraDouble, $paraString, \Com\Miaoju\Device\Entity\BaseStruct $baseStruct, array $returnList, array $returnSet, array $returnMap, $errorLevel);
   /**
    * @param bool $paraBool
    * @param int $paraI32
    * @param double $paraDouble
    * @param string $paraString
-   * @param \Com\Yourcompany\Demo\Entity\BaseStruct $baseStruct
-   * @param \Com\Yourcompany\Demo\Entity\BaseStruct[] $returnList
-   * @param \Com\Yourcompany\Demo\Entity\BaseStruct[] $returnSet
+   * @param \Com\Miaoju\Device\Entity\BaseStruct $baseStruct
+   * @param \Com\Miaoju\Device\Entity\BaseStruct[] $returnList
+   * @param \Com\Miaoju\Device\Entity\BaseStruct[] $returnSet
    * @param array $returnMap
    * @param int $errorLevel
    * @return array
    */
-  public function complexMethod($paraBool, $paraI32, $paraDouble, $paraString, \Com\Yourcompany\Demo\Entity\BaseStruct $baseStruct, array $returnList, array $returnSet, array $returnMap, $errorLevel);
+  public function complexMethod($paraBool, $paraI32, $paraDouble, $paraString, \Com\Miaoju\Device\Entity\BaseStruct $baseStruct, array $returnList, array $returnSet, array $returnMap, $errorLevel);
 }
 

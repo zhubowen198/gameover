@@ -7,7 +7,7 @@
  * @generated
  */
 
-namespace Com\Yourcompany\Demo\Servicespecification;
+namespace Com\Miaoju\Device\Servicespecification;
 
 use Kdt\Iron\Nova\Foundation\TSpecification;
 use Thrift\Type\TType;
@@ -15,7 +15,7 @@ use Thrift\Type\TType;
 
 class DemoService extends TSpecification {
 
-  protected $serviceName = 'Com.Yourcompany.Demo.Service.DemoService';
+  protected $serviceName = 'Com.Miaoju.Device.Service.DemoService';
 
   protected $inputStructSpec = [
     'throwException' => [
@@ -72,7 +72,7 @@ class DemoService extends TSpecification {
       5 => [
         'var' => 'baseStruct',
         'type' => TType::STRUCT,
-        'class' => '\Com\Yourcompany\Demo\Entity\BaseStruct',
+        'class' => '\Com\Miaoju\Device\Entity\BaseStruct',
         ],
       6 => [
         'var' => 'returnList',
@@ -80,7 +80,7 @@ class DemoService extends TSpecification {
         'etype' => TType::STRUCT,
         'elem' => [
           'type' => TType::STRUCT,
-          'class' => '\Com\Yourcompany\Demo\Entity\BaseStruct',
+          'class' => '\Com\Miaoju\Device\Entity\BaseStruct',
           ],
         ],
       7 => [
@@ -89,7 +89,7 @@ class DemoService extends TSpecification {
         'etype' => TType::STRUCT,
         'elem' => [
           'type' => TType::STRUCT,
-          'class' => '\Com\Yourcompany\Demo\Entity\BaseStruct',
+          'class' => '\Com\Miaoju\Device\Entity\BaseStruct',
           ],
         ],
       8 => [
@@ -102,7 +102,7 @@ class DemoService extends TSpecification {
         ],
         'val' => [
           'type' => TType::STRUCT,
-          'class' => '\Com\Yourcompany\Demo\Entity\BaseStruct',
+          'class' => '\Com\Miaoju\Device\Entity\BaseStruct',
           ],
         ],
       9 => [
@@ -130,7 +130,7 @@ class DemoService extends TSpecification {
       5 => [
         'var' => 'baseStruct',
         'type' => TType::STRUCT,
-        'class' => '\Com\Yourcompany\Demo\Entity\BaseStruct',
+        'class' => '\Com\Miaoju\Device\Entity\BaseStruct',
         ],
       6 => [
         'var' => 'returnList',
@@ -138,7 +138,7 @@ class DemoService extends TSpecification {
         'etype' => TType::STRUCT,
         'elem' => [
           'type' => TType::STRUCT,
-          'class' => '\Com\Yourcompany\Demo\Entity\BaseStruct',
+          'class' => '\Com\Miaoju\Device\Entity\BaseStruct',
           ],
         ],
       7 => [
@@ -147,7 +147,7 @@ class DemoService extends TSpecification {
         'etype' => TType::STRUCT,
         'elem' => [
           'type' => TType::STRUCT,
-          'class' => '\Com\Yourcompany\Demo\Entity\BaseStruct',
+          'class' => '\Com\Miaoju\Device\Entity\BaseStruct',
           ],
         ],
       8 => [
@@ -160,7 +160,7 @@ class DemoService extends TSpecification {
         ],
         'val' => [
           'type' => TType::STRUCT,
-          'class' => '\Com\Yourcompany\Demo\Entity\BaseStruct',
+          'class' => '\Com\Miaoju\Device\Entity\BaseStruct',
           ],
         ],
       9 => [
@@ -194,18 +194,18 @@ class DemoService extends TSpecification {
     ],
     'returnBaseStruct' => [
       'type' => TType::STRUCT,
-      'class' => '\Com\Yourcompany\Demo\Entity\BaseStruct',
+      'class' => '\Com\Miaoju\Device\Entity\BaseStruct',
     ],
     'returnMixedStruct' => [
       'type' => TType::STRUCT,
-      'class' => '\Com\Yourcompany\Demo\Entity\MixedStruct',
+      'class' => '\Com\Miaoju\Device\Entity\MixedStruct',
     ],
     'returnList' => [
       'type' => TType::LST,
       'etype' => TType::STRUCT,
       'elem' => [
         'type' => TType::STRUCT,
-        'class' => '\Com\Yourcompany\Demo\Entity\BaseStruct',
+        'class' => '\Com\Miaoju\Device\Entity\BaseStruct',
         ],
     ],
     'returnSet' => [
@@ -213,7 +213,7 @@ class DemoService extends TSpecification {
       'etype' => TType::STRUCT,
       'elem' => [
         'type' => TType::STRUCT,
-        'class' => '\Com\Yourcompany\Demo\Entity\BaseStruct',
+        'class' => '\Com\Miaoju\Device\Entity\BaseStruct',
         ],
     ],
     'returnMap' => [
@@ -225,7 +225,7 @@ class DemoService extends TSpecification {
       ],
       'val' => [
         'type' => TType::STRUCT,
-        'class' => '\Com\Yourcompany\Demo\Entity\BaseStruct',
+        'class' => '\Com\Miaoju\Device\Entity\BaseStruct',
         ],
     ],
     'paraBaseNoReturn' => [
@@ -243,7 +243,7 @@ class DemoService extends TSpecification {
       ],
       'val' => [
         'type' => TType::STRUCT,
-        'class' => '\Com\Yourcompany\Demo\Entity\BaseStruct',
+        'class' => '\Com\Miaoju\Device\Entity\BaseStruct',
         ],
     ],
   ];
@@ -253,7 +253,7 @@ class DemoService extends TSpecification {
       1 => [
         'var' => 'e',
         'type' => TType::STRUCT,
-        'class' => '\Com\Yourcompany\Demo\Exception\DemoServiceException',
+        'class' => '\Com\Miaoju\Device\Exception\DemoServiceException',
         ],
     ],
   ];

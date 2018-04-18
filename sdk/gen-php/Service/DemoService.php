@@ -7,14 +7,14 @@
  * @generated
  */
 
-namespace Com\Yourcompany\Demo\Service;
+namespace Com\Miaoju\Device\Service;
 
 use Kdt\Iron\Nova\Foundation\TService;
 use Thrift\Type\TType;
 
 
-use Com\Yourcompany\Demo\Interfaces\DemoService as DemoServiceInterface;
-use Com\Yourcompany\Demo\Servicespecification\DemoService as DemoServiceSpecification;
+use Com\Miaoju\Device\Interfaces\DemoService as DemoServiceInterface;
+use Com\Miaoju\Device\Servicespecification\DemoService as DemoServiceSpecification;
 
 class DemoService extends TService implements DemoServiceInterface {
 
@@ -24,7 +24,7 @@ class DemoService extends TService implements DemoServiceInterface {
   }
 
   /**
-   * @throws \Com\Yourcompany\Demo\Exception\DemoServiceException
+   * @throws \Com\Miaoju\Device\Exception\DemoServiceException
    */
   public function throwException()
   {
@@ -79,7 +79,7 @@ class DemoService extends TService implements DemoServiceInterface {
   }
 
   /**
-   * @return \Com\Yourcompany\Demo\Entity\BaseStruct
+   * @return \Com\Miaoju\Device\Entity\BaseStruct
    */
   public function returnBaseStruct()
   {
@@ -87,7 +87,7 @@ class DemoService extends TService implements DemoServiceInterface {
   }
 
   /**
-   * @return \Com\Yourcompany\Demo\Entity\MixedStruct
+   * @return \Com\Miaoju\Device\Entity\MixedStruct
    */
   public function returnMixedStruct()
   {
@@ -95,7 +95,7 @@ class DemoService extends TService implements DemoServiceInterface {
   }
 
   /**
-   * @return \Com\Yourcompany\Demo\Entity\BaseStruct[]
+   * @return \Com\Miaoju\Device\Entity\BaseStruct[]
    */
   public function returnList()
   {
@@ -103,7 +103,7 @@ class DemoService extends TService implements DemoServiceInterface {
   }
 
   /**
-   * @return \Com\Yourcompany\Demo\Entity\BaseStruct[]
+   * @return \Com\Miaoju\Device\Entity\BaseStruct[]
    */
   public function returnSet()
   {
@@ -132,13 +132,13 @@ class DemoService extends TService implements DemoServiceInterface {
    * @param int $paraI32
    * @param double $paraDouble
    * @param string $paraString
-   * @param \Com\Yourcompany\Demo\Entity\BaseStruct $baseStruct
-   * @param \Com\Yourcompany\Demo\Entity\BaseStruct[] $returnList
-   * @param \Com\Yourcompany\Demo\Entity\BaseStruct[] $returnSet
+   * @param \Com\Miaoju\Device\Entity\BaseStruct $baseStruct
+   * @param \Com\Miaoju\Device\Entity\BaseStruct[] $returnList
+   * @param \Com\Miaoju\Device\Entity\BaseStruct[] $returnSet
    * @param array $returnMap
    * @param int $errorLevel
    */
-  public function paraMixedNoReturn($paraBool, $paraI32, $paraDouble, $paraString, \Com\Yourcompany\Demo\Entity\BaseStruct $baseStruct, array $returnList, array $returnSet, array $returnMap, $errorLevel)
+  public function paraMixedNoReturn($paraBool, $paraI32, $paraDouble, $paraString, \Com\Miaoju\Device\Entity\BaseStruct $baseStruct, array $returnList, array $returnSet, array $returnMap, $errorLevel)
   {
     return $this->apiCall(__FUNCTION__, func_get_args());
   }
@@ -148,14 +148,14 @@ class DemoService extends TService implements DemoServiceInterface {
    * @param int $paraI32
    * @param double $paraDouble
    * @param string $paraString
-   * @param \Com\Yourcompany\Demo\Entity\BaseStruct $baseStruct
-   * @param \Com\Yourcompany\Demo\Entity\BaseStruct[] $returnList
-   * @param \Com\Yourcompany\Demo\Entity\BaseStruct[] $returnSet
+   * @param \Com\Miaoju\Device\Entity\BaseStruct $baseStruct
+   * @param \Com\Miaoju\Device\Entity\BaseStruct[] $returnList
+   * @param \Com\Miaoju\Device\Entity\BaseStruct[] $returnSet
    * @param array $returnMap
    * @param int $errorLevel
    * @return array
    */
-  public function complexMethod($paraBool, $paraI32, $paraDouble, $paraString, \Com\Yourcompany\Demo\Entity\BaseStruct $baseStruct, array $returnList, array $returnSet, array $returnMap, $errorLevel)
+  public function complexMethod($paraBool, $paraI32, $paraDouble, $paraString, \Com\Miaoju\Device\Entity\BaseStruct $baseStruct, array $returnList, array $returnSet, array $returnMap, $errorLevel)
   {
     return $this->apiCall(__FUNCTION__, func_get_args());
   }

@@ -1,4 +1,4 @@
-namespace nova com.yourcompany.demo.service
+namespace nova com.Miaoju.device.service
 
 include '../entity/ErrorLevel.thrift'
 include '../entity/BaseStruct.thrift'

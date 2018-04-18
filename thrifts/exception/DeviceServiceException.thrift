@@ -1,6 +1,6 @@
 namespace nova com.Miaoju.device.exception
 
-exception DemoServiceException {
+exception DeviceServiceException {
     1: string message
     2: i32 code
 }

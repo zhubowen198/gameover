@@ -7,7 +7,7 @@
  * @generated
  */
 
-namespace Com\Yourcompany\Demo\Entity;
+namespace Com\Miaoju\Device\Entity;
 
 use Kdt\Iron\Nova\Foundation\Protocol\TStruct;
 use Thrift\Type\TType;
@@ -19,15 +19,15 @@ class MixedStruct extends TStruct {
    */
   public $propString = null;
   /**
-   * @var \Com\Yourcompany\Demo\Entity\BaseStruct
+   * @var \Com\Miaoju\Device\Entity\BaseStruct
    */
   public $baseStruct = null;
   /**
-   * @var \Com\Yourcompany\Demo\Entity\BaseStruct[]
+   * @var \Com\Miaoju\Device\Entity\BaseStruct[]
    */
   public $propList = null;
   /**
-   * @var \Com\Yourcompany\Demo\Entity\BaseStruct[]
+   * @var \Com\Miaoju\Device\Entity\BaseStruct[]
    */
   public $propSet = null;
   /**
@@ -43,7 +43,7 @@ class MixedStruct extends TStruct {
     2 => [
       'var' => 'baseStruct',
       'type' => TType::STRUCT,
-      'class' => '\Com\Yourcompany\Demo\Entity\BaseStruct',
+      'class' => '\Com\Miaoju\Device\Entity\BaseStruct',
       ],
     3 => [
       'var' => 'propList',
@@ -51,7 +51,7 @@ class MixedStruct extends TStruct {
       'etype' => TType::STRUCT,
       'elem' => [
         'type' => TType::STRUCT,
-        'class' => '\Com\Yourcompany\Demo\Entity\BaseStruct',
+        'class' => '\Com\Miaoju\Device\Entity\BaseStruct',
         ],
       ],
     4 => [
@@ -60,7 +60,7 @@ class MixedStruct extends TStruct {
       'etype' => TType::STRUCT,
       'elem' => [
         'type' => TType::STRUCT,
-        'class' => '\Com\Yourcompany\Demo\Entity\BaseStruct',
+        'class' => '\Com\Miaoju\Device\Entity\BaseStruct',
         ],
       ],
     5 => [
@@ -73,7 +73,7 @@ class MixedStruct extends TStruct {
       ],
       'val' => [
         'type' => TType::STRUCT,
-        'class' => '\Com\Yourcompany\Demo\Entity\BaseStruct',
+        'class' => '\Com\Miaoju\Device\Entity\BaseStruct',
         ],
       ],
     ];

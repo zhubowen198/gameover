@@ -1,4 +1,4 @@
-namespace nova com.yourcompany.demo.entity
+namespace nova com.Miaoju.device.entity
 
 include 'ErrorLevel.thrift'
 
