@@ -1,5 +1,5 @@
 {
-    "name": "nova-service/game",
+    "name": "nova-service/device",
     "repositories": [
     ],
     "require": {
