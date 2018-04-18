@@ -39,5 +39,29 @@ class DeviceService extends TService implements DeviceServiceInterface {
     return $this->apiCall(__FUNCTION__, func_get_args());
   }
 
+  /**
+   * @return \Com\Yourcompany\Demo\Entity\BaseStruct
+   */
+  public function getDeviceBaseStruct()
+  {
+    return $this->apiCall(__FUNCTION__, func_get_args());
+  }
+
+  /**
+   * @return array
+   */
+  public function getDevicemapBaseStruct()
+  {
+    return $this->apiCall(__FUNCTION__, func_get_args());
+  }
+
+  /**
+   * @return \Com\Yourcompany\Demo\Entity\BaseStruct[]
+   */
+  public function getDevicelistshow()
+  {
+    return $this->apiCall(__FUNCTION__, func_get_args());
+  }
+
 }
 

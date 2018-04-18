@@ -22,6 +22,12 @@ class DeviceService extends TSpecification {
     ],
     'getDeviceList' => [
     ],
+    'getDeviceBaseStruct' => [
+    ],
+    'getDevicemapBaseStruct' => [
+    ],
+    'getDevicelistshow' => [
+    ],
   ];
   protected $outputStructSpec = [
 
@@ -30,6 +36,30 @@ class DeviceService extends TSpecification {
     ],
     'getDeviceList' => [
       'type' => TType::STRING,
+    ],
+    'getDeviceBaseStruct' => [
+      'type' => TType::STRUCT,
+      'class' => '\Com\Yourcompany\Demo\Entity\BaseStruct',
+    ],
+    'getDevicemapBaseStruct' => [
+      'type' => TType::MAP,
+      'ktype' => TType::STRING,
+      'vtype' => TType::STRUCT,
+      'key' => [
+        'type' => TType::STRING,
+      ],
+      'val' => [
+        'type' => TType::STRUCT,
+        'class' => '\Com\Yourcompany\Demo\Entity\BaseStruct',
+        ],
+    ],
+    'getDevicelistshow' => [
+      'type' => TType::LST,
+      'etype' => TType::STRUCT,
+      'elem' => [
+        'type' => TType::STRUCT,
+        'class' => '\Com\Yourcompany\Demo\Entity\BaseStruct',
+        ],
     ],
   ];
   protected $exceptionStructSpec = [

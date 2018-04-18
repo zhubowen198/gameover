@@ -18,5 +18,17 @@ interface DeviceService {
    * @return string
    */
   public function getDeviceList();
+  /**
+   * @return \Com\Yourcompany\Demo\Entity\BaseStruct
+   */
+  public function getDeviceBaseStruct();
+  /**
+   * @return array
+   */
+  public function getDevicemapBaseStruct();
+  /**
+   * @return \Com\Yourcompany\Demo\Entity\BaseStruct[]
+   */
+  public function getDevicelistshow();
 }
 
