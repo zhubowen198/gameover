@@ -42,11 +42,11 @@ public interface DeviceService {
 
   public String getDeviceList();
 
-  public com.yourcompany.demo.entity.BaseStruct getDeviceBaseStruct();
+  public com.miaoju.device.entity.BaseStruct getDeviceBaseStruct();
 
-  public Map<String,com.yourcompany.demo.entity.BaseStruct> getDevicemapBaseStruct();
+  public Map<String,com.miaoju.device.entity.BaseStruct> getDevicemapBaseStruct();
 
-  public List<com.yourcompany.demo.entity.BaseStruct> getDevicelistshow();
+  public List<com.miaoju.device.entity.BaseStruct> getDevicelistshow();
 
   public static class throwException_args implements org.apache.thrift.TBase<throwException_args, throwException_args._Fields>, java.io.Serializable, Cloneable, Comparable<throwException_args>   {
     private static final org.apache.thrift.protocol.TStruct STRUCT_DESC = new org.apache.thrift.protocol.TStruct("throwException_args");
@@ -1336,7 +1336,7 @@ public interface DeviceService {
       schemes.put(StandardScheme.class, new getDeviceBaseStruct_resultStandardSchemeFactory());
     }
 
-    private com.yourcompany.demo.entity.BaseStruct success; // default
+    private com.miaoju.device.entity.BaseStruct success; // default
 
     /** The set of fields this struct contains, along with convenience methods for finding and manipulating them. */
     public enum _Fields implements org.apache.thrift.TFieldIdEnum {
@@ -1401,7 +1401,7 @@ public interface DeviceService {
     static {
       Map<_Fields, org.apache.thrift.meta_data.FieldMetaData> tmpMap = new EnumMap<_Fields, org.apache.thrift.meta_data.FieldMetaData>(_Fields.class);
       tmpMap.put(_Fields.SUCCESS, new org.apache.thrift.meta_data.FieldMetaData("success", org.apache.thrift.TFieldRequirementType.DEFAULT, 
-          new org.apache.thrift.meta_data.StructMetaData(org.apache.thrift.protocol.TType.STRUCT, com.yourcompany.demo.entity.BaseStruct.class)));
+          new org.apache.thrift.meta_data.StructMetaData(org.apache.thrift.protocol.TType.STRUCT, com.miaoju.device.entity.BaseStruct.class)));
       metaDataMap = Collections.unmodifiableMap(tmpMap);
       org.apache.thrift.meta_data.FieldMetaData.addStructMetaDataMap(getDeviceBaseStruct_result.class, metaDataMap);
     }
@@ -1410,7 +1410,7 @@ public interface DeviceService {
     }
 
     public getDeviceBaseStruct_result(
-      com.yourcompany.demo.entity.BaseStruct success)
+      com.miaoju.device.entity.BaseStruct success)
     {
       this();
       if (success != null ) {
@@ -1424,7 +1424,7 @@ public interface DeviceService {
      */
     public getDeviceBaseStruct_result(getDeviceBaseStruct_result other) {
       if (other.isSetSuccess()) {
-        this.success = new com.yourcompany.demo.entity.BaseStruct(other.success);
+        this.success = new com.miaoju.device.entity.BaseStruct(other.success);
       }
     }
 
@@ -1438,11 +1438,11 @@ public interface DeviceService {
       this.success = null;
     }
 
-    public com.yourcompany.demo.entity.BaseStruct getSuccess() {
+    public com.miaoju.device.entity.BaseStruct getSuccess() {
       return this.success;
     }
 
-    public getDeviceBaseStruct_result setSuccess(com.yourcompany.demo.entity.BaseStruct success) {
+    public getDeviceBaseStruct_result setSuccess(com.miaoju.device.entity.BaseStruct success) {
       this.success = success;
       if (success != null) {
         setSuccessIsSet(true);
@@ -1473,7 +1473,7 @@ public interface DeviceService {
         if (value == null) {
           unsetSuccess();
         } else {
-          setSuccess((com.yourcompany.demo.entity.BaseStruct)value);
+          setSuccess((com.miaoju.device.entity.BaseStruct)value);
         }
         break;
 
@@ -1622,7 +1622,7 @@ public interface DeviceService {
           switch (schemeField.id) {
             case 0: // SUCCESS
               if (schemeField.type == org.apache.thrift.protocol.TType.STRUCT) {
-                struct.success = new com.yourcompany.demo.entity.BaseStruct();
+                struct.success = new com.miaoju.device.entity.BaseStruct();
                 struct.success.read(iprot);
                 struct.setSuccessIsSet(true);
               } else { 
@@ -1874,7 +1874,7 @@ public interface DeviceService {
       schemes.put(StandardScheme.class, new getDevicemapBaseStruct_resultStandardSchemeFactory());
     }
 
-    private Map<String,com.yourcompany.demo.entity.BaseStruct> success; // default
+    private Map<String,com.miaoju.device.entity.BaseStruct> success; // default
 
     /** The set of fields this struct contains, along with convenience methods for finding and manipulating them. */
     public enum _Fields implements org.apache.thrift.TFieldIdEnum {
@@ -1941,7 +1941,7 @@ public interface DeviceService {
       tmpMap.put(_Fields.SUCCESS, new org.apache.thrift.meta_data.FieldMetaData("success", org.apache.thrift.TFieldRequirementType.DEFAULT, 
           new org.apache.thrift.meta_data.MapMetaData(org.apache.thrift.protocol.TType.MAP, 
               new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING), 
-              new org.apache.thrift.meta_data.StructMetaData(org.apache.thrift.protocol.TType.STRUCT, com.yourcompany.demo.entity.BaseStruct.class))));
+              new org.apache.thrift.meta_data.StructMetaData(org.apache.thrift.protocol.TType.STRUCT, com.miaoju.device.entity.BaseStruct.class))));
       metaDataMap = Collections.unmodifiableMap(tmpMap);
       org.apache.thrift.meta_data.FieldMetaData.addStructMetaDataMap(getDevicemapBaseStruct_result.class, metaDataMap);
     }
@@ -1950,7 +1950,7 @@ public interface DeviceService {
     }
 
     public getDevicemapBaseStruct_result(
-      Map<String,com.yourcompany.demo.entity.BaseStruct> success)
+      Map<String,com.miaoju.device.entity.BaseStruct> success)
     {
       this();
       if (success != null ) {
@@ -1964,15 +1964,15 @@ public interface DeviceService {
      */
     public getDevicemapBaseStruct_result(getDevicemapBaseStruct_result other) {
       if (other.isSetSuccess()) {
-        Map<String,com.yourcompany.demo.entity.BaseStruct> __this__success = new HashMap<String,com.yourcompany.demo.entity.BaseStruct>(other.success.size());
-        for (Map.Entry<String, com.yourcompany.demo.entity.BaseStruct> other_element : other.success.entrySet()) {
+        Map<String,com.miaoju.device.entity.BaseStruct> __this__success = new HashMap<String,com.miaoju.device.entity.BaseStruct>(other.success.size());
+        for (Map.Entry<String, com.miaoju.device.entity.BaseStruct> other_element : other.success.entrySet()) {
 
           String other_element_key = other_element.getKey();
-          com.yourcompany.demo.entity.BaseStruct other_element_value = other_element.getValue();
+          com.miaoju.device.entity.BaseStruct other_element_value = other_element.getValue();
 
           String __this__success_copy_key = other_element_key;
 
-          com.yourcompany.demo.entity.BaseStruct __this__success_copy_value = new com.yourcompany.demo.entity.BaseStruct(other_element_value);
+          com.miaoju.device.entity.BaseStruct __this__success_copy_value = new com.miaoju.device.entity.BaseStruct(other_element_value);
 
           __this__success.put(__this__success_copy_key, __this__success_copy_value);
         }
@@ -1994,18 +1994,18 @@ public interface DeviceService {
       return (this.success == null) ? 0 : this.success.size();
     }
 
-    public void putToSuccess(String key, com.yourcompany.demo.entity.BaseStruct val) {
+    public void putToSuccess(String key, com.miaoju.device.entity.BaseStruct val) {
       if (this.success == null) {
-        this.success = new HashMap<String,com.yourcompany.demo.entity.BaseStruct>();
+        this.success = new HashMap<String,com.miaoju.device.entity.BaseStruct>();
       }
       this.success.put(key, val);
     }
 
-    public Map<String,com.yourcompany.demo.entity.BaseStruct> getSuccess() {
+    public Map<String,com.miaoju.device.entity.BaseStruct> getSuccess() {
       return this.success;
     }
 
-    public getDevicemapBaseStruct_result setSuccess(Map<String,com.yourcompany.demo.entity.BaseStruct> success) {
+    public getDevicemapBaseStruct_result setSuccess(Map<String,com.miaoju.device.entity.BaseStruct> success) {
       this.success = success;
       if (success != null) {
         setSuccessIsSet(true);
@@ -2036,7 +2036,7 @@ public interface DeviceService {
         if (value == null) {
           unsetSuccess();
         } else {
-          setSuccess((Map<String,com.yourcompany.demo.entity.BaseStruct>)value);
+          setSuccess((Map<String,com.miaoju.device.entity.BaseStruct>)value);
         }
         break;
 
@@ -2184,13 +2184,13 @@ public interface DeviceService {
               if (schemeField.type == org.apache.thrift.protocol.TType.MAP) {
                 {
                   org.apache.thrift.protocol.TMap _map0 = iprot.readMapBegin();
-                  struct.success = new HashMap<String,com.yourcompany.demo.entity.BaseStruct>(2*_map0.size);
+                  struct.success = new HashMap<String,com.miaoju.device.entity.BaseStruct>(2*_map0.size);
                   String _key1;
-                  com.yourcompany.demo.entity.BaseStruct _val2;
+                  com.miaoju.device.entity.BaseStruct _val2;
                   for (int _i3 = 0; _i3 < _map0.size; ++_i3)
                   {
                     _key1 = iprot.readString();
-                    _val2 = new com.yourcompany.demo.entity.BaseStruct();
+                    _val2 = new com.miaoju.device.entity.BaseStruct();
                     _val2.read(iprot);
                     struct.success.put(_key1, _val2);
                   }
@@ -2218,7 +2218,7 @@ public interface DeviceService {
           oprot.writeFieldBegin(SUCCESS_FIELD_DESC);
           {
             int _isize5 = 0;
-            for (Map.Entry<String, com.yourcompany.demo.entity.BaseStruct> _iter4 : struct.success.entrySet())
+            for (Map.Entry<String, com.miaoju.device.entity.BaseStruct> _iter4 : struct.success.entrySet())
 
             {
               if (_iter4 != null &&_iter4.getValue() != null ) 
@@ -2227,7 +2227,7 @@ public interface DeviceService {
               }
             }
             oprot.writeMapBegin(new org.apache.thrift.protocol.TMap(org.apache.thrift.protocol.TType.STRING, org.apache.thrift.protocol.TType.STRUCT, _isize5));
-            for (Map.Entry<String, com.yourcompany.demo.entity.BaseStruct> _iter4 : struct.success.entrySet())
+            for (Map.Entry<String, com.miaoju.device.entity.BaseStruct> _iter4 : struct.success.entrySet())
             {
               if (_iter4 != null && _iter4.getValue() != null) {
             oprot.writeString(_iter4.getKey());
@@ -2465,7 +2465,7 @@ public interface DeviceService {
       schemes.put(StandardScheme.class, new getDevicelistshow_resultStandardSchemeFactory());
     }
 
-    private List<com.yourcompany.demo.entity.BaseStruct> success; // default
+    private List<com.miaoju.device.entity.BaseStruct> success; // default
 
     /** The set of fields this struct contains, along with convenience methods for finding and manipulating them. */
     public enum _Fields implements org.apache.thrift.TFieldIdEnum {
@@ -2531,7 +2531,7 @@ public interface DeviceService {
       Map<_Fields, org.apache.thrift.meta_data.FieldMetaData> tmpMap = new EnumMap<_Fields, org.apache.thrift.meta_data.FieldMetaData>(_Fields.class);
       tmpMap.put(_Fields.SUCCESS, new org.apache.thrift.meta_data.FieldMetaData("success", org.apache.thrift.TFieldRequirementType.DEFAULT, 
           new org.apache.thrift.meta_data.ListMetaData(org.apache.thrift.protocol.TType.LIST, 
-              new org.apache.thrift.meta_data.StructMetaData(org.apache.thrift.protocol.TType.STRUCT, com.yourcompany.demo.entity.BaseStruct.class))));
+              new org.apache.thrift.meta_data.StructMetaData(org.apache.thrift.protocol.TType.STRUCT, com.miaoju.device.entity.BaseStruct.class))));
       metaDataMap = Collections.unmodifiableMap(tmpMap);
       org.apache.thrift.meta_data.FieldMetaData.addStructMetaDataMap(getDevicelistshow_result.class, metaDataMap);
     }
@@ -2540,7 +2540,7 @@ public interface DeviceService {
     }
 
     public getDevicelistshow_result(
-      List<com.yourcompany.demo.entity.BaseStruct> success)
+      List<com.miaoju.device.entity.BaseStruct> success)
     {
       this();
       if (success != null ) {
@@ -2554,9 +2554,9 @@ public interface DeviceService {
      */
     public getDevicelistshow_result(getDevicelistshow_result other) {
       if (other.isSetSuccess()) {
-        List<com.yourcompany.demo.entity.BaseStruct> __this__success = new ArrayList<com.yourcompany.demo.entity.BaseStruct>(other.success.size());
-        for (com.yourcompany.demo.entity.BaseStruct other_element : other.success) {
-          __this__success.add(new com.yourcompany.demo.entity.BaseStruct(other_element));
+        List<com.miaoju.device.entity.BaseStruct> __this__success = new ArrayList<com.miaoju.device.entity.BaseStruct>(other.success.size());
+        for (com.miaoju.device.entity.BaseStruct other_element : other.success) {
+          __this__success.add(new com.miaoju.device.entity.BaseStruct(other_element));
         }
         this.success = __this__success;
       }
@@ -2576,22 +2576,22 @@ public interface DeviceService {
       return (this.success == null) ? 0 : this.success.size();
     }
 
-    public java.util.Iterator<com.yourcompany.demo.entity.BaseStruct> getSuccessIterator() {
+    public java.util.Iterator<com.miaoju.device.entity.BaseStruct> getSuccessIterator() {
       return (this.success == null) ? null : this.success.iterator();
     }
 
-    public void addToSuccess(com.yourcompany.demo.entity.BaseStruct elem) {
+    public void addToSuccess(com.miaoju.device.entity.BaseStruct elem) {
       if (this.success == null) {
-        this.success = new ArrayList<com.yourcompany.demo.entity.BaseStruct>();
+        this.success = new ArrayList<com.miaoju.device.entity.BaseStruct>();
       }
       this.success.add(elem);
     }
 
-    public List<com.yourcompany.demo.entity.BaseStruct> getSuccess() {
+    public List<com.miaoju.device.entity.BaseStruct> getSuccess() {
       return this.success;
     }
 
-    public getDevicelistshow_result setSuccess(List<com.yourcompany.demo.entity.BaseStruct> success) {
+    public getDevicelistshow_result setSuccess(List<com.miaoju.device.entity.BaseStruct> success) {
       this.success = success;
       if (success != null) {
         setSuccessIsSet(true);
@@ -2622,7 +2622,7 @@ public interface DeviceService {
         if (value == null) {
           unsetSuccess();
         } else {
-          setSuccess((List<com.yourcompany.demo.entity.BaseStruct>)value);
+          setSuccess((List<com.miaoju.device.entity.BaseStruct>)value);
         }
         break;
 
@@ -2770,11 +2770,11 @@ public interface DeviceService {
               if (schemeField.type == org.apache.thrift.protocol.TType.LIST) {
                 {
                   org.apache.thrift.protocol.TList _list6 = iprot.readListBegin();
-                  struct.success = new ArrayList<com.yourcompany.demo.entity.BaseStruct>(_list6.size);
-                  com.yourcompany.demo.entity.BaseStruct _elem7;
+                  struct.success = new ArrayList<com.miaoju.device.entity.BaseStruct>(_list6.size);
+                  com.miaoju.device.entity.BaseStruct _elem7;
                   for (int _i8 = 0; _i8 < _list6.size; ++_i8)
                   {
-                    _elem7 = new com.yourcompany.demo.entity.BaseStruct();
+                    _elem7 = new com.miaoju.device.entity.BaseStruct();
                     _elem7.read(iprot);
                     struct.success.add(_elem7);
                   }
@@ -2802,7 +2802,7 @@ public interface DeviceService {
           oprot.writeFieldBegin(SUCCESS_FIELD_DESC);
           {
             int _isize10 = 0;
-            for (com.yourcompany.demo.entity.BaseStruct _iter9 : struct.success)
+            for (com.miaoju.device.entity.BaseStruct _iter9 : struct.success)
             {
               if (_iter9 != null ) 
               {
@@ -2810,7 +2810,7 @@ public interface DeviceService {
               }
             }
             oprot.writeListBegin(new org.apache.thrift.protocol.TList(org.apache.thrift.protocol.TType.STRUCT, _isize10));
-            for (com.yourcompany.demo.entity.BaseStruct _iter9 : struct.success)
+            for (com.miaoju.device.entity.BaseStruct _iter9 : struct.success)
             {
               if (_iter9 != null ) {
                 _iter9.write(oprot);

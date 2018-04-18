@@ -40,7 +40,7 @@ class DeviceService extends TService implements DeviceServiceInterface {
   }
 
   /**
-   * @return \Com\Yourcompany\Demo\Entity\BaseStruct
+   * @return \Com\Miaoju\Device\Entity\BaseStruct
    */
   public function getDeviceBaseStruct()
   {
@@ -56,7 +56,7 @@ class DeviceService extends TService implements DeviceServiceInterface {
   }
 
   /**
-   * @return \Com\Yourcompany\Demo\Entity\BaseStruct[]
+   * @return \Com\Miaoju\Device\Entity\BaseStruct[]
    */
   public function getDevicelistshow()
   {

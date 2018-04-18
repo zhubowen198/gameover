@@ -39,7 +39,7 @@ class DeviceService extends TSpecification {
     ],
     'getDeviceBaseStruct' => [
       'type' => TType::STRUCT,
-      'class' => '\Com\Yourcompany\Demo\Entity\BaseStruct',
+      'class' => '\Com\Miaoju\Device\Entity\BaseStruct',
     ],
     'getDevicemapBaseStruct' => [
       'type' => TType::MAP,
@@ -50,7 +50,7 @@ class DeviceService extends TSpecification {
       ],
       'val' => [
         'type' => TType::STRUCT,
-        'class' => '\Com\Yourcompany\Demo\Entity\BaseStruct',
+        'class' => '\Com\Miaoju\Device\Entity\BaseStruct',
         ],
     ],
     'getDevicelistshow' => [
@@ -58,7 +58,7 @@ class DeviceService extends TSpecification {
       'etype' => TType::STRUCT,
       'elem' => [
         'type' => TType::STRUCT,
-        'class' => '\Com\Yourcompany\Demo\Entity\BaseStruct',
+        'class' => '\Com\Miaoju\Device\Entity\BaseStruct',
         ],
     ],
   ];

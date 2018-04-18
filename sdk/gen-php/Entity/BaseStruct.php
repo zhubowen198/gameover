@@ -7,7 +7,7 @@
  * @generated
  */
 
-namespace Com\Yourcompany\Demo\Entity;
+namespace Com\Miaoju\Device\Entity;
 
 use Kdt\Iron\Nova\Foundation\Protocol\TStruct;
 use Thrift\Type\TType;

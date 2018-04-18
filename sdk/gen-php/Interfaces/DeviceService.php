@@ -19,7 +19,7 @@ interface DeviceService {
    */
   public function getDeviceList();
   /**
-   * @return \Com\Yourcompany\Demo\Entity\BaseStruct
+   * @return \Com\Miaoju\Device\Entity\BaseStruct
    */
   public function getDeviceBaseStruct();
   /**
@@ -27,7 +27,7 @@ interface DeviceService {
    */
   public function getDevicemapBaseStruct();
   /**
-   * @return \Com\Yourcompany\Demo\Entity\BaseStruct[]
+   * @return \Com\Miaoju\Device\Entity\BaseStruct[]
    */
   public function getDevicelistshow();
 }
