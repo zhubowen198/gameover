@@ -40,7 +40,7 @@ public interface DeviceService {
 
   public Void throwException() throws com.miaoju.device.exception.DeviceServiceException;
 
-  public com.miaoju.device.entity.MixDeviceStruct getDeviceList(com.miaoju.device.entity.DeviceStruct device_struct);
+  public String getDeviceList();
 
   public static class throwException_args implements org.apache.thrift.TBase<throwException_args, throwException_args._Fields>, java.io.Serializable, Cloneable, Comparable<throwException_args>   {
     private static final org.apache.thrift.protocol.TStruct STRUCT_DESC = new org.apache.thrift.protocol.TStruct("throwException_args");
@@ -580,18 +580,16 @@ public interface DeviceService {
   public static class getDeviceList_args implements org.apache.thrift.TBase<getDeviceList_args, getDeviceList_args._Fields>, java.io.Serializable, Cloneable, Comparable<getDeviceList_args>   {
     private static final org.apache.thrift.protocol.TStruct STRUCT_DESC = new org.apache.thrift.protocol.TStruct("getDeviceList_args");
 
-    private static final org.apache.thrift.protocol.TField DEVICE_STRUCT_FIELD_DESC = new org.apache.thrift.protocol.TField("device_struct", org.apache.thrift.protocol.TType.STRUCT, (short)1);
 
     private static final Map<Class<? extends IScheme>, SchemeFactory> schemes = new HashMap<Class<? extends IScheme>, SchemeFactory>();
     static {
       schemes.put(StandardScheme.class, new getDeviceList_argsStandardSchemeFactory());
     }
 
-    private com.miaoju.device.entity.DeviceStruct device_struct; // default
 
     /** The set of fields this struct contains, along with convenience methods for finding and manipulating them. */
     public enum _Fields implements org.apache.thrift.TFieldIdEnum {
-      DEVICE_STRUCT((short)1, "device_struct");
+;
 
       private static final Map<String, _Fields> byName = new HashMap<String, _Fields>();
 
@@ -606,8 +604,6 @@ public interface DeviceService {
        */
       public static _Fields findByThriftId(int fieldId) {
         switch(fieldId) {
-          case 1: // DEVICE_STRUCT
-            return DEVICE_STRUCT;
           default:
             return null;
         }
@@ -646,13 +642,9 @@ public interface DeviceService {
         return _fieldName;
       }
     }
-
-    // isset id assignments
     public static final Map<_Fields, org.apache.thrift.meta_data.FieldMetaData> metaDataMap;
     static {
       Map<_Fields, org.apache.thrift.meta_data.FieldMetaData> tmpMap = new EnumMap<_Fields, org.apache.thrift.meta_data.FieldMetaData>(_Fields.class);
-      tmpMap.put(_Fields.DEVICE_STRUCT, new org.apache.thrift.meta_data.FieldMetaData("device_struct", org.apache.thrift.TFieldRequirementType.DEFAULT, 
-          new org.apache.thrift.meta_data.StructMetaData(org.apache.thrift.protocol.TType.STRUCT, com.miaoju.device.entity.DeviceStruct.class)));
       metaDataMap = Collections.unmodifiableMap(tmpMap);
       org.apache.thrift.meta_data.FieldMetaData.addStructMetaDataMap(getDeviceList_args.class, metaDataMap);
     }
@@ -660,25 +652,10 @@ public interface DeviceService {
     public getDeviceList_args() {
     }
 
-    public getDeviceList_args(
-      com.miaoju.device.entity.DeviceStruct device_struct)
-    {
-      this();
-      if (device_struct != null ) {
-        this.device_struct = device_struct;
-        setDevice_structIsSet(true);
-      } else {
-        setDevice_structIsSet(false);
-      }
-    }
-
     /**
      * Performs a deep copy on <i>other</i>.
      */
     public getDeviceList_args(getDeviceList_args other) {
-      if (other.isSetDevice_struct()) {
-        this.device_struct = new com.miaoju.device.entity.DeviceStruct(other.device_struct);
-      }
     }
 
     public getDeviceList_args deepCopy() {
@@ -687,60 +664,15 @@ public interface DeviceService {
 
     @Override
     public void clear() {
-      setDevice_structIsSet(false);
-      this.device_struct = null;
-    }
-
-    public com.miaoju.device.entity.DeviceStruct getDevice_struct() {
-      return this.device_struct;
-    }
-
-    public getDeviceList_args setDevice_struct(com.miaoju.device.entity.DeviceStruct device_struct) {
-      this.device_struct = device_struct;
-      if (device_struct != null) {
-        setDevice_structIsSet(true);
-      } else {
-        unsetDevice_struct();
-      }
-      return this;
-    }
-
-    public void unsetDevice_struct() {
-      this.device_struct = null;
-    }
-
-    /** Returns true if field device_struct is set (has been assigned a value) and false otherwise */
-    public boolean isSetDevice_struct() {
-      return this.device_struct != null;
-    }
-
-    public void setDevice_structIsSet(boolean value) {
-      if (!value) {
-        this.device_struct = null;
-      }
     }
 
     public void setFieldValue(_Fields field, Object value) {
       switch (field) {
-      case DEVICE_STRUCT:
-        if (value == null) {
-          unsetDevice_struct();
-        } else {
-          setDevice_struct((com.miaoju.device.entity.DeviceStruct)value);
-        }
-        break;
-
       }
     }
 
     public Object getFieldValue(_Fields field) {
       switch (field) {
-      case DEVICE_STRUCT:
-        if (getDevice_struct() != null) {
-          return getDevice_struct();
-
-        }
-        return null;
       }
       throw new IllegalStateException();
     }
@@ -752,8 +684,6 @@ public interface DeviceService {
       }
 
       switch (field) {
-      case DEVICE_STRUCT:
-        return isSetDevice_struct();
       }
       throw new IllegalStateException();
     }
@@ -771,26 +701,12 @@ public interface DeviceService {
       if (that == null)
         return false;
 
-      boolean this_present_device_struct = true && this.isSetDevice_struct();
-      boolean that_present_device_struct = true && that.isSetDevice_struct();
-      if (this_present_device_struct || that_present_device_struct) {
-        if (!(this_present_device_struct && that_present_device_struct))
-          return false;
-        if (!this.device_struct.equals(that.device_struct))
-          return false;
-      }
-
       return true;
     }
 
     @Override
     public int hashCode() {
       List<Object> list = new ArrayList<Object>();
-
-      boolean present_device_struct = true && (isSetDevice_struct());
-      list.add(present_device_struct);
-      if (present_device_struct)
-        list.add(device_struct);
 
       return list.hashCode();
     }
@@ -803,16 +719,6 @@ public interface DeviceService {
 
       int lastComparison = 0;
 
-      lastComparison = Boolean.valueOf(isSetDevice_struct()).compareTo(other.isSetDevice_struct());
-      if (lastComparison != 0) {
-        return lastComparison;
-      }
-      if (isSetDevice_struct()) {
-        lastComparison = org.apache.thrift.TBaseHelper.compareTo(this.device_struct, other.device_struct);
-        if (lastComparison != 0) {
-          return lastComparison;
-        }
-      }
       return 0;
     }
 
@@ -833,25 +739,12 @@ public interface DeviceService {
       StringBuilder sb = new StringBuilder("getDeviceList_args(");
       boolean first = true;
 
-      if (isSetDevice_struct()) {
-        sb.append("device_struct:");
-        if (this.device_struct == null) {
-          sb.append("null");
-        } else {
-          sb.append(this.device_struct);
-        }
-        first = false;
-      }
       sb.append(")");
       return sb.toString();
     }
 
     // check for args
     public void validate() throws org.apache.thrift.TException {
-      if (device_struct == null) {
-        throw new org.apache.thrift.protocol.TProtocolException("Required field 'device_struct' is unset! Struct:" + toString());
-      }
-
     }
 
     private static class getDeviceList_argsStandardSchemeFactory implements SchemeFactory {
@@ -872,15 +765,6 @@ public interface DeviceService {
             break;
           }
           switch (schemeField.id) {
-            case 1: // DEVICE_STRUCT
-              if (schemeField.type == org.apache.thrift.protocol.TType.STRUCT) {
-                struct.device_struct = new com.miaoju.device.entity.DeviceStruct();
-                struct.device_struct.read(iprot);
-                struct.setDevice_structIsSet(true);
-              } else { 
-                org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
-              }
-              break;
             default:
               org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
           }
@@ -894,11 +778,6 @@ public interface DeviceService {
         struct.validate();
 
         oprot.writeStructBegin(STRUCT_DESC);
-        if (struct.isSetDevice_struct()) {
-          oprot.writeFieldBegin(DEVICE_STRUCT_FIELD_DESC);
-          struct.device_struct.write(oprot);
-          oprot.writeFieldEnd();
-        }
         oprot.writeFieldStop();
         oprot.writeStructEnd();
       }
@@ -910,14 +789,14 @@ public interface DeviceService {
   public static class getDeviceList_result implements org.apache.thrift.TBase<getDeviceList_result, getDeviceList_result._Fields>, java.io.Serializable, Cloneable, Comparable<getDeviceList_result>   {
     private static final org.apache.thrift.protocol.TStruct STRUCT_DESC = new org.apache.thrift.protocol.TStruct("getDeviceList_result");
 
-    private static final org.apache.thrift.protocol.TField SUCCESS_FIELD_DESC = new org.apache.thrift.protocol.TField("success", org.apache.thrift.protocol.TType.STRUCT, (short)0);
+    private static final org.apache.thrift.protocol.TField SUCCESS_FIELD_DESC = new org.apache.thrift.protocol.TField("success", org.apache.thrift.protocol.TType.STRING, (short)0);
 
     private static final Map<Class<? extends IScheme>, SchemeFactory> schemes = new HashMap<Class<? extends IScheme>, SchemeFactory>();
     static {
       schemes.put(StandardScheme.class, new getDeviceList_resultStandardSchemeFactory());
     }
 
-    private com.miaoju.device.entity.MixDeviceStruct success; // default
+    private String success; // default
 
     /** The set of fields this struct contains, along with convenience methods for finding and manipulating them. */
     public enum _Fields implements org.apache.thrift.TFieldIdEnum {
@@ -982,7 +861,7 @@ public interface DeviceService {
     static {
       Map<_Fields, org.apache.thrift.meta_data.FieldMetaData> tmpMap = new EnumMap<_Fields, org.apache.thrift.meta_data.FieldMetaData>(_Fields.class);
       tmpMap.put(_Fields.SUCCESS, new org.apache.thrift.meta_data.FieldMetaData("success", org.apache.thrift.TFieldRequirementType.DEFAULT, 
-          new org.apache.thrift.meta_data.StructMetaData(org.apache.thrift.protocol.TType.STRUCT, com.miaoju.device.entity.MixDeviceStruct.class)));
+          new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.STRING)));
       metaDataMap = Collections.unmodifiableMap(tmpMap);
       org.apache.thrift.meta_data.FieldMetaData.addStructMetaDataMap(getDeviceList_result.class, metaDataMap);
     }
@@ -991,7 +870,7 @@ public interface DeviceService {
     }
 
     public getDeviceList_result(
-      com.miaoju.device.entity.MixDeviceStruct success)
+      String success)
     {
       this();
       if (success != null ) {
@@ -1005,7 +884,7 @@ public interface DeviceService {
      */
     public getDeviceList_result(getDeviceList_result other) {
       if (other.isSetSuccess()) {
-        this.success = new com.miaoju.device.entity.MixDeviceStruct(other.success);
+        this.success = other.success;
       }
     }
 
@@ -1019,11 +898,11 @@ public interface DeviceService {
       this.success = null;
     }
 
-    public com.miaoju.device.entity.MixDeviceStruct getSuccess() {
+    public String getSuccess() {
       return this.success;
     }
 
-    public getDeviceList_result setSuccess(com.miaoju.device.entity.MixDeviceStruct success) {
+    public getDeviceList_result setSuccess(String success) {
       this.success = success;
       if (success != null) {
         setSuccessIsSet(true);
@@ -1054,7 +933,7 @@ public interface DeviceService {
         if (value == null) {
           unsetSuccess();
         } else {
-          setSuccess((com.miaoju.device.entity.MixDeviceStruct)value);
+          setSuccess((String)value);
         }
         break;
 
@@ -1178,9 +1057,6 @@ public interface DeviceService {
     public void validate() throws org.apache.thrift.TException {
       // check for required fields
       // check for sub-struct validity
-      if (success != null) {
-        success.validate();
-      }
     }
 
     private static class getDeviceList_resultStandardSchemeFactory implements SchemeFactory {
@@ -1202,9 +1078,8 @@ public interface DeviceService {
           }
           switch (schemeField.id) {
             case 0: // SUCCESS
-              if (schemeField.type == org.apache.thrift.protocol.TType.STRUCT) {
-                struct.success = new com.miaoju.device.entity.MixDeviceStruct();
-                struct.success.read(iprot);
+              if (schemeField.type == org.apache.thrift.protocol.TType.STRING) {
+                struct.success = iprot.readString();
                 struct.setSuccessIsSet(true);
               } else { 
                 org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
@@ -1225,7 +1100,7 @@ public interface DeviceService {
         oprot.writeStructBegin(STRUCT_DESC);
         if (struct.isSetSuccess()) {
           oprot.writeFieldBegin(SUCCESS_FIELD_DESC);
-          struct.success.write(oprot);
+          oprot.writeString(struct.success);
           oprot.writeFieldEnd();
         }
         oprot.writeFieldStop();

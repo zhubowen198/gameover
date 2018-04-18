@@ -21,11 +21,6 @@ class DeviceService extends TSpecification {
     'throwException' => [
     ],
     'getDeviceList' => [
-      1 => [
-        'var' => 'device_struct',
-        'type' => TType::STRUCT,
-        'class' => '\Com\Miaoju\Device\Entity\DeviceStruct',
-        ],
     ],
   ];
   protected $outputStructSpec = [
@@ -34,8 +29,7 @@ class DeviceService extends TSpecification {
       'type' => TType::VOID,
     ],
     'getDeviceList' => [
-      'type' => TType::STRUCT,
-      'class' => '\Com\Miaoju\Device\Entity\MixDeviceStruct',
+      'type' => TType::STRING,
     ],
   ];
   protected $exceptionStructSpec = [

@@ -32,10 +32,9 @@ class DeviceService extends TService implements DeviceServiceInterface {
   }
 
   /**
-   * @param \Com\Miaoju\Device\Entity\DeviceStruct $device_struct
-   * @return \Com\Miaoju\Device\Entity\MixDeviceStruct
+   * @return string
    */
-  public function getDeviceList(\Com\Miaoju\Device\Entity\DeviceStruct $device_struct)
+  public function getDeviceList()
   {
     return $this->apiCall(__FUNCTION__, func_get_args());
   }

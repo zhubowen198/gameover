@@ -5,5 +5,5 @@ include '../entity/MixDeviceStruct.thrift'
 include '../exception/DeviceServiceException.thrift'
 service DeviceService {
     void    throwException() throws (1:DeviceServiceException.DeviceServiceException e);
-    MixDeviceStruct.MixDeviceStruct    getDeviceList(1:DeviceStruct.DeviceStruct device_struct);
+    string    getDeviceList();
 }

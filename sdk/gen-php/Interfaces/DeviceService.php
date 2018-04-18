@@ -15,9 +15,8 @@ interface DeviceService {
    */
   public function throwException();
   /**
-   * @param \Com\Miaoju\Device\Entity\DeviceStruct $device_struct
-   * @return \Com\Miaoju\Device\Entity\MixDeviceStruct
+   * @return string
    */
-  public function getDeviceList(\Com\Miaoju\Device\Entity\DeviceStruct $device_struct);
+  public function getDeviceList();
 }
 
