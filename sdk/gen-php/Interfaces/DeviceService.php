@@ -11,23 +11,81 @@ namespace Com\Miaoju\Device\Interfaces;
 
 interface DeviceService {
   /**
-   * @throws \Com\Miaoju\Device\Exception\DeviceServiceException
+   * @throws \Com\Miaoju\Device\Exception\DemoServiceException
    */
   public function throwException();
   /**
-   * @param \Com\Miaoju\Device\Entity\DeviceStruct $device_struct
-   * @return array
    */
-  public function getdeviceid(\Com\Miaoju\Device\Entity\DeviceStruct $device_struct);
+  public function returnVoid();
   /**
-   * @param \Com\Miaoju\Device\Entity\DeviceStruct $device_struct
-   * @return array
+   * @return bool
    */
-  public function createdevice(\Com\Miaoju\Device\Entity\DeviceStruct $device_struct);
+  public function returnBool();
   /**
-   * @param \Com\Miaoju\Device\Entity\DeviceStruct $device_struct
+   * @return int
+   */
+  public function returnI32();
+  /**
+   * @return double
+   */
+  public function returnDouble();
+  /**
+   * @return string
+   */
+  public function returnString();
+  /**
+   * @return int
+   */
+  public function returnEnum();
+  /**
+   * @return \Com\Miaoju\Device\Entity\BaseStruct
+   */
+  public function returnBaseStruct();
+  /**
+   * @return \Com\Miaoju\Device\Entity\MixedStruct
+   */
+  public function returnMixedStruct();
+  /**
+   * @return \Com\Miaoju\Device\Entity\BaseStruct[]
+   */
+  public function returnList();
+  /**
+   * @return \Com\Miaoju\Device\Entity\BaseStruct[]
+   */
+  public function returnSet();
+  /**
    * @return array
    */
-  public function updatedevice(\Com\Miaoju\Device\Entity\DeviceStruct $device_struct);
+  public function returnMap();
+  /**
+   * @param string $paraString
+   * @param int $errorLevel
+   */
+  public function paraBaseNoReturn($paraString, $errorLevel);
+  /**
+   * @param bool $paraBool
+   * @param int $paraI32
+   * @param double $paraDouble
+   * @param string $paraString
+   * @param \Com\Miaoju\Device\Entity\BaseStruct $baseStruct
+   * @param \Com\Miaoju\Device\Entity\BaseStruct[] $returnList
+   * @param \Com\Miaoju\Device\Entity\BaseStruct[] $returnSet
+   * @param array $returnMap
+   * @param int $errorLevel
+   */
+  public function paraMixedNoReturn($paraBool, $paraI32, $paraDouble, $paraString, \Com\Miaoju\Device\Entity\BaseStruct $baseStruct, array $returnList, array $returnSet, array $returnMap, $errorLevel);
+  /**
+   * @param bool $paraBool
+   * @param int $paraI32
+   * @param double $paraDouble
+   * @param string $paraString
+   * @param \Com\Miaoju\Device\Entity\BaseStruct $baseStruct
+   * @param \Com\Miaoju\Device\Entity\BaseStruct[] $returnList
+   * @param \Com\Miaoju\Device\Entity\BaseStruct[] $returnSet
+   * @param array $returnMap
+   * @param int $errorLevel
+   * @return array
+   */
+  public function complexMethod($paraBool, $paraI32, $paraDouble, $paraString, \Com\Miaoju\Device\Entity\BaseStruct $baseStruct, array $returnList, array $returnSet, array $returnMap, $errorLevel);
 }
 

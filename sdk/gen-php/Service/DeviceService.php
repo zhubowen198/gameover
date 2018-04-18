@@ -24,7 +24,7 @@ class DeviceService extends TService implements DeviceServiceInterface {
   }
 
   /**
-   * @throws \Com\Miaoju\Device\Exception\DeviceServiceException
+   * @throws \Com\Miaoju\Device\Exception\DemoServiceException
    */
   public function throwException()
   {
@@ -32,28 +32,130 @@ class DeviceService extends TService implements DeviceServiceInterface {
   }
 
   /**
-   * @param \Com\Miaoju\Device\Entity\DeviceStruct $device_struct
-   * @return array
    */
-  public function getdeviceid(\Com\Miaoju\Device\Entity\DeviceStruct $device_struct)
+  public function returnVoid()
   {
     return $this->apiCall(__FUNCTION__, func_get_args());
   }
 
   /**
-   * @param \Com\Miaoju\Device\Entity\DeviceStruct $device_struct
-   * @return array
+   * @return bool
    */
-  public function createdevice(\Com\Miaoju\Device\Entity\DeviceStruct $device_struct)
+  public function returnBool()
   {
     return $this->apiCall(__FUNCTION__, func_get_args());
   }
 
   /**
-   * @param \Com\Miaoju\Device\Entity\DeviceStruct $device_struct
+   * @return int
+   */
+  public function returnI32()
+  {
+    return $this->apiCall(__FUNCTION__, func_get_args());
+  }
+
+  /**
+   * @return double
+   */
+  public function returnDouble()
+  {
+    return $this->apiCall(__FUNCTION__, func_get_args());
+  }
+
+  /**
+   * @return string
+   */
+  public function returnString()
+  {
+    return $this->apiCall(__FUNCTION__, func_get_args());
+  }
+
+  /**
+   * @return int
+   */
+  public function returnEnum()
+  {
+    return $this->apiCall(__FUNCTION__, func_get_args());
+  }
+
+  /**
+   * @return \Com\Miaoju\Device\Entity\BaseStruct
+   */
+  public function returnBaseStruct()
+  {
+    return $this->apiCall(__FUNCTION__, func_get_args());
+  }
+
+  /**
+   * @return \Com\Miaoju\Device\Entity\MixedStruct
+   */
+  public function returnMixedStruct()
+  {
+    return $this->apiCall(__FUNCTION__, func_get_args());
+  }
+
+  /**
+   * @return \Com\Miaoju\Device\Entity\BaseStruct[]
+   */
+  public function returnList()
+  {
+    return $this->apiCall(__FUNCTION__, func_get_args());
+  }
+
+  /**
+   * @return \Com\Miaoju\Device\Entity\BaseStruct[]
+   */
+  public function returnSet()
+  {
+    return $this->apiCall(__FUNCTION__, func_get_args());
+  }
+
+  /**
    * @return array
    */
-  public function updatedevice(\Com\Miaoju\Device\Entity\DeviceStruct $device_struct)
+  public function returnMap()
+  {
+    return $this->apiCall(__FUNCTION__, func_get_args());
+  }
+
+  /**
+   * @param string $paraString
+   * @param int $errorLevel
+   */
+  public function paraBaseNoReturn($paraString, $errorLevel)
+  {
+    return $this->apiCall(__FUNCTION__, func_get_args());
+  }
+
+  /**
+   * @param bool $paraBool
+   * @param int $paraI32
+   * @param double $paraDouble
+   * @param string $paraString
+   * @param \Com\Miaoju\Device\Entity\BaseStruct $baseStruct
+   * @param \Com\Miaoju\Device\Entity\BaseStruct[] $returnList
+   * @param \Com\Miaoju\Device\Entity\BaseStruct[] $returnSet
+   * @param array $returnMap
+   * @param int $errorLevel
+   */
+  public function paraMixedNoReturn($paraBool, $paraI32, $paraDouble, $paraString, \Com\Miaoju\Device\Entity\BaseStruct $baseStruct, array $returnList, array $returnSet, array $returnMap, $errorLevel)
+  {
+    return $this->apiCall(__FUNCTION__, func_get_args());
+  }
+
+  /**
+   * @param bool $paraBool
+   * @param int $paraI32
+   * @param double $paraDouble
+   * @param string $paraString
+   * @param \Com\Miaoju\Device\Entity\BaseStruct $baseStruct
+   * @param \Com\Miaoju\Device\Entity\BaseStruct[] $returnList
+   * @param \Com\Miaoju\Device\Entity\BaseStruct[] $returnSet
+   * @param array $returnMap
+   * @param int $errorLevel
+   * @return array
+   */
+  public function complexMethod($paraBool, $paraI32, $paraDouble, $paraString, \Com\Miaoju\Device\Entity\BaseStruct $baseStruct, array $returnList, array $returnSet, array $returnMap, $errorLevel)
   {
     return $this->apiCall(__FUNCTION__, func_get_args());
   }
