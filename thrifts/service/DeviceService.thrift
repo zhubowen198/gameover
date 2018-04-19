@@ -7,7 +7,7 @@ include '../exception/DeviceServiceException.thrift'
 service DeviceService {
     void    throwException() throws (1:DeviceServiceException.DeviceServiceException e);
     string  getDeviceList();
-    BaseStruct.BaseStruct  getDeviceBaseStruct();
+    DeviceStruct.DeviceStruct  getDeviceBaseStruct();
     MixDeviceStruct.MixDeviceStruct    getDevicemapBaseStruct();
     list<BaseStruct.BaseStruct>    getDevicelistshow();
 }

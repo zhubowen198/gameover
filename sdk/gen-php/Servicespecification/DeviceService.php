@@ -39,7 +39,7 @@ class DeviceService extends TSpecification {
     ],
     'getDeviceBaseStruct' => [
       'type' => TType::STRUCT,
-      'class' => '\Com\Miaoju\Device\Entity\BaseStruct',
+      'class' => '\Com\Miaoju\Device\Entity\DeviceStruct',
     ],
     'getDevicemapBaseStruct' => [
       'type' => TType::STRUCT,

@@ -42,7 +42,7 @@ public interface DeviceService {
 
   public String getDeviceList();
 
-  public com.miaoju.device.entity.BaseStruct getDeviceBaseStruct();
+  public com.miaoju.device.entity.DeviceStruct getDeviceBaseStruct();
 
   public com.miaoju.device.entity.MixDeviceStruct getDevicemapBaseStruct();
 
@@ -1336,7 +1336,7 @@ public interface DeviceService {
       schemes.put(StandardScheme.class, new getDeviceBaseStruct_resultStandardSchemeFactory());
     }
 
-    private com.miaoju.device.entity.BaseStruct success; // default
+    private com.miaoju.device.entity.DeviceStruct success; // default
 
     /** The set of fields this struct contains, along with convenience methods for finding and manipulating them. */
     public enum _Fields implements org.apache.thrift.TFieldIdEnum {
@@ -1401,7 +1401,7 @@ public interface DeviceService {
     static {
       Map<_Fields, org.apache.thrift.meta_data.FieldMetaData> tmpMap = new EnumMap<_Fields, org.apache.thrift.meta_data.FieldMetaData>(_Fields.class);
       tmpMap.put(_Fields.SUCCESS, new org.apache.thrift.meta_data.FieldMetaData("success", org.apache.thrift.TFieldRequirementType.DEFAULT, 
-          new org.apache.thrift.meta_data.StructMetaData(org.apache.thrift.protocol.TType.STRUCT, com.miaoju.device.entity.BaseStruct.class)));
+          new org.apache.thrift.meta_data.StructMetaData(org.apache.thrift.protocol.TType.STRUCT, com.miaoju.device.entity.DeviceStruct.class)));
       metaDataMap = Collections.unmodifiableMap(tmpMap);
       org.apache.thrift.meta_data.FieldMetaData.addStructMetaDataMap(getDeviceBaseStruct_result.class, metaDataMap);
     }
@@ -1410,7 +1410,7 @@ public interface DeviceService {
     }
 
     public getDeviceBaseStruct_result(
-      com.miaoju.device.entity.BaseStruct success)
+      com.miaoju.device.entity.DeviceStruct success)
     {
       this();
       if (success != null ) {
@@ -1424,7 +1424,7 @@ public interface DeviceService {
      */
     public getDeviceBaseStruct_result(getDeviceBaseStruct_result other) {
       if (other.isSetSuccess()) {
-        this.success = new com.miaoju.device.entity.BaseStruct(other.success);
+        this.success = new com.miaoju.device.entity.DeviceStruct(other.success);
       }
     }
 
@@ -1438,11 +1438,11 @@ public interface DeviceService {
       this.success = null;
     }
 
-    public com.miaoju.device.entity.BaseStruct getSuccess() {
+    public com.miaoju.device.entity.DeviceStruct getSuccess() {
       return this.success;
     }
 
-    public getDeviceBaseStruct_result setSuccess(com.miaoju.device.entity.BaseStruct success) {
+    public getDeviceBaseStruct_result setSuccess(com.miaoju.device.entity.DeviceStruct success) {
       this.success = success;
       if (success != null) {
         setSuccessIsSet(true);
@@ -1473,7 +1473,7 @@ public interface DeviceService {
         if (value == null) {
           unsetSuccess();
         } else {
-          setSuccess((com.miaoju.device.entity.BaseStruct)value);
+          setSuccess((com.miaoju.device.entity.DeviceStruct)value);
         }
         break;
 
@@ -1622,7 +1622,7 @@ public interface DeviceService {
           switch (schemeField.id) {
             case 0: // SUCCESS
               if (schemeField.type == org.apache.thrift.protocol.TType.STRUCT) {
-                struct.success = new com.miaoju.device.entity.BaseStruct();
+                struct.success = new com.miaoju.device.entity.DeviceStruct();
                 struct.success.read(iprot);
                 struct.setSuccessIsSet(true);
               } else { 

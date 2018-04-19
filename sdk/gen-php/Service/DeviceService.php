@@ -40,7 +40,7 @@ class DeviceService extends TService implements DeviceServiceInterface {
   }
 
   /**
-   * @return \Com\Miaoju\Device\Entity\BaseStruct
+   * @return \Com\Miaoju\Device\Entity\DeviceStruct
    */
   public function getDeviceBaseStruct()
   {
