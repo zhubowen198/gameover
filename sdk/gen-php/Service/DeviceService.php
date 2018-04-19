@@ -48,7 +48,7 @@ class DeviceService extends TService implements DeviceServiceInterface {
   }
 
   /**
-   * @return array
+   * @return \Com\Miaoju\Device\Entity\MixDeviceStruct
    */
   public function getDevicemapBaseStruct()
   {

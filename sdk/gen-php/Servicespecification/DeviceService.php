@@ -42,16 +42,8 @@ class DeviceService extends TSpecification {
       'class' => '\Com\Miaoju\Device\Entity\BaseStruct',
     ],
     'getDevicemapBaseStruct' => [
-      'type' => TType::MAP,
-      'ktype' => TType::STRING,
-      'vtype' => TType::STRUCT,
-      'key' => [
-        'type' => TType::STRING,
-      ],
-      'val' => [
-        'type' => TType::STRUCT,
-        'class' => '\Com\Miaoju\Device\Entity\BaseStruct',
-        ],
+      'type' => TType::STRUCT,
+      'class' => '\Com\Miaoju\Device\Entity\MixDeviceStruct',
     ],
     'getDevicelistshow' => [
       'type' => TType::LST,

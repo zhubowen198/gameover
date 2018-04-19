@@ -8,6 +8,6 @@ service DeviceService {
     void    throwException() throws (1:DeviceServiceException.DeviceServiceException e);
     string  getDeviceList();
     BaseStruct.BaseStruct  getDeviceBaseStruct();
-    map<string, BaseStruct.BaseStruct>    getDevicemapBaseStruct();
+    MixDeviceStruct.MixDeviceStruct    getDevicemapBaseStruct();
     list<BaseStruct.BaseStruct>    getDevicelistshow();
 }

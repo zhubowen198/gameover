@@ -23,7 +23,7 @@ interface DeviceService {
    */
   public function getDeviceBaseStruct();
   /**
-   * @return array
+   * @return \Com\Miaoju\Device\Entity\MixDeviceStruct
    */
   public function getDevicemapBaseStruct();
   /**
