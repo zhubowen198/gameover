@@ -29,27 +29,28 @@ data|各接口具体的返回内容，空值或无表示无具体返回内容
 
 创建订单参数如下[POST]
 
-+ productid (string) - 商品id
-+ productname (string) - 商品名称
-+ money(number) - 付款订单金额
-+ gameid(number) - 平台中心配置appid(订单后台为每个游戏配置的gameid值)
++ productid (string) - 商品id:com.rxsg1.07
++ productname (string) - 商品名称 
++ money(number) - 付款订单金额:100
++ currency(string) - 币种:RMB  
++ gameid(number) - 平台中心配置appid(订单后台为每个游戏配置的gameid值):1001
 + gamename(string) - app名
-+ packagename(string) - 充值订单产生的游戏包名
 + orderID(string) - app的订单号(如果支付前app内未产生订单号 支付时再返回)
 + roleID(string) - 角色id
 + roleName(string) - 角色名称
-+ serverID(string) - 服务器id
++ serverID(string) - 服务器id:50936
 + serverName(string) - 服务器名
 + userID(string) - 充值用户id
 + username(string) - 充值用户名
 + roleLevel(string) - 角色等级
-+ pay_channel(string) - 充值方式(1 谷歌充值 2苹果充值)
-+ packagename(string) - 充值订单产生的游戏包名
-+ sign(string) - ksort($request); md5(http_build_query($request).'B8899E2039DF87E0');
++ pay_channel(string) - 充值渠道方式(1 谷歌 2苹果)
++ packagename(string) - app包名
++ sign(string) - ksort($request); md5(key1=value1&key2=value2&.'B8899E2039DF87E2');
 
 ### data值
 
 + Response 200(application/json)
+
         {
         resultCode: 0, //3.创建订单失败
         resultMessage: "success",//失败时显示失败原因
@@ -64,7 +65,7 @@ data|各接口具体的返回内容，空值或无表示无具体返回内容
 + gameid (number) - 后台配置游戏id
 + payreturndata(string) - 支付的全部返回值串(json格式)
 + time (number) - 发起时间（戳）
-+ sign (string) - ksort($request); md5(http_build_query($request).'B8899E2039DF87E0');**payreturndata不参与排序加密**
++ sign (string) - ksort($request); md5(key1=value1&key2=value2&.'B8899E2039DF87E2');**payreturndata不参与排序加密**
 
 ### 
 
@@ -82,7 +83,7 @@ data|各接口具体的返回内容，空值或无表示无具体返回内容
 
 + platorderid(string) - 平台唯一订单10011554867699875662
 + time (number) - 发起时间（戳）
-+ sign (string) - ksort($request); md5(http_build_query($request).'B8899E2039DF87E0');
++ sign (string) - ksort($request); md5(key1=value1&key2=value2&.'B8899E2039DF87E2');
 
 
 ### 
@@ -102,11 +103,12 @@ data|各接口具体的返回内容，空值或无表示无具体返回内容
 + platorderid (string) - 唯一订单id
 + gameid (number) - 后台配置游戏id
 + time (number) - 发起时间（戳）
-+ sign (string) - ksort($request); md5(http_build_query($request).'B8899E2039DF87E0');
++ sign (string) - ksort($request); md5(key1=value1&key2=value2&.'B8899E2039DF87E2');
 
 ### 
 
 + Response 200 (application/json)
+
         {
         resultCode: 0, //3.查询订单不存在
         resultMessage: "success",//失败时显示失败原因
@@ -114,6 +116,7 @@ data|各接口具体的返回内容，空值或无表示无具体返回内容
             "platorderid":"10011554867699875662",//平台唯一id
             "productid":"12345",//产品id
             "money":100,//订单金额
+            "currency":"RMB",
             "productname":"12345",//产品名称
             "gameid":12345,//app的后台配置id
             "gamename":"12345",//游戏名
