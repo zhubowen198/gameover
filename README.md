@@ -7,10 +7,10 @@ https://apijhy.g.ledu.com|测试|19.3.11.9
 ## 接口列表：请求方式（GET | POST）
 服务端请求接口|请求方式|URL|请求参数与返回data
 :--|:--|:--|:--
-创建订单接口      |POST|/ordercenter/createorder|[创建订单接口参数]("createorder")
-支付验证接口      |POST|/ordercenter/valiorder  |[支付验证接口参数]("createorder")
-订单发货(消费)接口|POST|/ordercenter/sendproduct |[订单发货接口参数]("createorder")
-查询订单接口       |GET |/ordercenter/queryorder |[查询订单接口参数]("createorder")
+一:创建订单接口      |POST|/ordercenter/createorder|[创建订单接口参数]("createorder")
+二:支付验证接口      |POST|/ordercenter/valiorder  |[支付验证接口参数]("createorder")
+三:订单发货(消费)接口|POST|/ordercenter/sendproduct |[订单发货接口参数]("createorder")
+四:查询订单接口       |GET |/ordercenter/queryorder |[查询订单接口参数]("createorder")
 
 ## 游戏请求api接口加密串验证
 ksort($request); md5(key1=value1&key2=value2& . ‘B8899E2039DF87E0’)
@@ -23,9 +23,9 @@ resultMessage|状态码对应说明信息
 data|各接口具体的返回内容，空值或无表示无具体返回内容
 
 
-# Group 服务端 请求接口
+# 请求接口参数详述
 
-## 创建订单接口参数 [/ordercenter/createorder]
+## 一:<span id="createorder">创建订单接口参数</span> [/ordercenter/createorder]
 
 创建订单参数如下[POST]
 
@@ -50,7 +50,7 @@ data|各接口具体的返回内容，空值或无表示无具体返回内容
               "time":1538323200
         }
 
-## 支付验证接口参数 [/ordercenter/valiorder][POST]
+## 二:支付验证接口参数 [/ordercenter/valiorder][POST]
 
 + sdk_uid (number) - 用户各平台唯一uid
 + platform_id (number) - 平台id
@@ -73,7 +73,7 @@ data|各接口具体的返回内容，空值或无表示无具体返回内容
           "time": 1538323200
          }
 
-## 订单发货接口参数 [/ordercenter/sendproduct][POST]
+## 三:订单发货接口参数 [/ordercenter/sendproduct][POST]
 
 + no (string) - （18位唯一）充值或扣减流水单号，用于查询充值或扣减是否成功
 + time (number) - 发起时间（戳）
@@ -88,7 +88,7 @@ data|各接口具体的返回内容，空值或无表示无具体返回内容
             "status":0
         }
 
-## 查询订单接口参数 [/ordercenter/queryorder][GET]
+## 四:查询订单接口参数 [/ordercenter/queryorder][GET]
 
 + sdk_uid (number) - 用户各平台唯一uid
 + platform_id (number) - 平台id
