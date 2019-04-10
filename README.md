@@ -11,5 +11,5 @@ https://apijhy.g.ledu.com|测试|19.3.11.9
 订单发货(消费)接口|POST|ordercenter/sendproduct |[订单发货接口参数]("createorder")
 查询订单接口       |GET |ordercenter/queryorder |[查询订单接口参数]("createorder")
 
-# 游戏请求api接口参数验证：ksort($request); md5(key1=value1&key2=value2& . ‘B8899E2039DF87E0’);
-
+# 游戏请求api接口参数验证
+ksort($request); md5(key1=value1&key2=value2& . ‘B8899E2039DF87E0’)
