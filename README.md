@@ -13,12 +13,12 @@ https://apijhy.g.ledu.com|测试|19.3.11.9
 <span id="lqueryorder">查询订单接口</span>       |GET |/ordercenter/queryorder |[查询订单接口参数](#queryorder)
 
 ## 游戏请求api接口加密串验证
-ksort($request); md5(key1=value1&key2=value2& . ‘B8899E2039DF87E0’)
+ksort($request); md5(key1=value1&key2=value2&.'B8899E2039DF87E0')
 
 ## 公共返回：数据格式(JSON)
 字段|值
 :--|:--
-resultCode|状态码，0表示成功，其它对应状态码的说明
+resultCode|状态码，0表示成功，1 订单中心api接口验证失败 2 请求超时   其它对应状态码的说明
 resultMessage|状态码对应说明信息
 data|各接口具体的返回内容，空值或无表示无具体返回内容
 
@@ -50,9 +50,12 @@ data|各接口具体的返回内容，空值或无表示无具体返回内容
 ### data值
 
 + Response 200(application/json)
-
         {
-              "platorderid":"10011554867699875662",//string
+        resultCode: 0, //3.创建订单失败
+        resultMessage: "success",//失败时显示失败原因
+        data: {
+                platorderid: "10011554867699875662",//string 平台生成的唯一订单号
+              }
         }
 
 ## 二:<span id="valiorder">支付验证接口参数</span> [/ordercenter/valiorder][POST][回到接口列表](#lvaliorder)
@@ -61,16 +64,19 @@ data|各接口具体的返回内容，空值或无表示无具体返回内容
 + gameid (number) - 后台配置游戏id
 + payreturndata(string) - 支付的全部返回值串(json格式)
 + time (number) - 发起时间（戳）
-+ sign (string) - ksort($request); md5(http_build_query($request) . ‘B8899E2039DF87E0’);
++ sign (string) - ksort($request); md5(http_build_query($request).'B8899E2039DF87E0');**payreturndata不参与排序加密**
 
 ### 
 
 + Response 200 (application/json)
 
         {
-          "platorderid": "10011554867699875662",
-          "state":0,
-         }
+        resultCode: 0, //3.验证支付返回信息不合法 
+        resultMessage: "success",//失败时显示失败原因
+        data: {
+                platorderid: "10011554867699875662",//string 平台生成的唯一订单号
+              }
+        }
 
 ## 三:<span id="sendproduct">订单发货接口参数</span> [/ordercenter/sendproduct][POST][回到接口列表](#lsendproduct)
 
@@ -84,7 +90,11 @@ data|各接口具体的返回内容，空值或无表示无具体返回内容
 + Response 200 (application/json)
 
         {
-            "status":0
+        resultCode: 0, //3.发货记录失败 
+        resultMessage: "success",//失败时显示失败原因
+        data: {
+                platorderid: "10011554867699875662",//string 平台生成的唯一订单号
+              }
         }
 
 ## 四:<span id="queryorder">查询订单接口参数</span> [/ordercenter/queryorder][GET][回到接口列表](#lqueryorder)
@@ -97,8 +107,10 @@ data|各接口具体的返回内容，空值或无表示无具体返回内容
 ### 
 
 + Response 200 (application/json)
-
         {
+        resultCode: 0, //3.查询订单不存在
+        resultMessage: "success",//失败时显示失败原因
+        data:  {
             "platorderid":"10011554867699875662",//平台唯一id
             "productid":"12345",//产品id
             "money":100,//订单金额
@@ -113,5 +125,7 @@ data|各接口具体的返回内容，空值或无表示无具体返回内容
             "pay_state":1,//支付状态
             "pay_channel":1,//支付渠道
             "state":1,//订单状态
+                }
         }
+       
 
