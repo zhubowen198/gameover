@@ -29,33 +29,37 @@ data|各接口具体的返回内容，空值或无表示无具体返回内容
 
 创建订单参数如下[POST]
 
-+ sdk_uid (number) - 用户各平台唯一uid
-+ platform_id (number) - 平台id
-+ no(string) - 充值流水单号，可用于查询充值是否成功
-+ number(number) - 充值数量
-+ time(number) - 发起时间（戳）
++ productid (string) - 商品id
++ productname (string) - 商品名称
++ money(number) - 付款订单金额
++ gameid(number) - 平台中心配置appid(订单后台为每个游戏配置的gameid值)
++ gamename(string) - app名
++ packagename(string) - 充值订单产生的游戏包名
++ orderID(string) - app的订单号(如果支付前app内未产生订单号 支付时再返回)
++ roleID(string) - 角色id
++ roleName(string) - 角色名称
++ serverID(string) - 服务器id
++ serverName(string) - 服务器名
++ userID(string) - 充值用户id
++ username(string) - 充值用户名
++ roleLevel(string) - 角色等级
++ pay_channel(string) - 充值方式(1 谷歌充值 2苹果充值)
++ packagename(string) - 充值订单产生的游戏包名
 + sign(string) - ksort($request); md5(http_build_query($request) . 'B8899E2039DF87E0');
 
-### 
+### data值
 
 + Response 200(application/json)
 
         {
-              "status":1,
-              "money":100,
-              "sdk_uid":123,
-              "platform_id":1234,
-              "no":"123456789012345678",
-              "number":100,
-              "time":1538323200
+              "platorderid":"10011554867699875662",//string
         }
 
 ## 二:<span id="valiorder">支付验证接口参数</span> [/ordercenter/valiorder][POST][回到接口列表](#lvaliorder)
 
-+ sdk_uid (number) - 用户各平台唯一uid
-+ platform_id (number) - 平台id
-+ no (string) - （18位唯一）扣减流水单号，可用于查询扣减是否成功
-+ number (number) - 扣减数量
++ platorderid (string) - 唯一订单id
++ gameid (number) - 后台配置游戏id
++ payreturndata(string) - 支付的全部返回值串(json格式)
 + time (number) - 发起时间（戳）
 + sign (string) - ksort($request); md5(http_build_query($request) . ‘B8899E2039DF87E0’);
 
@@ -64,18 +68,13 @@ data|各接口具体的返回内容，空值或无表示无具体返回内容
 + Response 200 (application/json)
 
         {
-          "status": 0,
-          "money": 100,
-          "sdk_uid": 123,
-          "platform_id": 123,
-          "no": "123456789012345678",
-          "number": 100,
-          "time": 1538323200
+          "platorderid": "10011554867699875662",
+          "state":0,
          }
 
 ## 三:<span id="sendproduct">订单发货接口参数</span> [/ordercenter/sendproduct][POST][回到接口列表](#lsendproduct)
 
-+ no (string) - （18位唯一）充值或扣减流水单号，用于查询充值或扣减是否成功
++ platorderid(string) - 平台唯一订单10011554867699875662
 + time (number) - 发起时间（戳）
 + sign (string) - ksort($request); md5(http_build_query($request) . 'B8899E2039DF87E0');
 
@@ -90,8 +89,8 @@ data|各接口具体的返回内容，空值或无表示无具体返回内容
 
 ## 四:<span id="queryorder">查询订单接口参数</span> [/ordercenter/queryorder][GET][回到接口列表](#lqueryorder)
 
-+ sdk_uid (number) - 用户各平台唯一uid
-+ platform_id (number) - 平台id
++ platorderid (string) - 唯一订单id
++ gameid (number) - 后台配置游戏id
 + time (number) - 发起时间（戳）
 + sign (string) - ksort($request); md5(http_build_query($request) . 'B8899E2039DF87E0');
 
@@ -100,8 +99,19 @@ data|各接口具体的返回内容，空值或无表示无具体返回内容
 + Response 200 (application/json)
 
         {
-            "money":100,
-            "sdk_uid":12345,
-            platform_id:12345;
+            "platorderid":"10011554867699875662",//平台唯一id
+            "productid":"12345",//产品id
+            "money":100,//订单金额
+            "productname":"12345",//产品名称
+            "gameid":12345,//app的后台配置id
+            "gamename":"12345",//游戏名
+            "packagename":"12345",//游戏包名
+            "orderID":"12345",//游戏订单id
+            "roleID":"12345",//角色id
+            "serverID":"12345",//充值时的服务器
+            "userID":"12345",//游戏中的用户id
+            "pay_state":1,//支付状态
+            "pay_channel":1,//支付渠道
+            "state":1,//订单状态
         }
 
