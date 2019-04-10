@@ -45,7 +45,7 @@ data|各接口具体的返回内容，空值或无表示无具体返回内容
 + roleLevel(string) - 角色等级
 + pay_channel(string) - 充值方式(1 谷歌充值 2苹果充值)
 + packagename(string) - 充值订单产生的游戏包名
-+ sign(string) - ksort($request); md5(http_build_query($request) . 'B8899E2039DF87E0');
++ sign(string) - ksort($request); md5(http_build_query($request).'B8899E2039DF87E0');
 
 ### data值
 
@@ -82,7 +82,7 @@ data|各接口具体的返回内容，空值或无表示无具体返回内容
 
 + platorderid(string) - 平台唯一订单10011554867699875662
 + time (number) - 发起时间（戳）
-+ sign (string) - ksort($request); md5(http_build_query($request) . 'B8899E2039DF87E0');
++ sign (string) - ksort($request); md5(http_build_query($request).'B8899E2039DF87E0');
 
 
 ### 
@@ -102,7 +102,7 @@ data|各接口具体的返回内容，空值或无表示无具体返回内容
 + platorderid (string) - 唯一订单id
 + gameid (number) - 后台配置游戏id
 + time (number) - 发起时间（戳）
-+ sign (string) - ksort($request); md5(http_build_query($request) . 'B8899E2039DF87E0');
++ sign (string) - ksort($request); md5(http_build_query($request).'B8899E2039DF87E0');
 
 ### 
 
